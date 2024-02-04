@@ -5,7 +5,7 @@ title: K Gopal Krishna's Landing
 
 Welcome to my little space on the internet! 
 
-I am [[resume.pdf|an infrastructure guy / aspiring devops]], [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts).
+I am [[resume.pdf|an infrastructure guy]] / [[resume.pdf|aspiring devops]], [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts).
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try out putting out notes from my zettelkasten as updates. 
 
