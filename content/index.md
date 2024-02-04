@@ -15,7 +15,7 @@ You might be interested in [[services|using the services that I host]], [[uses|m
 
  You can find me on these platforms:
 
-- [Telegram](https://t.me/kayg)
+- [Telegram](https://t.me/kayg04)
 - [Email](mailto:mail@kayg.org)
 - [Letterboxd](https://letterboxd.com/kayg04)
 - [X / Twitter](https://x.com/therealkayg04)
