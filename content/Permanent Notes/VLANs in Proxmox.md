@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-02-03 22:22
-last edited: 2024-02-06 03:37
+last edited: 2024-02-06 03:38
 tags:
   - proxmox
   - vlan
@@ -105,8 +105,9 @@ Now Tailscale docs mention a very important side effect of allowing IP forwardin
 Thus, the host here acts like a router and forwards all traffic, even the unintended bits (between two VLANs).
 
 ### Fixing inter-VLAN traffic
----
+
 This can be solved by setting a default forwarding policy of `DROP` with iptables and then allowing traffic we intend to.
+
 - Allow communication between the NIC and the bridge.
     ```bash
     iptables -A FORWARD -i eno1 -o vmbr+ -j ACCEPT
