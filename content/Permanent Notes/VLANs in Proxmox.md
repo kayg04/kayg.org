@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-02-03 22:22
-last edited: 2024-02-06 02:55
+last edited: 2024-02-06 03:31
 tags:
   - proxmox
   - vlan
@@ -20,9 +20,12 @@ VLANs are used to separate traffic into different [Broadcast Domains](https://ww
 ### Create VLANs
 
 > [!Assumptions] Assumptions
->  `eno1` - NIC 
->  `eno1.Z` - VLAN on the NIC eno1 with a the VLAN tag Z 
->  `vmbrX` - Bridge 
+>  `eno1` - NIC
+>
+>  `eno1.Z` - VLAN on the NIC eno1 with a the VLAN tag Z
+>   
+>  `vmbrX` - Bridge
+>   
 >  `vmbrX.Y` - VLAN on the bridge `vmbrX` with the VLAN tag Y
 
 There are two ways to create a VLAN on Proxmox:
@@ -33,30 +36,30 @@ The VM’s virtual network device has to be assigned a network tag and the netwo
     
 1. Visit the Network tab under the node and create a Linux bridge:
         
-        ![[Pasted image 20240206024045.png]]
+	![[Pasted image 20240206024045.png]]
         
 2. Tick the “VLAN Aware” box.
         
-        ![[Pasted image 20240206024507.png]]
+	![[Pasted image 20240206024507.png]]
         
 3. Create a “Linux VLAN” too as we want the Proxmox Host to do the routing. Here we want to define a subnet as the VM will be permitted to set an IP within this subnet.
         
-        ![[Pasted image 20240206024536.png]]
-4. On the VM, goto the Hardware Tab. While creating the network device or editing a network device, add the vlan tag.
+	![[Pasted image 20240206024536.png]]
+1. On the VM, goto the Hardware Tab. While creating the network device or editing a network device, add the vlan tag.
         
-        ![[Pasted image 20240206024555.png]]
+	![[Pasted image 20240206024555.png]]
         
 5. Under VM → Cloud-init, add IPs belonging the VLAN’s subnet to the VMs.
         
-        ![[Pasted image 20240206024609.png]]
+	![[Pasted image 20240206024609.png]]
         
-        ![[Pasted image 20240206024627.png]]
+	![[Pasted image 20240206024627.png]]
         
 	Make sure to click on “Regenerate Image” to apply changes.
         
 6. Start both VMs and get them to ping each other.
         
-        ![[Pasted image 20240206024647.png]]
+	![[Pasted image 20240206024647.png]]
         
 #### Traditional configuration
  
@@ -64,25 +67,25 @@ The VM’s virtual network device has to be assigned a network tag and the netwo
     
 1. Create a Linux Bridge under System → Network that refers to a VLAN on the NIC:
         
-        ![[Pasted image 20240206024832.png]]
+	![[Pasted image 20240206024832.png]]
         
 	This time the bridge is **not marked VLAN-Aware**, as the tagging is done directly on the NIC. The bridge port here is the vlan tag we want to create on the NIC - `2048` in this example. `eno1.2048` will be created and destroyed dynamically. 
 	
 2. Use the bridge `vmbr2` on two test VMs to put them in the same VLAN. The VLAN tag on the VM itself is empty because the VM network device does not know it belongs to a VLAN, the bridge itself does.
         
-        ![[Pasted image 20240206024849.png]]
+	![[Pasted image 20240206024849.png]]
         
 3. Under VM → Cloud-init, make sure the VM has an IP that belongs to our VLAN bridge:
         
-        ![[Pasted image 20240206024951.png]]
+	![[Pasted image 20240206024951.png]]
         
-        ![[Pasted image 20240206025004.png]]
+	![[Pasted image 20240206025004.png]]
         
         Make sure to click on “Regenerate Image” for changes to apply to the VM.
         
 4. Start the VMs and try to ping each other.
         
-        ![[Pasted image 20240206025019.png]]
+	![[Pasted image 20240206025019.png]]
         
 
 ### Why does inter-VLAN traffic work?
