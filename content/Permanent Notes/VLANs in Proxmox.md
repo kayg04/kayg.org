@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-02-03 22:22
-last edited: 2024-02-06 03:34
+last edited: 2024-02-06 03:35
 tags:
   - proxmox
   - vlan
@@ -20,10 +20,12 @@ VLANs are used to separate traffic into different [Broadcast Domains](https://ww
 ### Create VLANs
 
 > [!Assumptions] Assumptions
-> 
 >  `eno1` - NIC
+>  
 >  `eno1.Z` - VLAN on the NIC eno1 with a the VLAN tag Z
+>  
 >  `vmbrX` - Bridge
+>  
 >  `vmbrX.Y` - VLAN on the bridge `vmbrX` with the VLAN tag Y
 
 There are two ways to create a VLAN on Proxmox:
