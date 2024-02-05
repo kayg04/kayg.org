@@ -1,5 +1,7 @@
 ---
 Title: Stuff I use
+date: 2024-02-04 23:03
+last edited: 2024-02-05 13:28
 ---
 The world has a `/uses` page and why shouldn't I?
 

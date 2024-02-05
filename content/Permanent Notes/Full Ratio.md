@@ -1,6 +1,7 @@
 ---
 date: 2024-02-04 20:57
-Type: Permanent Note
+type: Permanent Note
+last edited: 2024-02-05 13:28
 ---
 ## ❓ What?
   
