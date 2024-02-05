@@ -1,15 +1,11 @@
 ---
 date: 2024-02-04 21:30
 type: Permanent Note
-last edited: 2024-02-05 13:28
+last edited: 2024-02-05 20:43
 ---
 ## ❓ What?
 
 The maximum or threshold percentage of disk space that can be used before an OSD is considered too full to backfill. This ratio is reached after crossing [[Nearfull Ratio]]. Once utilisation crosses [[Backfillfull Ratio]], it reaches [[Full Ratio]]. The default value is 0.90 or 90% of the total available space.
-
-## ❔ Why?
-
-  
 
 ## 🎤 How?
 
