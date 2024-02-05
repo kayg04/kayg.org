@@ -1,5 +1,5 @@
 ---
-Created: 2024-02-04 21:30
+date: 2024-02-04 21:30
 Type: Permanent Note
 ---
 ## ❓ What?

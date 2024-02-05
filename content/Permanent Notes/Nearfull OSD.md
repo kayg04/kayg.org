@@ -1,7 +1,5 @@
 ---
-Created: 2024-01-17T16:38
-Refers to:
-  - "[[Ceph]]"
+date: 2024-01-17T16:38
 tags:
   - ceph
   - nearfull

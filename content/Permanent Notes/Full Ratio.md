@@ -1,10 +1,10 @@
 ---
-Created: 2024-02-04 20:57
+date: 2024-02-04 20:57
 Type: Permanent Note
 ---
 ## ❓ What?
   
-The maximum / threshold percentage of disk space usage before an OSD is considered `full`. This happens after usage has crossed and [[Nearfull Ratio]] Ratio]. The default value is 0.95 or 95% of the total available space / capacity.
+The maximum / threshold percentage of disk space usage before an OSD is considered `full`. This happens after usage has crossed and [[Nearfull Ratio]]. The default value is 0.95 or 95% of the total available space / capacity.
 
 ## ❔ Why?
 
@@ -32,6 +32,4 @@ In croit, [[Full Ratio]] can be changed by visiting Maintenance → Full Ratios 
 ![[croit-ratios.png]]
 ## 👓 References
 
-> [!info] Monitor Config Reference — Ceph Documentation  
-> Understanding how to configure a Ceph Monitor is an important part of  
-> [https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity](https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity)
+https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity
