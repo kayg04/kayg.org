@@ -1,4 +1,0 @@
----
-Inbox:
-  - "[[iSCSI Reservations]]"
----
