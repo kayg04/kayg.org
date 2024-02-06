@@ -12,7 +12,7 @@ const config: QuartzConfig = {
     locale: "en-US",
     baseUrl: "kayg.org",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    defaultDateType: "modified",
     theme: {
       typography: {
         header: "Schibsted Grotesk",

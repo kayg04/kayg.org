@@ -32,6 +32,12 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Graph(),
     Component.Backlinks(),
+    Component.RecentNotes({
+      title: "Recent Notes",
+      limit: 4,
+      filter: (f) => f.slug!.startsWith("Permanent-Notes/"),
+      linkToMore: "Permanent-Notes/" as SimpleSlug,
+    }),
   ],
 }
 
