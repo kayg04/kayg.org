@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-02-03 22:22
-last edited: 2024-02-06 03:38
+last edited: 2024-02-06 21:21
 tags:
   - proxmox
   - vlan
@@ -117,10 +117,6 @@ This can be solved by setting a default forwarding policy of `DROP` with iptable
     ```bash
     iptables -A FORWARD -i vmbr5 -o vmbr5.+ -j ACCEPT
     Iptables -A FORWARD -i vmbr5.+ -o vmbr5 -j ACCEPT
-    ```
-- Allow communication on the VLANs (not required with traditional VLANs - when VLANs are not on the bridge)
-    ```bash
-    iptables -A FORWRAD -i vmbr5.100 -o vmbr5.100 -j ACCEPT
     ```
 - Drop everything else
     ```bash
