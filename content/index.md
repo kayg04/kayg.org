@@ -1,13 +1,13 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-02-07 12:52
+last edited: 2024-02-07 17:43
 ---
 ## Intro
 
 Welcome to my little space on the internet! 
 
-I am [[resume.pdf|an infrastructure guy]] / [[resume.pdf|aspiring devops]], [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts).
+I am [[resume.pdf|an infrastructure guy]] / [[resume.pdf|aspiring devops]], [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts). I work at [croit GmbH](https://croit.io); we make deploying and managing ceph super simple! 
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try out putting out notes from my zettelkasten as updates. 
 

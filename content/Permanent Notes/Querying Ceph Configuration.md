@@ -4,7 +4,7 @@ tags:
   - ceph
   - config
 date: 2024-01-17 16:47
-last edited: 2024-02-06 15:23
+last edited: 2024-02-07 13:18
 ---
 [[Ceph]]'s configuration can be queried in quite a few ways:
 ### Runtime
