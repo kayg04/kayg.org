@@ -30,7 +30,14 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        showTags: false, // whether to show tags in the graph
+      },
+      globalGraph: {
+        showTags: false, // whether to show tags in the graph
+      },
+    }),
     Component.Backlinks(),
     Component.RecentNotes({
       title: "Recent Notes",
