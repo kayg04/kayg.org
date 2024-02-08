@@ -1,7 +1,7 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-02-07 17:43
+last edited: 2024-02-07 23:38
 ---
 ## Intro
 
@@ -15,7 +15,7 @@ You might be interested in [[services|using the services that I host]], [[uses|m
 
 ## Other Platforms
 
- You can find me on these platforms:
+You can find me on these platforms:
 
 - [Telegram](https://t.me/kayg04)
 - [Email](mailto:mail@kayg.org)

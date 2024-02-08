@@ -1,6 +1,6 @@
 ---
 date: 2024-01-17 16:47
-last edited: 2024-02-05 17:14
+last edited: 2024-02-07 18:55
 type: Permanent Note
 tags:
   - ceph
@@ -35,11 +35,16 @@ When there's a failed drive/OSD, there are two situations:
 
 - [[Ceph]] drains the dying OSD and moves data OR if the disk is dead, ceph rebuilds data from redundant bits / parity to _other OSDs on the same node_. This may cause a [[Nearfull OSD]] situation.
  
-- To prevent such a situation, the trick here is to set `ceph osd crush reweight 0`. This makes sure that the data is distributed to _other OSDs on all the nodes / throughout the crushmap_.
+- To prevent such a situation, the trick here is to set `ceph osd crush reweight 0`. [[Difference Between OSD Reweight and CRUSH Reweight]] This makes sure that the data is distributed to _other OSDs on all the nodes / throughout the crushmap_.
 
 - Wait till the OSD has been drained (0 PGs) if the disk is still alive. If the disk is dead, it can be replaced immediately.
 
 - The OSD can be destroyed and recreated thereafter.
+
+
+> [!NOTE] Persistence
+> Restarting the OSD will
+
 
 ## 👓 References
 
