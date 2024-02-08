@@ -27,7 +27,7 @@ const config: QuartzConfig = {
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
+          secondary: "#AA336A",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
@@ -37,7 +37,7 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
+          secondary: "#DA70D6",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
         },
@@ -59,7 +59,8 @@ const config: QuartzConfig = {
         mermaid: false 
       }),
       Plugin.GitHubFlavoredMarkdown(),
-      Plugin.TableOfContents(),
+      Plugin.TableOfContents({
+      }),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
     ],

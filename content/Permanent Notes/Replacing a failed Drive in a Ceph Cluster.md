@@ -1,6 +1,6 @@
 ---
 date: 2024-01-17 16:47
-last edited: 2024-02-07 18:55
+last edited: 2024-02-08 13:40
 type: Permanent Note
 tags:
   - ceph
@@ -40,11 +40,6 @@ When there's a failed drive/OSD, there are two situations:
 - Wait till the OSD has been drained (0 PGs) if the disk is still alive. If the disk is dead, it can be replaced immediately.
 
 - The OSD can be destroyed and recreated thereafter.
-
-
-> [!NOTE] Persistence
-> Restarting the OSD will
-
 
 ## 👓 References
 
