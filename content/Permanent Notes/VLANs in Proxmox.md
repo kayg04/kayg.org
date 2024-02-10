@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-01-27 12:18
-last edited: 2024-02-10 21:30
+last edited: 2024-02-10 21:39
 tags:
   - proxmox
   - vlan
@@ -9,7 +9,7 @@ tags:
 ---
 > [!NOTE] Featured on FOSS United
 > I presented this topic on the [FOSS United](https://fossunited.org/) Delhi February Meetup: 
-> https://twitter.com/FOSSUnitedDelhi/status/1752258824680165857?t=0Kn4qDAvOXjcUGO0kBV43A&s=19
+> https://twitter.com/FOSSUnitedDelhi/status/1752677087071395979?t=ow7jR9nGNODxmFIjQqxeKw&s=19
 > 
 > ![[foss-united-feb-2024-talk.jpg]]
 > 
