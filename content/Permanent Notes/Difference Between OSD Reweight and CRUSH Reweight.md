@@ -6,7 +6,7 @@ tags:
   - crush
   - reweight
 date: 2024-01-17 16:47
-last edited: 2024-02-10 17:27
+last edited: 2024-02-10 17:34
 ---
 ## TLDR
 
@@ -53,13 +53,13 @@ ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP     META     AVAIL
 		18    hdd  0.03119         0      0 B      0 B      0 B     0 B      0 B      0 B      0     0    0      up          osd.18
       ```
 	- In the OSD, check osd reweight
-	```bash
+	  ```bash
 		$ ceph osd in osd.18
 		marked in osd.18.
 		$ ceph osd df tree | grep -E 'ID|osd.18'
 		ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP    META     AVAIL    %USE   VAR   PGS  STATUS  TYPE NAME
-		18    hdd  0.03119   1.00000      0 B      0 B      0 B     0 B      0 B      0 B      0     0    4      up          osd.18
-	```
+			18    hdd  0.03119   1.00000      0 B      0 B      0 B     0 B      0 B      0 B      0     0    4      up          osd.18
+	  ```
 - It forces CRUSH to move (`1 - reweight`) times the data that would have otherwise lived on this drive. However it does not change the weight of the host and therefore only causes data movement within the host, not across the crush map. This might cause a [[Nearfull OSD]] situation as more data is allocated to a single OSD.
 - When a custom reweight is set (eg: 0.5), it persists through an osd being marked out and marked in. We can confirm this with a tiny experiment as well.
 	- Set a custom weight on the OSD: 0.5
@@ -96,7 +96,7 @@ ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP     META     AVAIL
 	  ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP    META     AVAIL    %USE   VAR   PGS  STATUS  TYPE NAME
 	  18    hdd  0.03119   1.00000   32 GiB  290 MiB    4 KiB     0 B  290 MiB   32 GiB   0.89  0.41    3      up          osd.18
 		```
-- The [Redhat docs]() say:
+- The [Redhat docs](https://access.redhat.com/documentation/en-us/red_hat_ceph_storage/1.2.3/html/storage_strategies/crush-weights) say:
   > Restarting the cluster will wipe out `osd reweight` and `osd reweight-by-utilization`, but `osd crush reweight` settings are persistent.  
   - It's not clear what a cluster restart implies here as the restarting the MONs and MGRs (both simultaneous and rolling) persists the osd reweight.
   - Even in the case of shutting down all the nodes (which is very unlikely in a production cluster), the reweight persists.
