@@ -6,9 +6,11 @@ tags:
   - crush
   - reweight
 date: 2024-01-17 16:47
-last edited: 2024-02-10 17:34
+last edited: 2024-02-10 17:36
 ---
 ## TLDR
+
+[[Ceph]] has two ways of changing an OSD's weight.
 
 | ceph osd reweight | ceph osd crush reweight |
 | ---- | ---- |
