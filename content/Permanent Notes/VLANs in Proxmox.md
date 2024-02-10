@@ -1,12 +1,22 @@
 ---
 type: Permanent Note
 date: 2024-01-27 12:18
-last edited: 2024-02-07 12:51
+last edited: 2024-02-10 17:56
 tags:
   - proxmox
   - vlan
   - networking
 ---
+
+> [!NOTE] Featured on FOSS United
+> I presented this topic on the [FOSS United]((https://fossunited.org/)) Delhi February Meetup: 
+> https://twitter.com/FOSSUnitedDelhi/status/1752258824680165857?t=0Kn4qDAvOXjcUGO0kBV43A&s=19
+> 
+> ![[foss-united-feb-2024-talk.jpg]]
+> 
+> So if you're coming from there, welcome! Here's the [[FOSS United - Fun with VLANs on Proxmox.pdf|Presentation PDF]] too if you missed it. The line "*Finally, allow communication within VLANs*" on Page 16 is **incorrect**; communication within a VLAN is permitted by default.
+
+
 ## ❓ What?
   
 VLANs in [[Proxmox]] are a method to segment existing networking interfaces, bridges or bonds. If `eth0` is the interface name, `eth0.2` would be the vlan interface name where `2` is the vlan tag. The vlan tag 1 is reserved for untagged traffic and is often the default vlan in most networks, including Proxmox. VLAN IDs range from 0 - 4096.
