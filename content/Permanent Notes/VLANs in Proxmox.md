@@ -1,15 +1,14 @@
 ---
 type: Permanent Note
 date: 2024-01-27 12:18
-last edited: 2024-02-10 21:39
+last edited: 2024-02-10 21:41
 tags:
   - proxmox
   - vlan
   - networking
 ---
 > [!NOTE] Featured on FOSS United
-> I presented this topic on the [FOSS United](https://fossunited.org/) Delhi February Meetup: 
-> https://twitter.com/FOSSUnitedDelhi/status/1752677087071395979?t=ow7jR9nGNODxmFIjQqxeKw&s=19
+> I presented this topic on the [FOSS United](https://fossunited.org/) [Delhi February Meetup](https://twitter.com/FOSSUnitedDelhi/status/1752677087071395979?t=ow7jR9nGNODxmFIjQqxeKw&s=19): 
 > 
 > ![[foss-united-feb-2024-talk.jpg]]
 > 
