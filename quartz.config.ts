@@ -63,6 +63,7 @@ const config: QuartzConfig = {
       }),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+      Plugin.Remark42({ host: "https://remark42.kayg.org", site_id: "kayg.org", no_footer: true }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
