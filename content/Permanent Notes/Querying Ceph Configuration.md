@@ -3,8 +3,8 @@ type: Permanent Note
 tags:
   - ceph
   - config
-date: 2024-01-17 16:47
-last edited: 2024-02-07 13:18
+date: 2024-02-06 14:53
+last edited: 2024-02-12 01:09
 ---
 [[Ceph]]'s configuration can be queried in quite a few ways:
 ### Runtime

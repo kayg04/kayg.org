@@ -1,11 +1,11 @@
 ---
-date: 2024-02-04 18:09
+date: 2024-01-25 11:25
 type: Permanent Note
 tags:
   - ceph
   - nearfull
   - osd
-last edited: 2024-02-05 13:30
+last edited: 2024-02-12 01:09
 ---
 ## ❓ What? 
 

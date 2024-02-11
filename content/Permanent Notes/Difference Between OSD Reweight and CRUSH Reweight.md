@@ -5,8 +5,8 @@ tags:
   - osd
   - crush
   - reweight
-date: 2024-01-17 16:47
-last edited: 2024-02-10 17:36
+date: 2024-02-05 14:00
+last edited: 2024-02-12 01:09
 ---
 ## TLDR
 

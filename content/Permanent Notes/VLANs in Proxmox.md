@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-01-27 12:18
-last edited: 2024-02-10 21:41
+last edited: 2024-02-12 01:08
 tags:
   - proxmox
   - vlan
