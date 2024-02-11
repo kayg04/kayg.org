@@ -1,7 +1,7 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-02-07 23:38
+last edited: 2024-02-11 23:52
 ---
 ## Intro
 
@@ -11,7 +11,7 @@ I am [[resume.pdf|an infrastructure guy]] / [[resume.pdf|aspiring devops]], [a w
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try out putting out notes from my zettelkasten as updates. 
 
-You might be interested in [[services|using the services that I host]], [[uses|my workspace]] and [my notes](https://kayg.org/Permanent-Notes/). If you notice any incorrect information or issues with the website, please [notify me with an email](mailto:mail@kayg.org).
+You might be interested in [[services|using the services that I host]], [[uses|my workspace]] and [my notes](https://kayg.org/Permanent-Notes/). If you notice any incorrect information or issues with the website, [[2024-02-11 - Comments!|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
 
 ## Other Platforms
 
