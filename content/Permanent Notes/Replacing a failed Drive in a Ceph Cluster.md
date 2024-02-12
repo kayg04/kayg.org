@@ -1,6 +1,6 @@
 ---
 date: 2024-01-17 16:02
-last edited: 2024-02-12 01:10
+last edited: 2024-02-12 18:53
 type: Permanent Note
 tags:
   - ceph
@@ -37,7 +37,7 @@ When there's a failed drive/OSD, there are two situations:
  
 - To prevent such a situation, the trick here is to set `ceph osd crush reweight 0`.  This makes sure that the data is distributed to _other OSDs on all the nodes / throughout the crushmap_. See [[Difference Between OSD Reweight and CRUSH Reweight]].
 
-- Wait till the OSD has been drained (0 PGs) if the disk is still alive. If the disk is dead, it can be replaced immediately.
+- Wait till the OSD has been drained (0 PGs) if the disk is still alive. The subcommands `ok-to-stop` and `safe-to-destroy` can be run to make sure that the OSD can be stopped and destroyed without affecting data redundancy. If the disk is dead, it can be replaced immediately.
 
 - The OSD can be destroyed and recreated thereafter.
 
