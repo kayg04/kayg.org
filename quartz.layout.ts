@@ -43,6 +43,7 @@ export const defaultContentPageLayout: PageLayout = {
       title: "Recent Entries",
       limit: 4,
     }),
+    Component.MobileOnly(Component.Explorer({ title: "Finder" })),
   ],
 }
 
