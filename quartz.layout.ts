@@ -16,6 +16,7 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.MobileOnly(Component.Explorer({ title: "Finder" })),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
@@ -27,7 +28,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.Explorer({ title: "Finder" })),
   ],
   right: [
     Component.Graph({
@@ -40,10 +41,8 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Backlinks(),
     Component.RecentNotes({
-      title: "Recent Notes",
+      title: "Recent Entries",
       limit: 4,
-      filter: (f) => f.slug!.startsWith("Permanent-Notes/"),
-      linkToMore: "Permanent-Notes/" as SimpleSlug,
     }),
   ],
 }

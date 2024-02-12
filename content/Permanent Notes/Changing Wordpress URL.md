@@ -5,11 +5,11 @@ tags:
   - blog
   - infrastructure
 date: 2024-02-12 00:32
-last edited: 2024-02-12 12:26
+last edited: 2024-02-12 14:32
 ---
 ## ❓ What happened?
 
-My wordpress instance was hosted at https://kayg.org, however I replaced it with Quartz before exporting / importing content. Therefore, I need it accessible over at https://wp.kayg.org so I can squeeze some content out and decommission it for good. I tried to access the instance over the private IP address directly by exposing the IP with [tailscale subnet routers](https://tailscale.com/kb/1019/subnets)... but that did not work because the site is configured to be available only over HTTPS and at a specific address. 😔
+My wordpress instance was hosted at https://kayg.org, however I [[Moving from Wordpress to Quartz|replaced it with Quartz]] before exporting / importing content. Therefore, I need it accessible over at https://wp.kayg.org so I can squeeze some content out and decommission it for good. I tried to access the instance over the private IP address directly by exposing the IP with [tailscale subnet routers](https://tailscale.com/kb/1019/subnets)... but that did not work because the site is configured to be available only over HTTPS and at a specific address. 😔
 
 ![[Changing Wordpress URL-05C72CA6A4DC2155ABBD4D5F8A98F803.png]]
 
