@@ -6,7 +6,7 @@ tags:
   - crush
   - reweight
 date: 2024-02-05 14:00
-last edited: 2024-02-12 01:09
+last edited: 2024-02-12 17:10
 ---
 ## TLDR
 
@@ -17,6 +17,7 @@ last edited: 2024-02-12 01:09
 | ranges between  0 - 1; 0 for an osd that's out, 1 for in | value set to the disk size in TiB |
 | decides data placement locally on the node | decides data placement across the CRUSH Map |
 | custom value does not persist across osd recreation | custom value persists across all scenarios |
+| accepts both `osd.<num>` and `<num>` formats | accepts only the `osd.<num>` format |
 ## Assumptions
 
 Examples in this note will include operating on `osd.18` and this is what the cluster looks like before running the commands:
