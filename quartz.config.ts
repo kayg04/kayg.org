@@ -7,7 +7,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "null",
+      provider: 'umami',
+      host: 'https://umami.kayg.org', 
+      websiteId: '845e36eb-7054-488c-919d-73f399433363',
     },
     locale: "en-US",
     baseUrl: "kayg.org",
