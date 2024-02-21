@@ -1,5 +1,5 @@
 import { QuartzTransformerPlugin } from "../types"
-import rehypePrettyCode, { Options as CodeOptions } from "rehype-pretty-code"
+import rehypePrettyCode, { Options as CodeOptions, Theme as CodeTheme } from "rehype-pretty-code"
 
 export const SyntaxHighlighting: QuartzTransformerPlugin = () => ({
   name: "SyntaxHighlighting",
@@ -17,4 +17,18 @@ export const SyntaxHighlighting: QuartzTransformerPlugin = () => ({
       ],
     ]
   },
-})
+  keepBackground: false,
+}
+
+export const SyntaxHighlighting: QuartzTransformerPlugin<Options> = (
+  userOpts?: Partial<Options>,
+) => {
+  const opts: Partial<CodeOptions> = { ...defaultOptions, ...userOpts }
+
+  return {
+    name: "SyntaxHighlighting",
+    htmlPlugins() {
+      return [[rehypePrettyCode, opts]]
+    },
+  }
+}
