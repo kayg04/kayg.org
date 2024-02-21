@@ -55,7 +55,16 @@ const config: QuartzConfig = {
         priority: ["frontmatter", "filesystem"],
       }),
     //  Plugin.Latex({ renderEngine: "katex" }),
-      Plugin.SyntaxHighlighting(),
+      Plugin.SyntaxHighlighting({
+        // uses themes bundled with Shikiji, see https://shikiji.netlify.app/themes
+        theme: {
+          light: "light-plus",
+          dark: "synthwave-84",
+        },
+        // set this to 'true' to use the background color of the Shikiji theme
+        // if set to 'false', will use Quartz theme colors for background
+        keepBackground: false,
+      }),
       Plugin.ObsidianFlavoredMarkdown({ 
         enableInHtmlEmbed: false, 
         mermaid: false 
