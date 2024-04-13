@@ -1,13 +1,13 @@
 ---
 title: Workspace
 date: 2024-02-04 23:03
-last edited: 2024-02-05 17:37
+last edited: 2024-04-13 13:06
 ---
 The world has a `/uses` page and why shouldn't I?
 
 Here's the gear on my desk that fuels my work:
 
-- Laptop: M2 Max Macbook Pro - 32G / 1T
+- Laptop: 16 inch M2 Max Macbook Pro - 32 GB RAM / 1 TB NVMe
 - Monitor: LG C148 OLED
 - Speakers: Samsung HW-Q990B
 - Microphone: Fifine T669B
