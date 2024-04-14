@@ -1,7 +1,7 @@
 ---
 title: Workspace
 date: 2024-02-04 23:03
-last edited: 2024-04-14 18:55
+last edited: 2024-04-14 19:01
 ---
 The world has a `/uses` page and why shouldn't I? 
 
@@ -55,7 +55,7 @@ the [[uses-1F19266075BE424E5F8A30661A433BF1-1.jpg|16 inch screen]] serves its pu
 > - [iStat Menus](https://bjango.com/mac/istatmenus/) is the first item on the right menubar, and as you'd guess, it shows all the stats I want on the menubar.
 > - [Aldente Pro](https://apphousekitchen.com/) is the second item on the right menubar, limits and handles battery charging behaviour to keep my battery health [[uses-D07F62680F57A1AEAC1EF7AEAAB636E0-1.png|twitter-share worthy]]. 
 
-![[uses-E7E7CAEF08FCCFE8E0938DACD38DB44B.png]]
+![[uses-E7E7CAEF08FCCFE8E0938DACD38DB44B 1.png]]
 
 ### What else is there?
 
