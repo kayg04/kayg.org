@@ -1,7 +1,7 @@
 ---
 title: Workspace
 date: 2024-02-04 23:03
-last edited: 2024-04-14 19:27
+last edited: 2024-04-14 21:37
 ---
 [The world has a `/uses` page](https://uses.tech/) and why shouldn't I? 
 
@@ -15,6 +15,7 @@ This is the gear that fuels my work and play.
 - Laptop Dock: [Cable Creation 8K@60 hz](https://www.amazon.in/CableCreation-Multiport-Delivery-Charging-Compatible/dp/B0B5CFPDD2)
 - External Storage: [Samsung T7 Shield 4 TB](https://www.amazon.in/Samsung-Resistant-Photographers-MU-PE4T0S-WW/dp/B0BXBSYTZR)
 - Laptop Arm: [Rife Laptop Arm](https://www.rifeindia.com/products/full-motion-articulation-gas-spring-laptop-desk-stand-arm-height-adjustable-notebook-riser-nags?variant=39325762486345)
+- Lights: A mixture of Phillips Hue Play Bars, 9W (800 and 1100 lumens) E27 bulbs and (soon) Wiz bulbs, controlled by a Home Assistant instance that does not run at home.
 - Monitor: LG C148 OLED
 - Speakers: Samsung HW-Q990B
 - Microphone: [[uses-982612B89C5049E687E2D70F270BAF9B-1.jpg|Fifine T669B]] (which is basically the Fifine K669B + Arm + Windscreen + Pop filter)
