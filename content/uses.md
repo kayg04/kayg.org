@@ -1,9 +1,9 @@
 ---
 title: Workspace
 date: 2024-02-04 23:03
-last edited: 2024-04-14 19:01
+last edited: 2024-04-14 19:27
 ---
-The world has a `/uses` page and why shouldn't I? 
+[The world has a `/uses` page](https://uses.tech/) and why shouldn't I? 
 
 This is the gear that fuels my work and play.
 
