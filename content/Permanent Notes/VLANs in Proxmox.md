@@ -1,7 +1,7 @@
 ---
 type: Permanent Note
 date: 2024-01-27 12:18
-last edited: 2024-02-12 12:06
+last edited: 2024-04-15 11:41
 tags:
   - proxmox
   - vlan
@@ -10,7 +10,7 @@ tags:
 > [!NOTE] Featured on FOSS United
 > I presented this topic on the [FOSS United](https://fossunited.org/) [Delhi February Meetup](https://twitter.com/FOSSUnitedDelhi/status/1752677087071395979?t=ow7jR9nGNODxmFIjQqxeKw&s=19): 
 > 
-> ![[VLANs in Proxmox-79BFB4BBD20EC3C6FEFCC9BD52E1E608.jpg]]
+> ![[VLANs in Proxmox-B21896F57E97A7D9BAD827424260BB60.jpg]]
 > 
 > So if you're coming from there, welcome! Here's the [[VLANs in Proxmox-2DC7941B54089F62B4AEF786965BDB56.pdf|Presentation PDF]] too if you missed it. The line "*Finally, allow communication within VLANs*" on Page 16 is **incorrect**; communication within a VLAN is permitted by default.
 
@@ -42,54 +42,54 @@ There are two ways to create a VLAN on Proxmox:
 The VM’s virtual network device has to be assigned a network tag and the network device has to be marked VLAN aware.
     
 1. Visit the Network tab under the node and create a Linux bridge:
-	![[VLANs in Proxmox-D3CD432A660B69AC386DFAE6E38FEBDD.png]]
+	![[VLANs in Proxmox-B1E5114A69115E413CC5C93A6D5974C9.png]]
         
 2. Tick the “VLAN Aware” box.
-	![[VLANs in Proxmox-2C9FCD68CE9AFD66E9925ED520860F4D.png]]
+	![[VLANs in Proxmox-69800FC1FB4DE08F4E901B0DFBDFBD72.png]]
         
 3. Create a “Linux VLAN” too as we want the Proxmox Host to do the routing. Here we want to define a subnet as the VM will be permitted to set an IP within this subnet.
-	![[VLANs in Proxmox-9A29C30A0E388619B23619EEF7942B99.png]]
+	![[VLANs in Proxmox-A02EC4C335EBF04839EC73F003A679B9.png]]
 4. On the VM, goto the Hardware Tab. While creating the network device or editing a network device, add the vlan tag.
-	![[VLANs in Proxmox-A022D15CED6ACC4A6A71083F8C389D1F.png]]
+	![[VLANs in Proxmox-9B114AAAB7AFBB695294488B00E59A6B.png]]
         
 5. Under VM → Cloud-init, add IPs belonging the VLAN’s subnet to the VMs.
-    ![[VLANs in Proxmox-11C981F0D6BF55BE916FC9B14E27B97D.png]]
+    ![[VLANs in Proxmox-FEBA052B496066D6A4D9DF952E586B04.png]]
         
-	![[VLANs in Proxmox-1AFE59FD2E6544485CAAC166B0BA4721.png]]
+	![[VLANs in Proxmox-3910BD626ACCFE5DFF255D66F256F2F4.png]]
         
 	Make sure to click on “Regenerate Image” to apply changes.
         
 6. Start both VMs and get them to ping each other.
-	![[VLANs in Proxmox-B07F605F581448DFB34B56A456FA8C41.png]]
+	![[VLANs in Proxmox-C71BF1EE0E7C1C386D779562BAC07531.png]]
         
 #### Traditional configuration
  
  The VLAN tagging is done directly on the interface and the VLAN interface is referred to by a linux bridge. This VLAN interface on the physical interface is created dynamically when the linux bride is active and is in use.
     
 1. Create a Linux Bridge under System → Network that refers to a VLAN on the NIC:
-	![[VLANs in Proxmox-B752A9030BD023EB899722F49959A456.png]]
+	![[VLANs in Proxmox-EB1839A6EF9B2B45245CECAB17CE2909.png]]
         
 	This time the bridge is **not marked VLAN-Aware**, as the tagging is done directly on the NIC. The bridge port here is the vlan tag we want to create on the NIC - `2048` in this example. `eno1.2048` will be created and destroyed dynamically. 
 	
 2. Use the bridge `vmbr2` on two test VMs to put them in the same VLAN. The VLAN tag on the VM itself is empty because the VM network device does not know it belongs to a VLAN, the bridge itself does.
-	![[VLANs in Proxmox-7F1BADAAF34EA5644C727CF6C1E8F6E8.png]]
+	![[VLANs in Proxmox-0C354A5A599BC7404A7986907F0AAB7E.png]]
         
 3. Under VM → Cloud-init, make sure the VM has an IP that belongs to our VLAN bridge:
-	![[VLANs in Proxmox-29979BD0E2990AB610466DB0A90DC1CC.png]]
+	![[VLANs in Proxmox-33F0D3F919B13F32B5D8B864473346F1.png]]
         
-	![[VLANs in Proxmox-D80DE055A82E13A51C70D81F6DC7ABE8.png]]
+	![[VLANs in Proxmox-C31CBF45E611534988105CBBF5298020.png]]
         
 	Make sure to click on “Regenerate Image” for changes to apply to the VM.
         
 4. Start the VMs and try to ping each other.
-	![[VLANs in Proxmox-C7C99848E4E56E807DCBBB3F134CBB27.png]]
+	![[VLANs in Proxmox-6647A103853A40C3D3117FC01D38E056.png]]
         
 
 ### Why does inter-VLAN traffic work?
 
 However, now that we have two VLANs (one on a bridge, one on a NIC), when we ping from one VLAN to the other…. this happens.
 
-![[VLANs in Proxmox-CF00E4450BB9650758B6EDA96DCDEFDC.png]]
+![[VLANs in Proxmox-86538024D1EDF2051ACE639E0687A864.png]]
 
 This is because of a sysctl property that makes IP forwarding possible. The property is disabled by default on Proxmox but for a routed configuration, where traffic has to be forwarded from one interface to another, it needs to be enabled everytime on startup like this:
 

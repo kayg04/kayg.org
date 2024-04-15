@@ -4,7 +4,7 @@ tags:
   - firefox
   - macos
 date: 2024-03-08 00:03
-last edited: 2024-03-08 00:20
+last edited: 2024-04-15 11:40
 ---
 ## ❓ What?
 
@@ -24,7 +24,7 @@ I have reported the bug here: https://bugzilla.mozilla.org/show_bug.cgi?id=16505
 
 The older version of firefox will try to access the application password created by the new version so you will get a prompt of Firefox asking for keychain access. Simply adding the application to always have access to this particular item will be sufficient.
 
-![[Firefox Profile Downgrade-77912CF0271903445140C27D9162E168.png]]
+![[Firefox Profile Downgrade-55F2B45D707A0FEAB946C7358D8DC0DE.png]]
 
 ## 👓 References
 

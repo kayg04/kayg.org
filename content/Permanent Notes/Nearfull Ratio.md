@@ -5,7 +5,7 @@ tags:
   - ceph
   - nearfull
   - osd
-last edited: 2024-02-12 12:34
+last edited: 2024-04-15 11:41
 ---
 ## ❓ What? 
 
@@ -37,7 +37,7 @@ ceph osd set-nearfull-ratio 0.85
 
 On croit, one can do this by adjusting the sliders at Maintenance → Full Ratios (at the bottom):
  
-![[croit-ratios.png]]
+![[Backfillfull Ratio-571796D17254D71486AF8B02990E6B90.png]]
 ## 👓 References
 
 https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity
