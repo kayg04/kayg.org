@@ -1,29 +1,29 @@
 ---
 title: Workspace
 date: 2024-02-04 23:03
-last edited: 2024-04-15 11:40
+last edited: 2024-04-15 17:45
 ---
 [The world has a `/uses` page](https://uses.tech/) and why shouldn't I? 
 
 This is the gear that fuels my work and play.
 
-![[uses-EB885745B0CC5B991DFBF08E62398766.jpg]]
+![[workspace.jpg]]
 
 ## Hardware
 
-- Laptop: [[uses-D03457ECB25C8FA7110B98F6DB366CF1.jpg|16 inch]] [[uses-030DBA85ADD5088DA21C5EC005FF6906.jpg|Macbook Pro]] - M2 Max, 32 GB RAM, 1 TB NVMe
+- Laptop: [[macbook-lid-open.jpg|16 inch]] [[macbook-lid-closed.jpg|Macbook Pro]] - M2 Max, 32 GB RAM, 1 TB NVMe
 - Laptop Dock: [Cable Creation 8K@60 hz](https://www.amazon.in/CableCreation-Multiport-Delivery-Charging-Compatible/dp/B0B5CFPDD2)
 - External Storage: [Samsung T7 Shield 4 TB](https://www.amazon.in/Samsung-Resistant-Photographers-MU-PE4T0S-WW/dp/B0BXBSYTZR)
 - Laptop Arm: [Rife Laptop Arm](https://www.rifeindia.com/products/full-motion-articulation-gas-spring-laptop-desk-stand-arm-height-adjustable-notebook-riser-nags?variant=39325762486345)
 - Lights: A mixture of Phillips Hue Play Bars, 9W (800 and 1100 lumens) E27 bulbs and (soon) Wiz bulbs, controlled by a Home Assistant instance that does not run at home.
 - Monitor: LG C148 OLED
 - Speakers: Samsung HW-Q990B
-- Microphone: [[uses-C93727D3AB6507A79BAF2B1DBD1C0756.jpg|Fifine T669B]] (which is basically the Fifine K669B + Arm + Windscreen + Pop filter)
+- Microphone: [[fifine-t669b.jpg|Fifine T669B]] (which is basically the Fifine K669B + Arm + Windscreen + Pop filter)
 - Headphones
-	- When I move around the house: [[uses-8170C77125CC54DF166BE50E1C29196A.jpg|Sony WH-1000XM5]]
-	- When I need some music at my desk: [[uses-5F9AAABE460854FF6F01166081647F69.jpg|HiFiMan Sundara]] paired with [[uses-DCE2659B5074124994E37F566C2A636C.jpg|FiiO K5 Pro]]
-- Keyboard: [[uses-6B4DDE7F784E88111064B07905922C6C.jpg|Fi]][[uses-09F2BCF5295BE1EF309449332C3FED04.jpg|fi]] (https://github.com/raychengy/fifi_split_keeb) with the famous [Miryoku Keymap](https://github.com/manna-harbour/miryoku)
-- Mouse: [[uses-28528851034DD33109250245D4A4B49D.jpg|Glorious Model D Wireless]] (soon to be replaced by a USB C Magic Trackpad if Apple ever is kind enough to release one)
+	- When I move around the house: [[sony-wh1000xm5.jpg|Sony WH-1000XM5]]
+	- When I need some music at my desk: [[hifiman-sundara.jpg|HiFiMan Sundara]] paired with [[fiio-k5-pro.jpg|FiiO K5 Pro]]
+- Keyboard: [[fifi-left.jpg|Fi]][[fifi-right.jpg|fi]] (https://github.com/raychengy/fifi_split_keeb) with the famous [Miryoku Keymap](https://github.com/manna-harbour/miryoku)
+- Mouse: [[glorious-model-d-wireless.jpg|Glorious Model D Wireless]] (soon to be replaced by a USB C Magic Trackpad if Apple ever is kind enough to release one)
 
 ## Software
 
@@ -41,11 +41,11 @@ I am mostly glued to the inky blacks of the OLED TV that serves as a giant works
 > - [Raycast](https://www.raycast.com/) on the bottom center - The answer to every person's, "Why MacOS?"
 > - [Obsidian](https://obsidian.md/) on the bottom right - Notion good but local first markdown with extensibility is better.
 
-![[uses-A4CC0F5B412951F50E2AABDAFB568417.png]]
+![[desktop-on-tv-at-home.png]]
 
 ### When I am on the go though...
 
-the [[uses-030DBA85ADD5088DA21C5EC005FF6906.jpg|16 inch screen]] serves its purpose more than my thinnest-ultrabook-seeker past self would have realised. Then my work desktop would look something like this.
+the [[macbook-lid-open.jpg|16 inch screen]] serves its purpose more than my thinnest-ultrabook-seeker past self would have realised. Then my work desktop would look something like this.
 
 > [!NOTE] What's on my screen?
 > - [Apple Books](https://www.apple.com/apple-books/) on the left
@@ -54,18 +54,18 @@ the [[uses-030DBA85ADD5088DA21C5EC005FF6906.jpg|16 inch screen]] serves its purp
 > - [Orbstack](https://orbstack.dev/) on the center, an excellent replacement for my past WSL2 enjoyer self.
 > - [Bartender](https://www.macbartender.com/Bartender5/) rounds and separates the menubar, and hides items behind an icon of my choice.
 > - [iStat Menus](https://bjango.com/mac/istatmenus/) is the first item on the right menubar, and as you'd guess, it shows all the stats I want on the menubar.
-> - [Aldente Pro](https://apphousekitchen.com/) is the second item on the right menubar, limits and handles battery charging behaviour to keep my battery health [[uses-372C00AF7BAD383D7C762581C85A6DAE.png|twitter-share worthy]]. 
+> - [Aldente Pro](https://apphousekitchen.com/) is the second item on the right menubar, limits and handles battery charging behaviour to keep my battery health [[aldente-pro.png|twitter-share worthy]]. 
 
-![[uses-CCEE1EEBAD4116738753389363E509D1.png]]
+![[desktop-on-the-go.png]]
 
 ### What else is there?
 
 There are other tools that fuel my workflow but have missed the highlights above.
 
-- [BetterDisplay](https://github.com/waydabber/BetterDisplay#readme) - The first time I laid eyes on the MacOS [[uses-C6A49634073103CEC26B337C95E2BB09.png|Displays section in System Settings]], I wondered if I was due for an eye checkup. When I first plugged my laptop into my LG OLED TV, MacOS also wouldn't let me do 4k@120 hz. Then I came across [this section on MacRumors](https://forums.macrumors.com/threads/dp-usb-c-thunderbolt-3-4-to-hdmi-2-1-4k-120hz-rgb4-4-4-10b-hdr-with-apple-silicon-m1-m2-now-possible.2381664/) that informed me that it's MacOS that's blind. After patching an alternative firmware for my dock through Windows and fooling MacOS into thinking it's using DisplayPort instead of HDMI, I was able to use 4k@120hz at 4:4:4 RGB again. None of this would have been possible without an excellent display / scaling manager like BetterDisplay. It lets me [[uses-559518CCA37E0327A7DDAF05071D6D34.png|scroll through a wider catalogue of scaling options]], informs me [[uses-EE483B69E5B4E561D93F2D7F09649BCF.png|if a certain resolution or scaling option supports 10bit and HDR]], and lets me toggle dark mode / hdr / night light easily. 
-- [BetterMouse](https://better-mouse.com/) - Scrolling using a mouse isn't the smoothest thing on MacOS, and why would it be? Apple has also never been smooth about discouraging you from using third party accessories, especially when [their own rendition of it has a port on the bottom](https://youtu.be/MpzRUiAV6do). Anyways, I know [MOS](https://mos.caldis.me/) and [LinearMouse](https://linearmouse.app/) exist, but BetterMouse is miles ahead in its UI and the functionality it offers. Of course, it allows you to fix smooth scrolling first but it also lets you fine-tune [[uses-5CB2036D988BFC49A787E3586AE66539.png|scrolling acceleration]], [[uses-F739280025F88BB656139591A93DEA9C.png|cursor acceleration]] and [[uses-16CE19D9B1E10E261D48CBF34419A717.png|actions for your unused mouse keys]].  
-- [Parallels](https://www.parallels.com/) - You may have heard of VMWare, used Virtualbox on the desktop but nothing beats the level of integration and ease of use that Parallels brings to the table. Yes, it's not cheap, but I could just play *Witcher 3* in a Windows VM inside Parallels as a test with very decent framerates. What's more is that home folders of MacOS and Windows are automatically linked, the apps that I install on Windows [[uses-EEB354AC49C244ADF153F0AF170DE1A5.png|appear as MacOS apps]] which open in [[uses-FD21B5E821D88F6B64C81DBF54AACD0A.png|their own window]].
-- [SetApp](https://setapp.com/) to bring all my app subscriptions under one umbrella and serve as the primary platform for finding apps (The other is [r/macapps](https://old.reddit.com/r/macapps)). I am only going to talk about the apps I use (other than the ones I already mentioned above). The others are just the ones I have installed, don't care about or am just exploring. ![[uses-2BBB1909A433C03952F56CFE673E82EF.png]]
+- [BetterDisplay](https://github.com/waydabber/BetterDisplay#readme) - The first time I laid eyes on the MacOS [[macos-system-settings-displays.png|Displays section in System Settings]], I wondered if I was due for an eye checkup. When I first plugged my laptop into my LG OLED TV, MacOS also wouldn't let me do 4k@120 hz. Then I came across [this section on MacRumors](https://forums.macrumors.com/threads/dp-usb-c-thunderbolt-3-4-to-hdmi-2-1-4k-120hz-rgb4-4-4-10b-hdr-with-apple-silicon-m1-m2-now-possible.2381664/) that informed me that it's MacOS that's blind. After patching an alternative firmware for my dock through Windows and fooling MacOS into thinking it's using DisplayPort instead of HDMI, I was able to use 4k@120hz at 4:4:4 RGB again. None of this would have been possible without an excellent display / scaling manager like BetterDisplay. It lets me [[betterdisplay-scaling.png|scroll through a wider catalogue of scaling options]], informs me [[betterdisplay-resolutions.png|if a certain resolution or scaling option supports 10bit and HDR]], and lets me toggle dark mode / hdr / night light easily. 
+- [BetterMouse](https://better-mouse.com/) - Scrolling using a mouse isn't the smoothest thing on MacOS, and why would it be? Apple has also never been smooth about discouraging you from using third party accessories, especially when [their own rendition of it has a port on the bottom](https://youtu.be/MpzRUiAV6do). Anyways, I know [MOS](https://mos.caldis.me/) and [LinearMouse](https://linearmouse.app/) exist, but BetterMouse is miles ahead in its UI and the functionality it offers. Of course, it allows you to fix smooth scrolling first but it also lets you fine-tune [[bettermouse-scroll.png|scrolling acceleration]], [[bettermouse-mouse.png|cursor acceleration]] and [[bettermouse-buttons.png|actions for your unused mouse keys]].  
+- [Parallels](https://www.parallels.com/) - You may have heard of VMWare, used Virtualbox on the desktop but nothing beats the level of integration and ease of use that Parallels brings to the table. Yes, it's not cheap, but I could just play *Witcher 3* in a Windows VM inside Parallels as a test with very decent framerates. What's more is that home folders of MacOS and Windows are automatically linked, the apps that I install on Windows [[parallels-windows-apps.png|appear as MacOS apps]] which open in [[parallels-windows-paint.png|their own window]].
+- [SetApp](https://setapp.com/) to bring all my app subscriptions under one umbrella and serve as the primary platform for finding apps (The other is [r/macapps](https://old.reddit.com/r/macapps)). I am only going to talk about the apps I use (other than the ones I already mentioned above). The others are just the ones I have installed, don't care about or am just exploring. ![[setapp.png]]
 	- [BetterTouchTool](https://folivora.ai/) - I have nothing but respect for the developer. BTT is a swiss army knife for MacOS, allowing you to go wild with hotkeys and automations. 
 	- [Cleanshot X](https://cleanshot.com/) - the best screenshot tool I have found on MacOS, and has a terrible pricing model. A free alternative is [Shottr](https://shottr.cc/). If you don't care about an additional tool for your screenshots, you can make your own pasta with BetterTouchTool and the built-in MacOS screenshotting functionality.
 	- [Commander One](https://commander-one.com/) - Another app with a horrible pricing model but is the only app with reliable MTP functionality. I am a MacOS / Android enjoyer, and occasionally I need to transfer files over the wire. Yes, [OpenMTP](https://github.com/ganeshrvel/openmtp) exists, but in my experience Commander One has a much more stable and reliable MTP implementation. 
