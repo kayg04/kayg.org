@@ -1,15 +1,15 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-04-15 20:21
+last edited: 2024-04-15 20:28
 ---
 ## Intro
 
 Welcome to my little space on the internet! 
 
-I am [an infrastructure guy](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx) / [aspiring devops](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx), [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts). I work at [croit GmbH](https://croit.io); we make deploying and managing ceph super simple! 
+I am [an infrastructure guy](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx) / [aspiring devops](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx), [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts). I work at [croit GmbH](https://croit.io); we make deploying and managing [ceph](https://ceph.io) super simple! 
 
-This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try out putting out notes from my zettelkasten as updates. 
+This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try putting out notes from my [zettelkasten](https://freedium.cfd/https://sacredkarailee.medium.com/understanding-zettelkasten-notes-d7eb3fae0c45) as updates. 
 
 You might be interested in [[services|using the services that I host]], [[uses|my workspace]] and [my notes](https://kayg.org/Permanent-Notes/). If you notice any incorrect information or issues with the website, [[2024-02-11 - Comments!|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
 
