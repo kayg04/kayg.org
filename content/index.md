@@ -1,7 +1,7 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-04-15 20:28
+last edited: 2024-04-20 23:01
 ---
 ## Intro
 
@@ -11,7 +11,7 @@ I am [an infrastructure guy](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx) / [aspiri
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try putting out notes from my [zettelkasten](https://freedium.cfd/https://sacredkarailee.medium.com/understanding-zettelkasten-notes-d7eb3fae0c45) as updates. 
 
-You might be interested in [[services|using the services that I host]], [[uses|my workspace]] and [my notes](https://kayg.org/Permanent-Notes/). If you notice any incorrect information or issues with the website, [[2024-02-11 - Comments!|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
+You might be interested in [[services|using the services that I host]], [[uses|my workspace]], [my notes](https://kayg.org/Permanent-Notes/) and [my wordpress archive](https://kayg.org/Archive/Wordpress). If you notice any incorrect information or issues with the website, [[2024-02-11 - Comments!|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
 
 ## Other Platforms
 
