@@ -5,7 +5,7 @@ tags:
   - keyboard
   - macos-defaults
 date: 2024-04-22 13:20
-last edited: 2024-04-22 13:36
+last edited: 2024-04-22 13:43
 ---
 ## ❓ What?
 
@@ -16,6 +16,8 @@ last edited: 2024-04-22 13:36
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
+
+Run the command in your terminal app of choice, close/reopen app or logout/login or simply reboot. Since [[enable-key-spam-or-disable-special-characters-on-macos-2.png|I am an uptime masochist]], I simply close and reopen apps.
 
 I am not sure if a help page exists inside MacOS to query the different values of the keys for `defaults`. However, in my search, I found this page which serves as an alternative: https://macos-defaults.com/ 
 

@@ -83,7 +83,7 @@ export default ((userOpts?: Partial<Options>) => {
       </div>
     )
   }
-
+  
   RecentNotes.css = style
   return RecentNotes
 }) satisfies QuartzComponentConstructor
