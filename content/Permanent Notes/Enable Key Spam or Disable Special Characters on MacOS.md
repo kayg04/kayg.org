@@ -5,15 +5,16 @@ tags:
   - keyboard
   - macos-defaults
 date: 2024-04-22 13:20
-last edited: 2024-04-22 13:43
+last edited: 2024-04-22 13:48
 ---
 ## ❓ What?
 
   MacOS has this behaviour where if you hold a key, such as in my case, holding `k` to move up in VSCode, a special character popup appears where you can choose an alternative character for the key pressed.
+  
    ![[enable-key-spam-or-disable-special-characters-on-macos-1.mp4]]
 ## 🎤 The fix
 
-```
+```bash
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 

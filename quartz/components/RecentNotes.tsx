@@ -56,7 +56,7 @@ export default ((userOpts?: Partial<Options>) => {
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
                   )}
-                  <ul class="tags">
+                  {/* <ul class="tags">
                     {tags.map((tag) => (
                       <li>
                         <a
@@ -67,7 +67,7 @@ export default ((userOpts?: Partial<Options>) => {
                         </a>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </div>
               </li>
             )
@@ -83,7 +83,7 @@ export default ((userOpts?: Partial<Options>) => {
       </div>
     )
   }
-  
+
   RecentNotes.css = style
   return RecentNotes
 }) satisfies QuartzComponentConstructor
