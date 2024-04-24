@@ -1,17 +1,19 @@
 ---
 date: 2024-04-23 22:31
-last edited: 2024-04-23 23:21
+last edited: 2024-04-24 15:11
 tags:
   - journaling
   - personal
   - ticktick
   - obsidian
 ---
+## Some Context
+
 I remember as a kid when, each year, was a welcome to a brand new year of new diaries which meant a brand new attempt at journaling. Of course I would start on a whim, yet full of inspiration, make all sorts of templating in my head, think about the things I need to write but I would fail to capture even the first hour of information. With each passing year, the renewed motivation to maintain a journal waned in favour of [memory being its own diary](https://i.kym-cdn.com/entries/icons/original/000/031/072/Screen_Shot_2019-09-09_at_1.45.44_PM.jpg); and as my friends and family would tell you, I have the retention of a toddler. 
 
 Over the last two years which marked the largest move of my life: moving from a not-so well known city of Bhubaneswar to a very overwhelmingly large Delhi, moving in with a loved one and sharing a house with them; also meant a lot of things needed to get done. If I don't do it, the onus that fell on me becomes a burden that was shoved to somebody with perhaps better use of time. And often so, things don't get done. The trash waits to be taken out for a couple of days every once in a week, clothes in the washing machine stay undried, food has to be ordered in. If scheduling responsibilities was a chore, tracking them was a nightmare.
 
-### Just TickTick, will you?
+## Just TickTick, will you?
 
 [[TickTick]] was the initial answer to my problem, one that I found a month before the move happened; a workflow that would shine within spurts of motivation and dwindle in the workaday. I love the reminders (seriously though, *chef's kiss*), I love the calendar, I love the Kanban Boards, I love that it costs 1400 INR a year, I love.... but ~~did it~~ does it work for me?
 
