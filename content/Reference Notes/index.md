@@ -1,7 +1,7 @@
 ---
 title: Reference Notes
 date: 2024-04-25 12:32
-last edited: 2024-04-25 13:51
+last edited: 2024-04-25 14:07
 ---
 ## Previously Index Notes
 
@@ -13,16 +13,16 @@ Tags for notes of this folder include #project #reference and their subtags. Sin
 
 ^15a371
 
-- Something that has a due date, that is, it has state changes: backlog, to-do, finished OR
-- Something involves priorities and can be weighed against in a Kanban board. For example, learning ceph over learning kubernetes would net me a greater benefit sooner since the former relates to my present career while the latter is mostly for homelabbing AND
+- Something that has a due date, that is, it has state changes: backlog, to-do, finished *OR*
+- Something that involves priorities and can be weighed against in a Kanban board. For example, learning ceph over learning kubernetes would net me a greater benefit sooner since the former relates to my present career while the latter is mostly for homelabbing *AND*
 - Something that has bits and pieces added to it over the course of time
 
 ## Reference
 
 ^692952
 
-- An initiative with no due dates OR
-- A piece of literature or media that does not involve a priority AND
+- An initiative with no due dates *OR*
+- A piece of literature or media that does not involve a priority *AND*
 - Adding information to it has little to no urgency and can be done so whenever desired or at random
 
 So, learning prospects will always be [[#^15a371|projects]], simply because I am at a point of time in my life where shit needs to be prioritised. Self-improvement topics will always be [[#^692952|references]] since they do not hold a period of definite start or definite end. 
