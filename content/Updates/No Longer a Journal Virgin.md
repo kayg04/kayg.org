@@ -1,6 +1,6 @@
 ---
 date: 2024-04-23 22:31
-last edited: 2024-04-24 15:11
+last edited: 2024-04-25 00:53
 tags:
   - journaling
   - personal

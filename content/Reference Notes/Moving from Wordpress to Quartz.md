@@ -1,12 +1,14 @@
 ---
 date: 2024-02-12 14:30
-last edited: 2024-02-12 17:49
+last edited: 2024-04-25 00:13
 tags:
   - wordpress
   - blog
   - quartz
   - infrastructure
   - writing
+  - project/moving-from-wordpress-to-quartz
+  - "#project"
 type: Project
 ---
 ## ❔ Why do it?
