@@ -5,11 +5,11 @@ tags:
   - ceph/s3
   - ceph/rgw
 date: 2024-04-27 02:11
-last edited: 2024-04-27 03:15
+last edited: 2024-04-27 14:23
 ---
 ## ❓ What?
 
-Placement rules in [[Ceph]] are a method to assign a specific [[data pool]], [[index pool]] and [[extra pools]] to a particular [[bucket]]. Placement rules are assigned to buckets at the time of creation and cannot be changed after creation. The default placement rule is called, `default-placement`. It assigns a [[Storage Class|storage class]] called `STANDARD` which links the default [[rados gateway]] data, index and non-ec pools. 
+Placement rules in [[Ceph]] are a method to assign a specific [[data pool]], [[index pool]] and [[extra pools]] to a particular [[bucket]]. Placement rules are assigned to buckets at the time of creation and cannot be changed after creation. The default placement rule is called, `default-placement`. It assigns a [[Storage Classes in Ceph S3|storage class]] called `STANDARD` which links the default [[rados gateway]] data, index and non-ec pools. 
 
 ### Undocumented --storage-class flag
 
@@ -147,7 +147,7 @@ The end result is the same with both the commands:
 
 ### Changing Default Placement Rule for the user
 
-A default placement rule with a default storage class can also be configured for a specific user like in the [[Storage Class#Changing Default Storage Class for a User|storage classes example]].
+A default placement rule with a default storage class can also be configured for a specific user like in the [[Storage Classes in Ceph S3#Changing Default Storage Class for a User|storage classes example]].
 
 ## 👓 References
 
