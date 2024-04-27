@@ -5,7 +5,7 @@ tags:
   - ceph/s3
   - ceph/rgw
 date: 2024-04-27 02:11
-last edited: 2024-04-27 14:23
+last edited: 2024-04-27 14:28
 ---
 ## ❓ What?
 
@@ -99,17 +99,17 @@ However, it does not do what it says, even though the `default_placement` key no
 ### Changing what STANDARD means
 
 However, this `STANDARD` storage class can be configured to have custom pools during placement rule creation. 
-![[placement-rules-1.png]]
+![[placement-rules-in-ceph-s3-1.png]]
 
 The new placement rule would look like this.
 
-![[placement-rules-2.png]]
+![[placement-rules-in-ceph-s3-2.png]]
 
 ### Changing Default Placement Rule
 
 The default placement rule can be changed so that it can be auto selected during bucket creation. As previously mentioned, making the same placement rule with another storage class has no effect.
 
-![[placement-rule-4.png]]
+![[placement-rule-in-ceph-s3-4.png]]
 On the command-line it would look like:
 
 ```bash
@@ -128,7 +128,7 @@ Placement rules establish a bucket (s3 lingo) to pool (ceph lingo) relationship,
 
 With croit, placement rules can be easily scrolled through during bucket creation:
 
-![[placement-rules-3.png]]
+![[placement-rules-ceph-s3-3.png]]
 
 ### Bucket Creation with Non-Default Placement Rule with AWS CLI
 
@@ -143,7 +143,7 @@ $ aws --endpoint-url http://172.31.117.5 s3api create-bucket --bucket test-test-
 
 The end result is the same with both the commands:
 
-![[placement-rule-5.png]]
+![[placement-rule-ceph-s3-5.png]]
 
 ### Changing Default Placement Rule for the user
 

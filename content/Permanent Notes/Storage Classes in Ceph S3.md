@@ -5,7 +5,7 @@ tags:
   - ceph
   - ceph/rgw
 date: 2024-04-27 02:43
-last edited: 2024-04-27 14:23
+last edited: 2024-04-27 14:26
 ---
 ## ❓ What?
 
@@ -110,7 +110,7 @@ Storage classes help users and administrators to prioritise space and costs by h
   
 A storage class can be created like so:
 
-![[storage-class-1.png]]
+![[storage-class-in-ceph-s3-1.png]]
 Same over the command line:
 
 ```bash
