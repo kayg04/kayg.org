@@ -3,9 +3,9 @@ type: Permanent Note
 tags:
   - macos
   - keyboard
-  - macos-defaults
+  - macos/defaults
 date: 2024-04-22 13:20
-last edited: 2024-04-22 13:48
+last edited: 2024-04-28 18:35
 ---
 ## ❓ What?
 

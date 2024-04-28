@@ -1,7 +1,11 @@
 ---
 date: 2024-01-17 17:43
 type: Permanent Note
-last edited: 2024-04-15 11:40
+last edited: 2024-04-27 14:58
+tags:
+  - ceph
+  - ceph/osd
+  - ceph/disk-ratios
 ---
 ## ❓ What?
   

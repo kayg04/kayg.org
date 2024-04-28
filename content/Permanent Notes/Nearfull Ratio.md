@@ -3,9 +3,9 @@ date: 2024-01-25 11:25
 type: Permanent Note
 tags:
   - ceph
-  - nearfull
-  - osd
-last edited: 2024-04-15 11:41
+  - ceph/osd
+  - ceph/disk-ratios
+last edited: 2024-04-27 14:58
 ---
 ## ❓ What? 
 
