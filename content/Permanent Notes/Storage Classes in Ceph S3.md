@@ -5,11 +5,11 @@ tags:
   - ceph
   - ceph/rgw
 date: 2024-04-27 02:43
-last edited: 2024-04-27 14:26
+last edited: 2024-04-30 12:15
 ---
 ## ❓ What?
 
-Storage classes in [[Ceph]] correspond to a certain [[data pool]]. They are a subsection of [[Placement Rules in Ceph S3]] that link them to [[data pool]]s. A [[Storage Classes in Ceph S3]] is unique to a [[Placement Rules in Ceph S3|placement rule]] but [[Placement Rules in Ceph S3|placement rules]] can have many [[Storage Classes in Ceph S3|storage classes]]. Every [[Placement Rules in Ceph S3|placement rule]] has a [[Storage Classes in Ceph S3|storage class]] called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [[Placement Rules in Ceph S3|placement rules]].
+Storage classes in [[Ceph]] correspond to a certain [[data pool]]. They are a subsection of [[Placement Rules in Ceph S3]] that link them to [[data pool]]s. A [[Storage Classes in Ceph S3|storage class]] is unique to a [[Placement Rules in Ceph S3|placement rule]] but [[Placement Rules in Ceph S3|placement rules]] can have many [[Storage Classes in Ceph S3|storage classes]]. Every [[Placement Rules in Ceph S3|placement rule]] has a [[Storage Classes in Ceph S3|storage class]] called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [[Placement Rules in Ceph S3|placement rules]].
 ### Changing Default Storage Class for a User
 
 **The default storage class for a placement rule (and therefore a bucket) cannot be modified.** If it's desired that a certain user's uploads, by default, goto a different storage class, this can be done by modifying the `default_storage_class` key for the specific user with `radosgw-admin` .

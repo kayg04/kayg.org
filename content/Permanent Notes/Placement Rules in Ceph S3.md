@@ -5,7 +5,7 @@ tags:
   - ceph/s3
   - ceph/rgw
 date: 2024-04-27 02:11
-last edited: 2024-04-27 14:28
+last edited: 2024-04-30 13:25
 ---
 ## ❓ What?
 
@@ -13,7 +13,7 @@ Placement rules in [[Ceph]] are a method to assign a specific [[data pool]], [[i
 
 ### Undocumented --storage-class flag
 
-Currently, `radosgw-admin` accepts an undocumented `--storage-class` flag for changing the default storage class for a particular placement group. 
+Currently, `radosgw-admin` accepts an undocumented `--storage-class` flag for changing the default storage class for a particular placement rule. 
 
 ```bash
 $ radosgw-admin zonegroup placement default --rgw-zonegroup default --placement-id default-placement --storage-class hot_storage_class
@@ -94,9 +94,9 @@ $ radosgw-admin zonegroup get
 }
 ```
 
-However, it does not do what it says, even though the `default_placement` key now says `default-placement/hot_storage_class` instead of just `default-placement`.  When new objects are uploaded to a bucket with that particular placement group, they still goto the older default storage class `STANDARD`. 
+However, it does not do what it says, even though the `default_placement` key now says `default-placement/hot_storage_class` instead of just `default-placement`.  When new objects are uploaded to a bucket with that particular placement rule, they still goto the older default storage class `STANDARD`. 
 
-### Changing what STANDARD means
+### Creating a New Placement Rule OR Changing what STANDARD means
 
 However, this `STANDARD` storage class can be configured to have custom pools during placement rule creation. 
 ![[placement-rules-in-ceph-s3-1.png]]
@@ -105,9 +105,9 @@ The new placement rule would look like this.
 
 ![[placement-rules-in-ceph-s3-2.png]]
 
-### Changing Default Placement Rule
+### Changing Default Placement Rule for New Buckets
 
-The default placement rule can be changed so that it can be auto selected during bucket creation. As previously mentioned, making the same placement rule with another storage class has no effect.
+The default placement rule can be changed so that it can be auto selected during bucket creation (new buckets only). As previously mentioned, making the same placement rule with another storage class has no effect.
 
 ![[placement-rule-in-ceph-s3-4.png]]
 On the command-line it would look like:
