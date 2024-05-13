@@ -1,6 +1,6 @@
 ---
 date: 2024-02-04 23:03
-last edited: 2024-05-12 14:54
+last edited: 2024-05-13 13:24
 title: Services
 ---
 ## Overview
@@ -23,6 +23,9 @@ Obligatory [uptime-kuma reporting on incidents](https://status.kayg.org/status/k
 
 ## Status Updates
 
+### 2024-05-13 13:23
+
+VM was being migrated to another node because of the issue highlighted in [[Migrating VMs on Encrypted Proxmox]]. Services were up today morning again.
 ### 2024-05-11 12:44
 
 Updated DNS to the wrong CNAME first and then the correct CNAME record.
