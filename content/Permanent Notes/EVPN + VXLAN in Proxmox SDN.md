@@ -6,16 +6,16 @@ tags:
   - networking
   - project/learning-networking
 date: 2024-05-17 22:59
-last edited: 2024-05-17 23:04
+last edited: 2024-05-17 23:06
 ---
 ## ❓ What?
 
-EVPN is the control plane: responsible for populating the forwarding table and the routing table while VXLAN is the data plane: responsible for carry packets between the addresses in the routing table. 
+EVPN is the control plane that's responsible for populating the forwarding table and the routing table, while VXLAN is the data plane that's responsible for carry packets between the addresses in the routing table. 
 
 ## ❔ Why?
 
-EVPN + VXLAN is a necessary step in configuring Proxmox how I want it to function:
-	1. One zone with multiple VNets that have VLAN tags
+EVPN + VXLAN is a necessary step in configuring [[Proxmox]] how I want it to function:
+	1. One zone with multiple VNets that have [[VLANs in Proxmox|VLAN tags]].
 	2. VMs in any node can access each other and can access the internet. 
 	3. All network configuration is done only once via `Datacenter` and can be done through the GUI.
 ## 👓 References
