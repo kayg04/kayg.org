@@ -7,7 +7,7 @@ tags:
   - openwrt
   - router
 date: 2024-06-02 21:40
-last edited: 2024-06-03 00:55
+last edited: 2024-06-03 10:46
 ---
 ## Preface
 
