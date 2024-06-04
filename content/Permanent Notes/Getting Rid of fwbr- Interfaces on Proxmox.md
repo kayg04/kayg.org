@@ -6,13 +6,13 @@ tags:
   - project/learning-networking
   - networking
 date: 2024-06-04 19:11
-last edited: 2024-06-04 19:25
+last edited: 2024-06-04 19:31
 ---
 ## ❓ What?
 
 Proxmox creates fwbr interfaces when you start a VM with any bridge attached, as seen [[Virtual Router in Proxmox with the Skullsaints Onyx#Why are there multiple IPs?|here]]. This is done because firewall rules (using the proxmox firewall) cannot be set directly on a bridge, otherwise they will be set for all the vms using that bridge. Instead firewall rules are applied to the firewall interfaces instead.
 
-> tap dev -> fwrbr -> fwrln <-> fwrpr -> vmbrX
+> tap dev → fwrbr → fwrln ⇄ fwrpr → vmbrX
 
 This is apparently what the flow is. I need to dig deeper but the documentation on this is really sparse.
 
