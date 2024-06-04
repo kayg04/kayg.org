@@ -6,7 +6,7 @@ tags:
   - project/learning-networking
   - networking
 date: 2024-06-04 19:11
-last edited: 2024-06-04 19:31
+last edited: 2024-06-04 19:32
 ---
 ## ❓ What?
 
@@ -26,7 +26,7 @@ The solution is pretty simple: Disable the firewall checkbox on the nic.
 
 The following is when the firewall checkbox is enabled on virtual nic on a LXC:
 
-```
+```bash
 root@compute01:~# ip a | grep 1200
 171: veth12003i0@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue master fwbr12003i0 state UP group default qlen 1000
 172: fwbr12003i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue state UP group default qlen 1000
@@ -36,7 +36,7 @@ root@compute01:~# ip a | grep 1200
 
 This is after unticking the firewall checkbox on the nic of the lxc:
 
-```
+```bash
 root@compute01:~# ip a | grep 1200
 171: veth12003i0@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1450 qdisc noqueue master sdntest state UP group default qlen 1000
 ```
