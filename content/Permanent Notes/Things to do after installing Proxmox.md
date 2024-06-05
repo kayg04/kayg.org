@@ -5,7 +5,7 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-05 20:30
+last edited: 2024-06-05 20:32
 ---
 ## ❓ What?
 
@@ -20,7 +20,7 @@ After installation, I create a separate dataset for Proxmox CT/VMs as `zfs creat
 - Disable access time updation completely. This information is irrelevant to me and I only care about when a file was last modified. So it's disabled with `zfs set atime=off rpool` globally.
 - Enable extended attribute storage for POSIX ACLs with `zfs set xattr=sa rpool`. [This apparently improves xattr performance significantly](https://github.com/openzfs/zfs/commit/82a37189aac955c81a59a5ecc3400475adb56355). 
 - It's not recommended to set `dnodesize=auto` globally as GRUB2 still does not support all features of zfs and `dnodesize=auto` is one of them. So it can be set only for VM dataset like so: `zfs set dnodesize=auto rpool/pve` For reference, Proxmox's default installation partitioning looks like this: 
-  ```bash
+```bash
 root@minipc01-at-home:~# fdisk -l
 Disk /dev/nvme0n1: 238.47 GiB, 256060514304 bytes, 500118192 sectors
 Disk model: BK-256GB NVME SSD
