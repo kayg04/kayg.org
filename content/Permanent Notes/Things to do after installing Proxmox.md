@@ -5,11 +5,11 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-05 20:32
+last edited: 2024-06-05 21:50
 ---
 ## ❓ What?
 
-  There are a few tweaks I make after installing proxmox. This is when installing Proxmox is done through the provided liveiso. Usually though however I use the [Debian OpenZFS guide](https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html) to install Debian first and I then install Proxmox on top of it so I can apply all the tweaks right during installation. 
+  There are a few tweaks I make after installing proxmox. This is when installing Proxmox is done through the provided liveiso. Usually though however I use the [OpenZFS guide](https://openzfs.github.io/openzfs-docs/Getting%20Started/Debian/Debian%20Bookworm%20Root%20on%20ZFS.html) to install Debian first and I then install Proxmox on top of it so I can apply all the tweaks right during installation. 
 
 After installation, I create a separate dataset for Proxmox CT/VMs as `zfs create rpool/pve`. I name the storage is proxmox as `zfs-<deviceclass>` to keep it really simple and consistent across different installations, and also for migration to be possible without using shared storage. 
 

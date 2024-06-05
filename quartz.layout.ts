@@ -16,11 +16,12 @@ export const sharedPageComponents: SharedLayout = {
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.MobileOnly(Component.Explorer({ title: "Finder" })),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta({ showComma: false }),
     Component.TagList(),
-    Component.TableOfContents(),
+    Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
     Component.PageTitle(),
@@ -28,6 +29,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({ title: "Finder" })),
+    Component.DesktopOnly(Component.TableOfContents())
   ],
   right: [
     Component.Graph({
@@ -39,11 +41,10 @@ export const defaultContentPageLayout: PageLayout = {
       },
     }),
     Component.Backlinks(),
-    Component.RecentNotes({
+     Component.RecentNotes({
       title: "Recent Entries",
       limit: 4,
     }),
-    Component.MobileOnly(Component.Explorer({ title: "Finder" })),
   ],
 }
 
