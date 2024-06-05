@@ -7,8 +7,10 @@ tags:
   - openwrt
   - router
 date: 2024-06-02 21:40
-last edited: 2024-06-03 10:46
+last edited: 2024-06-05 20:55
 ---
+EDIT: Apparently it's possible to [[Getting Rid of fwbr- Interfaces on Proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used so I am updating the post with the fw* interfaces removed. 
+
 ## Preface
 
 Alright, everybody pretty much knows this but since I am speaking to the larger public here: my homelab isn't really at home. It's actually a proxmox cluster from the Hetzner auction, servers that I got for a very reasonable price that I am not willing to part. There are a few reasons why I do this:
@@ -96,7 +98,7 @@ iface vmbr0 inet static
 
 #### No IP Address on vmbr0, why?
 
-Because Proxmox creates a tap interface and two firewall interfaces that handle the VM's network namespacing. For example, here are the additional network interfaces that are created once the VM is started. The IPs are assigned by existing router, Mercusys MR90X.
+Because Proxmox creates a tap interface ~~and two firewall interfaces~~ that handle the VM's network namespace. For example, here are the additional network interfaces that are created once the VM is started. The IPs are assigned by existing router, Mercusys MR90X.
 
 ```bash
 # ip addr show
@@ -105,27 +107,15 @@ Because Proxmox creates a tap interface and two firewall interfaces that handle 
     link/ether de:1e:e5:90:af:9f brd ff:ff:ff:ff:ff:ff
     inet 10.0.0.209/24 brd 10.0.0.255 scope global dynamic tap100i0
        valid_lft 40565sec preferred_lft 40565sec
-10: fwbr100i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether ca:9c:1b:48:03:36 brd ff:ff:ff:ff:ff:ff
-    inet 10.0.0.188/24 brd 10.0.0.255 scope global dynamic fwbr100i0
-       valid_lft 40405sec preferred_lft 40405sec
-11: fwpr100p0@fwln100i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 06:61:cf:2c:2a:b4 brd ff:ff:ff:ff:ff:ff
-    inet 10.0.0.172/24 brd 10.0.0.255 scope global dynamic fwpr100p0
-       valid_lft 40411sec preferred_lft 40411sec
-    inet6 fe80::461:cfff:fe2c:2ab4/64 scope link
-       valid_lft forever preferred_lft forever
-12: fwln100i0@fwpr100p0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master fwbr100i0 state UP group default qlen 1000
-    link/ether ca:9c:1b:48:03:36 brd ff:ff:ff:ff:ff:ff
-13: vmbr0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+10: vmbr0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
     link/ether c2:a2:32:05:03:0f brd ff:ff:ff:ff:ff:ff
     inet6 fe80::c0a2:32ff:fe05:30f/64 scope link
        valid_lft forever preferred_lft forever
 ```
 
-#### Why are there multiple IPs?
+#### Why is the TAP interface created?
 
-Honestly I don't know yet. 
+Apparently, TAP interfaces are created to tunnel traffic in and out of VMs by Proxmox. I know that's a vague explanation but TUN/TAP is a topic I am still investigating and haven't been able to wrap my head around yet.
 
 ### Configuration inside OpenWRT
 
@@ -184,25 +174,13 @@ It works too but... it only does because I have already made additional configur
     link/ether de:1e:e5:90:af:9f brd ff:ff:ff:ff:ff:ff
     inet 10.0.0.209/24 brd 10.0.0.255 scope global dynamic tap100i0
        valid_lft 40565sec preferred_lft 40565sec
-10: fwbr100i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether ca:9c:1b:48:03:36 brd ff:ff:ff:ff:ff:ff
-    inet 10.0.0.188/24 brd 10.0.0.255 scope global dynamic fwbr100i0
-       valid_lft 40405sec preferred_lft 40405sec
-11: fwpr100p0@fwln100i0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    link/ether 06:61:cf:2c:2a:b4 brd ff:ff:ff:ff:ff:ff
-    inet 10.0.0.172/24 brd 10.0.0.255 scope global dynamic fwpr100p0
-       valid_lft 40411sec preferred_lft 40411sec
-    inet6 fe80::461:cfff:fe2c:2ab4/64 scope link
-       valid_lft forever preferred_lft forever
-12: fwln100i0@fwpr100p0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master fwbr100i0 state UP group default qlen 1000
-    link/ether ca:9c:1b:48:03:36 brd ff:ff:ff:ff:ff:ff
-13: vmbr0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+10: vmbr0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
     link/ether c2:a2:32:05:03:0f brd ff:ff:ff:ff:ff:ff
     inet6 fe80::c0a2:32ff:fe05:30f/64 scope link
        valid_lft forever preferred_lft forever
 ```
 
-The tap and fwbr interfaces already have IP addresses. How can that be? We never configured them to be dhcp clients. That's because two more steps are necessary for Proxmox to get internet and I have already performed them.
+The tap ~~and fwbr~~ interface~~s~~ already has an IP address. How can that be? We never configured it to be a dhcp client. That's because two more steps are necessary for Proxmox to get internet and I have already performed them.
 
 ### Configuration for Proxmox
 
@@ -292,7 +270,12 @@ While I don't necessarily understand perl, I do understand bash which means I'll
    
 2. To get the same IP everytime, one of the interfaces need to have a fixed MAC Address. To set a fixed MAC, we can use `ip link set <dev> address <mac-address>`.
    
-   And apparently, it needs to be the `fwpr100p` interface. I haven't figured out why yet. An `ip route` confirms my guess.   
+   ~~And apparently, it needs to be the `fwpr100p` interface. I haven't figured out why yet.~~
+   
+   > [!NOTE] fwpr interface
+	   > If the NIC has the firewall toggle enabled then as shown below, `fwbr100i0` is indeed the default gateway interface. If it's not then the outgoing interface is simply the interface that is used for tunnelling traffic in and out of the VM: `tap100i0`.
+   
+   An `ip route` confirms my guess.   
 ```bash
 # ip route
 default via 10.0.0.1 dev fwbr100i0
@@ -313,7 +296,7 @@ The whole thing looks like this and is added in the `post-start` phase of the pe
 
 ```perl
 [...]
-system("while ! /usr/sbin/qm guest cmd 100 network-get-interfaces | /usr/bin/grep '101'; do sleep 5; done; ip link set fwpr100p0 address 06:61:cf:2c:2a:b4 &&  /usr/sbin/dhclient && /usr/bin/systemctl restart networking")
+system("while ! /usr/sbin/qm guest cmd 100 network-get-interfaces | /usr/bin/grep '101'; do sleep 5; done; ip link set tap100i0 address 06:61:cf:2c:2a:b4 &&  /usr/sbin/dhclient && /usr/bin/systemctl restart networking")
 [...]
 ```
 
