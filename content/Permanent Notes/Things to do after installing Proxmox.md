@@ -5,7 +5,7 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-05 20:21
+last edited: 2024-06-05 20:25
 ---
 ## ❓ What?
 
@@ -35,6 +35,7 @@ Device           Start       End   Sectors   Size Type
 /dev/nvme0n1p3 2099200 500118158 498018959 237.5G Solaris /usr & Apple ZFS  
 ```
 - Enable POSIX ACLs globally with `zfs set acltype=posixacl rpool`. This is just a preference that helps to create snapshots on LXCs.
+- Enable TRIM automatically on the pool so you don't have to worry about ZFS not sending DISCARD messages to the nvme firmware. This is done on a pool level with `zpool set autotrim=on rpool`.
 
 ### Tweaks during Installation
 
