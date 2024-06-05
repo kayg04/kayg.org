@@ -7,7 +7,7 @@ tags:
   - openwrt
   - router
 date: 2024-06-02 21:40
-last edited: 2024-06-05 20:55
+last edited: 2024-06-05 20:59
 ---
 EDIT: Apparently it's possible to [[Getting Rid of fwbr- Interfaces on Proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used so I am updating the post with the fw* interfaces removed. 
 
@@ -272,8 +272,8 @@ While I don't necessarily understand perl, I do understand bash which means I'll
    
    ~~And apparently, it needs to be the `fwpr100p` interface. I haven't figured out why yet.~~
    
-   > [!NOTE] fwpr interface
-	   > If the NIC has the firewall toggle enabled then as shown below, `fwbr100i0` is indeed the default gateway interface. If it's not then the outgoing interface is simply the interface that is used for tunnelling traffic in and out of the VM: `tap100i0`.
+> [!NOTE] fwpr interface
+> If the NIC has the firewall toggle enabled then as shown below, `fwbr100i0` is indeed the default gateway interface. If it's not then the outgoing interface is simply the interface that is used for tunnelling traffic in and out of the VM: `tap100i0`.
    
    An `ip route` confirms my guess.   
 ```bash
