@@ -5,7 +5,7 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-05 20:25
+last edited: 2024-06-05 20:30
 ---
 ## ❓ What?
 
@@ -18,7 +18,8 @@ After installation, I create a separate dataset for Proxmox CT/VMs as `zfs creat
   The changes are automatically inherited from the parent dataset, so there's no need to set it for nested datasets. Also, these modifications will only apply to new files. The default proxmox installation is quite small at `1.2G` so I don't really mind. Finally, the tweaks:
   
 - Disable access time updation completely. This information is irrelevant to me and I only care about when a file was last modified. So it's disabled with `zfs set atime=off rpool` globally.
-- Enable extended attribute storage for POSIX ACLs with `zfs set xattr=sa dnodesize=auto rpool/pve`. [This apparently improves xattr performance significantly](https://github.com/openzfs/zfs/commit/82a37189aac955c81a59a5ecc3400475adb56355). It's not recommended to set these properties globally as GRUB2 still does not support all features of zfs and `dnodesize=auto` is one of them. For reference, Proxmox's default installation partitioning looks like this: 
+- Enable extended attribute storage for POSIX ACLs with `zfs set xattr=sa rpool`. [This apparently improves xattr performance significantly](https://github.com/openzfs/zfs/commit/82a37189aac955c81a59a5ecc3400475adb56355). 
+- It's not recommended to set `dnodesize=auto` globally as GRUB2 still does not support all features of zfs and `dnodesize=auto` is one of them. So it can be set only for VM dataset like so: `zfs set dnodesize=auto rpool/pve` For reference, Proxmox's default installation partitioning looks like this: 
   ```bash
 root@minipc01-at-home:~# fdisk -l
 Disk /dev/nvme0n1: 238.47 GiB, 256060514304 bytes, 500118192 sectors
@@ -44,6 +45,50 @@ During installation too, I make some really general tweaks such as:
 - Increase `ashift` to `12` because all modern drives have 4K physical sectore sizes and there's no need to live with the old emulated 512 bytes sectors.
 - Select `compression` method as `zstd` instead of the default `lz4`. I mean, compression is cheap, doesn't really hinder cpu time noticeably so if I can save some space, why not save it where I can?
 - Increase ARC size max to (1/2) x RAM. Proxmox [recently introduced a](https://pve.proxmox.com/wiki/ZFS_on_Linux#sysadmin_zfs_limit_memory_usage) change to lower the amount of RAM ZFS is allowed to use for its cache to 10% of the total available RAM. I know ZFS loves RAM and I have 32G of it, and I don't really mind zfs using half of it as long as zfs gives it back to applications when they ask for it, which it does.
+
+### Summary
+
+At the end of it, the properties look like this.
+
+```bash
+root@minipc01-at-home:~# zpool get autotrim,ashift
+NAME   PROPERTY  VALUE     SOURCE
+rpool  autotrim  on        local
+rpool  ashift    12        local
+
+# zfs get acltype,atime,compress,dnodesize,xattr
+NAME              PROPERTY     VALUE           SOURCE
+rpool             acltype      posix           local
+rpool             atime        off             local
+rpool             compression  zstd            local
+rpool             dnodesize    legacy          default
+rpool             xattr        sa              local
+rpool/ROOT        acltype      posix           inherited from rpool
+rpool/ROOT        atime        off             inherited from rpool
+rpool/ROOT        compression  zstd            inherited from rpool
+rpool/ROOT        dnodesize    legacy          default
+rpool/ROOT        xattr        sa              inherited from rpool
+rpool/ROOT/pve-1  acltype      posix           local
+rpool/ROOT/pve-1  atime        off             inherited from rpool
+rpool/ROOT/pve-1  compression  zstd            inherited from rpool
+rpool/ROOT/pve-1  dnodesize    legacy          default
+rpool/ROOT/pve-1  xattr        sa              inherited from rpool
+rpool/data        acltype      posix           inherited from rpool
+rpool/data        atime        off             inherited from rpool
+rpool/data        compression  zstd            inherited from rpool
+rpool/data        dnodesize    legacy          default
+rpool/data        xattr        sa              inherited from rpool
+rpool/pve         acltype      posix           inherited from rpool
+rpool/pve         atime        off             inherited from rpool
+rpool/pve         compression  zstd            inherited from rpool
+rpool/pve         dnodesize    auto            local
+rpool/pve         xattr        sa              local
+rpool/var-lib-vz  acltype      posix           inherited from rpool
+rpool/var-lib-vz  atime        off             inherited from rpool
+rpool/var-lib-vz  compression  zstd            inherited from rpool
+rpool/var-lib-vz  dnodesize    legacy          default
+rpool/var-lib-vz  xattr        sa              inherited from rpool
+```
 
 ## 👓 References
 
