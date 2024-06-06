@@ -5,7 +5,7 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-05 21:50
+last edited: 2024-06-06 13:00
 ---
 ## ❓ What?
 
@@ -47,6 +47,15 @@ During installation too, I make some really general tweaks such as:
 - Increase ARC size max to (1/2) x RAM. Proxmox [recently introduced a](https://pve.proxmox.com/wiki/ZFS_on_Linux#sysadmin_zfs_limit_memory_usage) change to lower the amount of RAM ZFS is allowed to use for its cache to 10% of the total available RAM. I know ZFS loves RAM and I have 32G of it, and I don't really mind zfs using half of it as long as zfs gives it back to applications when they ask for it, which it does.
 
 ### Summary
+
+In a nutshell, these are the commands to run:
+
+```bash
+root@minipc01-at-home:~# zpool set autotrim=on rpool
+root@minipc01-at-home:~# zfs set atime=off acltype=posixacl xattr=sa rpool
+root@minipc01-at-home:~# zfs create rpool/pve
+root@minipc01-at-home:~# zfs set dnodesize=auto rpool/pve
+```
 
 At the end of it, the properties look like this.
 
