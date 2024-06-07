@@ -5,7 +5,7 @@ tags:
   - productivity/shortcuts
   - macos/bettertouchtool
 date: 2024-06-07 12:27
-last edited: 2024-06-07 12:49
+last edited: 2024-06-07 13:33
 ---
 ## ❓ What?
 
@@ -23,9 +23,20 @@ Using Caps Lock as Hyper Key would mean I have to press Four Modifiers when conf
 
 I have spent quite a bit of time trying out different combinations of delays and such, trying to emulate a QMK tap-hold functionality and here is what worked finally.
 
-- When Caps Lock is Pressed and Released, send Escape (and Toggle Caps Lock - this is important because otherwise Caps Lock itself would turn on - meaning all CAPS).
-- When Caps Lock is Pressed and no further input is detected for the next 0.2 seconds (that is, caps lock is not released OR any other key is NOT pressed), block keyboard input. Initially the delay was 0.3s but I have reduced it to 0.2s. I'll test reducing it further in the future.
-- When Caps Lock is Released, allow keyboard input (And Toggle Caps Lock - this is important because otherwise Caps Lock itself would turn on - meaning all CAPS).
+- When Caps Lock is Pressed and Released:
+	- Send Escape 
+	- Toggle Caps Lock
+	  
+	  This is important because otherwise Caps Lock itself would turn on - meaning all CAPS.
+- When Caps Lock is Pressed and *no further input is detected for the next 0.2 seconds* (that is, caps lock is not released OR any other key is NOT pressed):
+	- Block keyboard input. 
+	  
+	  Initially, the delay was 0.3s, but I have reduced it to 0.2s. I'll try reducing it further in the future. 
+- When Caps Lock is Released (*only when keyboard input is blocked* - I do not want it to trigger when caps lock is pressed with another key as I also configure shortcuts that are not key sequences):
+	- Allow keyboard input 
+	- Toggle Caps Lock 
+	  
+	  This is important because otherwise Caps Lock itself would turn on - meaning all CAPS.
 
 ![[caps-lock-press-and-hold.png]]
 ![[caps-lock-release.png]]
