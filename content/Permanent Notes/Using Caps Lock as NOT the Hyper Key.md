@@ -5,7 +5,7 @@ tags:
   - productivity/shortcuts
   - macos/bettertouchtool
 date: 2024-06-07 12:27
-last edited: 2024-06-07 13:33
+last edited: 2024-06-07 16:57
 ---
 ## ❓ What?
 
