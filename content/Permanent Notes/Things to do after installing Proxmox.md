@@ -5,7 +5,7 @@ tags:
   - project/learning-proxmox
   - zfs
 date: 2024-06-05 19:57
-last edited: 2024-06-06 13:00
+last edited: 2024-06-19 01:28
 ---
 ## ❓ What?
 
@@ -39,6 +39,8 @@ Device           Start       End   Sectors   Size Type
 - Enable TRIM automatically on the pool so you don't have to worry about ZFS not sending DISCARD messages to the nvme firmware. This is done on a pool level with `zpool set autotrim=on rpool`.
 
 ### Tweaks during Installation
+
+^191335
 
 During installation too, I make some really general tweaks such as:
 
