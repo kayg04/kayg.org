@@ -7,9 +7,22 @@ tags:
   - openwrt
   - router
 date: 2024-06-02 21:40
-last edited: 2024-06-05 20:59
+last edited: 2024-07-08 18:21
 ---
-EDIT: Apparently it's possible to [[Getting Rid of fwbr- Interfaces on Proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used so I am updating the post with the fw* interfaces removed. 
+ANOTHER EDIT: Apparently the [[Virtual Router in Proxmox with the Skullsaints Onyx#Proxmox VM Hookscripts|hookscript section]] is what causes me the most headache and is not needed. Since the tap interface is bridged with `vmbr0`, it should not be configured to get an IP. The correct way to do it is to configure an IP and gateway on the bridge `vmbr0` itself like so:
+
+```conf
+auto vmbr0
+iface vmbr0 inet static
+	address 10.0.0.3/24
+	gateway 10.0.0.1
+	bridge-ports none
+	bridge-stp off
+	bridge-fd 0
+	hwaddress 06:61:cf:2c:2a:b4
+```
+
+EDIT: Apparently it's possible to [[Getting Rid of fwbr- Interfaces on Proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used, so I am updating the post with the fw* interfaces removed. 
 
 ## Preface
 
@@ -193,6 +206,11 @@ We have a few requirements:
 Let's tackle all the problems!
 
 #### Proxmox VM Hookscripts
+
+
+> [!NOTE] NO LONGER NEEDED
+> This hookscript will cause problems such as a DHCP broadcast from travelling through the bridge and should be avoided.
+
 
 With[ a snippet of documentation](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#_hookscripts), Proxmox has a feature called hookscripts which is basically what it sounds like: do an action based on a trigger. In this case, the trigger is set. Proxmox will run your hookscripts before and after the VM starts, and before and after the VM stops. The onus is on the user to configure the hookscript to choose between those triggers. ... and the hookscripts must be in perl!
 
