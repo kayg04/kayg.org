@@ -55,7 +55,11 @@ To see all the settings, defaults and non-defaults, one can use:
 
 ```bash
 $ # ceph config show-with-defaults <daemon> 
-
+for osd in $osd_list; do
+    echo "OSD $osd:" >> osd.txt
+    ceph config show osd.$osd public_network >> osd.txt
+    echo # Just for better readability of the output
+done
 $ ceph config show-with-defaults osd.0 | grep osd_memory_target
 osd_memory_target                                           1073741824                                                                                                                                                                                                                                                               file                        
 osd_memory_target_autotune                                  false                                                                                                                                                                                                                                                                    default                     
