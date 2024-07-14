@@ -1,13 +1,13 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2024-06-13 16:59
+last edited: 2024-07-14 14:33
 ---
 ## Intro
 
 Welcome to my little space on the internet! 
 
-I am [an infrastructure guy](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx) / [aspiring devops](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx), [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational weightlifter](https://youtube.com/@kayglifts). I work at [croit GmbH](https://croit.io); we make deploying and managing [ceph](https://ceph.io) super simple! 
+I am [an infrastructure guy](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx) / [aspiring devops](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx), [a waning cinephile](https://letterboxd.com/kayg04/films/diary/) and [a recreational bodybuilder](https://youtube.com/@kayglifts). I work at [croit GmbH](https://croit.io); we make deploying and managing [ceph](https://ceph.io) super simple! 
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try putting out notes from my [zettelkasten](https://freedium.cfd/https://sacredkarailee.medium.com/understanding-zettelkasten-notes-d7eb3fae0c45) as updates. 
 
