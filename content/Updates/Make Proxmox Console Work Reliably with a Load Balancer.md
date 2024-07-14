@@ -1,12 +1,16 @@
 ---
 date: 2024-07-13 19:36
-last edited: 2024-07-13 19:53
+last edited: 2024-07-14 19:26
 tags:
   - proxmox
   - caddy
   - cloudflare
   - proxmox/console
 ---
+
+> [!NOTE] Now on YouTube
+> As a short for now: https://youtube.com/shorts/HhuazMfbDiM
+
 ## The Problem
 
 Everybody around me knows that I am a big fan of Proxmox but very few people know that even though I load balance it, my heart races everytime I click on the console page of any VM or Container, and more often that not, I end up navigating to a particular node's web UI and clicking on the Console from there.
