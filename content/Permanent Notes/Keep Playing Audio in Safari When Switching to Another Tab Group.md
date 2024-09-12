@@ -3,8 +3,8 @@ type: Permanent Note
 tags:
   - macos/safari
   - browser
-date: 2024-02-12 14:35
-last edited: 2024-09-12 10:06
+date: 2024-09-09 16:35
+last edited: 2024-09-12 10:13
 ---
 ## ❓ What?
 
