@@ -20,7 +20,7 @@ You can find me on these platforms:
 - [Telegram](https://t.me/kayg04)
 - [Email](mailto:mail@kayg.org) / [Alternate Email](mailto:k.gopal.krishna@icloud.com)
 - [Letterboxd](https://letterboxd.com/kayg04)
-- [X / Twitter](https://x.com/therealkayg04)
+- [X / Twitter](https://x.com/kaygdotorg)
 - [Github](https://github.com/kayg04)
 - [Linkedin](https://www.linkedin.com/in/k-gopal-krishna-7546b92a2/)
 

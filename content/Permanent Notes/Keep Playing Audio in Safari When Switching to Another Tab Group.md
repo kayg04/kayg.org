@@ -3,8 +3,9 @@ type: Permanent Note
 tags:
   - macos/safari
   - browser
+  - "#project/youtube"
 date: 2024-09-09 16:35
-last edited: 2024-09-12 10:13
+last edited: 2024-09-12 18:55
 ---
 ## ❓ What?
 
