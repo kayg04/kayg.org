@@ -79,3 +79,5 @@ In these 3 days, I have been feeling much better about myself - simply because I
 - I didn't come up with the time tracking idea on my own. After my several search queries on the internet about "TickTick Focus Session as Calendar Events," I came across a reddit comment which forced me to think what I wanted to do - https://old.reddit.com/r/PKMS/comments/14l76io/comment/jpymrtl
 
 - Ali Abdaal's video about his Calendar System - https://youtu.be/6o2tm00Ar8A
+
+- My girlfriend who keeps listening to my babbling so I realise things which work and do not work when I speak them out loud.
