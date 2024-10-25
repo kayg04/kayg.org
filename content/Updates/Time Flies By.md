@@ -1,6 +1,6 @@
 ---
 date: 2024-10-25 12:28
-last edited: 2024-10-25 12:39
+last edited: 2024-10-25 14:06
 ---
 ## Intro
 
@@ -35,11 +35,13 @@ However, a nicer solution is to leverage your own arsenal of tools to tackle the
 ![[raycast-auto-quit.png]]
 ### Take Smaller Steps
 
-Let changes sink it, enough for them to give you a feeling that you are utilising your time better than you were. 
+Let changes sink in, enough for them to give you a feeling that you are utilising your time better than you were. Then make the next change.
 
 For example, recently I have started using this app called [OneSec](https://one-sec.app) (came across it because of an [Ali Abdaal short](https://www.youtube.com/shorts/XWgaOtLFQCM?feature=share)) which lets you configure simple shortcuts on iOS to block any offending apps. When you try to open the offending app, iOS redirects you to onesec which then displays a seemingly long flow transition, which is enough for me to get bored and quit the app. Since most of my attempts of opening social apps are tied to habit - waiting for a process to finish, resting between sets at the gym, waiting for food to arrive, commute, etc
 
 ![OneSec](https://photos.kayg.org/api/assets/256ce5ef-5b3d-4983-b81c-b3744e233945/video/playback?key=9QbB6-o5H6dhw73hS0O13LPMj6lloa-wwAWNbtvD4dAFBRqxGQxq-2qeGddLRPkz1Io)
+
+However, I do not yet use it to block messaging apps where I also spend a small but considerable time on. By making a change small enough to disrupt some of my offending actions while allowing a few others to exist, gives my brain time to adjust and equate the disruption to normalcy.
 
 It's been two weeks, and I feel like I have been using my time doing way more important things. I get my own space to think more, I don't have to regurgitate as much futile information I absorb from the internet and then convince myself that it's important. I think way more - about where my time goes, what should I be doing next, where would I want my life to be in the next year, and I decided to do something about it - which brings me to tackling problem number 2 - **Finding a sense of purpose**.
 
