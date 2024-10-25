@@ -80,4 +80,4 @@ In these 3 days, I have been feeling much better about myself - simply because I
 
 - Ali Abdaal's video about his Calendar System - https://youtu.be/6o2tm00Ar8A
 
-- My girlfriend who keeps listening to my babbling so I realise things which work and do not work when I speak them out loud.
+- My girlfriend who keeps listening to my babbling so I realise things which work and do not work when I speak them out loud, allowing for new ideas to emerge.
