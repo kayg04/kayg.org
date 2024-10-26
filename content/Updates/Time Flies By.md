@@ -1,6 +1,6 @@
 ---
 date: 2024-10-25 12:28
-last edited: 2024-10-25 14:06
+last edited: 2024-10-25 20:46
 ---
 ## Intro
 
@@ -60,6 +60,8 @@ But I certainly would like to get there. Planning doesn't happen in a day or a w
 So I decided to do the next best thing instead. 
 
 ### Time Tracking
+
+^44a512
 
 Instead of planning ahead, I decided to add whatever it is I *have done* as an event in the calendar. This is adding an event *after the fact*. So my past three days look like this:
 
