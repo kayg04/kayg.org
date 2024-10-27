@@ -1,6 +1,6 @@
 ---
 date: 2024-10-26 22:11
-last edited: 2024-10-26 22:45
+last edited: 2024-10-27 00:15
 ---
 ## Preface
 
@@ -44,8 +44,11 @@ Also it's quite unfair to say but BusyCal looks... very busy in the daily and we
 
 ### iOS
 
-I recently bought BusyCal on iOS to test drive it but I am quite disappointed to say that the UI is very barebones with very ugly spacing and font sizes. Fantastical has the same level or even more polish on iOS. 
+I recently bought BusyCal on iOS to test drive it but I am quite disappointed to say that the UI is very barebones with very ugly spacing and font sizes. Fantastical has the same level or even more polish on iOS.
 
+However, conversely on iOS, the day view on BusyCal allows you to zoom in and zoom out to a very flexible degree.
+
+![[busycal-ios-density-day-view.mp4]]
 ## Customisability
 
 ### MacOS
@@ -73,8 +76,12 @@ Both BusyCal and Fantastical have most bases covered. Both of them expect a simi
 In my experience, it's very important that you mention `[Day]` before `[Time Range]`, otherwise neither BusyCal nor Fantastical would schedule your event perfectly.
 
 However, since all my calendars start with emojis, `/calendar` doesn't work at all in BusyCal. It doesn't include the word `/calendar` in the event but puts it in the wrong one. 
+![[busycal-add-event-nlp.mp4]]
 
 Fantastical, however, delivers every-time. You don't need to specify `to` or `-` between time ranges, the `/calendar` syntax matches the calendar perfectly. 
+
+
+![[fantastical-add-event-nlp.mp4]]
 
 Fantastical is the winner here.
 
