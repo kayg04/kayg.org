@@ -10,9 +10,9 @@ tags:
 ---
 ## ❓ What?
 
-The ceph docs instruct one to use the token generated with `radosgw-token --encode` as the access key when used with AWS CLI. 
+To authenticate to a LDAP server as a RGW user, the ceph docs instruct one to use the token generated with `radosgw-token --encode` as the access key when used with AWS CLI. 
 
-However, with s3cmd, two changes have to be made:
+However, when using s3cmd, two changes have to be made:
 
 - `--access_token` needs to be used instead of `--access_key`
 - `--signature-v2` needs to be specified 
