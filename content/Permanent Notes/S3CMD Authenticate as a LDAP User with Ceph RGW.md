@@ -1,3 +1,13 @@
+---
+date: 2024-10-28 16:00
+last edited: 2024-10-28 16:05
+tags:
+  - ceph
+  - ceph/rgw
+  - linux/ldap
+  - ceph/s3
+  - s3cmd
+---
 ## ❓ What?
 
 The ceph docs instruct one to use the token generated with `radosgw-token --encode` as the access key when used with AWS CLI. 
