@@ -17,6 +17,11 @@ However, when using s3cmd, two changes have to be made:
 - `--access_token` needs to be used instead of `--access_key`
 - `--signature-v2` needs to be specified 
 
+An example command might look like:
+```
+s3cmd --access_token=<access-token-from-radosgw-token> --signature-v2 s3://<host>:<port>/<bucket> ls
+```
+
 ## 📚 References
 
 ```
