@@ -49,7 +49,7 @@ If you have other leads, please let me know.
 
 
 > [!NOTE] Adobe Premiere Pro on MacOS
-> One more interesting detail is that I wanted to produce a H264 Main@L6 video for myself and confirm which formats are supported in the Photos app. However, even if I select Levels 6, 6.1, 6.2 - Adobe Premiere Pro on MacOS ends up exporting the video in Main@L5.2 which then obviously works in Photos.app. 
+> One more interesting detail is that I wanted to produce a H264 Main@L6 video for myself and confirm which formats are supported in the Photos app. However, even if I select Levels 6, 6.1, 6.2 - Adobe Premiere Pro on MacOS ends up exporting the video in Main L5.2 which then obviously works in Photos.app. 
 
 
 ## 👓 References
