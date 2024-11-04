@@ -2,6 +2,11 @@
 date: 2024-10-26 22:11
 last edited: 2024-10-27 17:37
 ---
+## TLDR
+
+On MacOS, Fantastical and BusyCal are both excellent choices, with very few things left to personal preference. 
+
+On iOS, Fantastical wins because it looks prettier by a long shot, supports reminders and has 1:1 feature parity with MacOS.
 ## Preface
 
 Much like every other productivity bro, I am drawn to shiny new things. Especially shiny new things that portend to solve a real problem I have. Since I [[Time Flies By|recently got into calendaring]], I figured it was wise of me to simultaneously use multiple tools in my arsenal that attempt to tackle the same problem. In my case, they are Apple Calendar, BusyCal, Fantastical. Since Apple Calendar's NLP doesn't even let me omit the `:` when specifying time and Siri being completely atrocious while I want to schedule an event, I figured it wasn't worthy of this battle.
