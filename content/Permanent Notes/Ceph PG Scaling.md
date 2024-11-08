@@ -1,13 +1,15 @@
 ---
 date: 2024-11-08 21:23
 last edited: 2024-11-08 21:56
+tags:
+  - ceph/pg
 ---
 ## Overview
 
 At croit, the recommendation is to maintain the number of PGs in a pool such that each PG roughly holds about 45G of data. In order to achieve the number, the following calculation works:
 
 ```
-Data Per PG = (Used Pool Size) / (Number of existing PGs * Redundancy)
+Data per PG = (Used Pool Size) / (Number of existing PGs * Redundancy)
 ```
 where:
 - Used Pool Size - Amount of data stored in the pool
@@ -29,7 +31,7 @@ data 2 32 11 GiB 4.80k 31 GiB 0.13 7.8 TiB
 The calculation would be:
 
 ```
-Data Per PG 
+Data per PG 
 = (31 GiB) / (32 PGs * 3 size)
 = 0.323 GiB / PG
 ```
@@ -37,7 +39,7 @@ Data Per PG
 As seen, the data per PG is way below the recommended 45G. To improve performance on the pool, we can reduce the PG number to 1 which would be bring the number to:
 
 ```
-Data Per PG
+Data per PG
 = (31 GiB) / (1 PG * 3 size)
 = 10.33 GiB / PG
 ```
@@ -56,14 +58,14 @@ data_ec 1 128 5.7 TiB 2.19M 9.2 TiB 28.15 13 TiB
 The calculation would be:
 
 ```
-Data Per PG 
+Data per PG 
 = (13 TiB * 1024) / (128 * 7)
 = 14.86 GiB / PG
 ```
 As seen, the data per PG here is also way below the recommended 45 GiB. We can bring that number down to:
 
 ```
-Data Per PG 
+Data per PG 
 = (13 TiB * 1024) / (64 * 7)
 = 29.71 GiB / PG
 ```
