@@ -9,13 +9,13 @@ tags:
   - bluetooth/version
 ---
 
-## Context
+## 👓 Context
 
 Finding information about devices isn't exactly straightforward on MacOS.
 
 For example, [one of my youtube videos](https://www.youtube.com/shorts/Qe65sRivTQY?feature=share) has someone asking me what bluetooth version does the Magic Trackpad USB C use when it's connected over bluetooth to a Macbook Pro. That's a valid question.
 
-## Initial Findings
+## 🔖 Initial Findings
 
 At first glance, System Report / Information doesn't give out any information that could be linked to the bluetooth version but it does tell me the **MAC address of the trackpad**.
 
@@ -29,7 +29,7 @@ system_profiler -detailLevel full SPBluetoothDataType
 Another way to find out the MAC address of a connected device is to hold the Option key while clicking on Control Center → Bluetooth:
 
 ![[control-center-bluetooth-option-key.png]]
-## Looking Deeper
+## 📚 Looking Deeper
 
 A [stackoverflow answer](https://superuser.com/questions/1560716/how-can-i-check-the-bluetooth-version-of-a-connected-device) says that finding the LMP version is key. However, since that information is not exposed very easily, we need to turn to logs. To do that:
 
@@ -44,7 +44,7 @@ According to the table [that Microsoft provides](https://support.microsoft.com/e
 
 > LMP supports requests for the version of the LM protocol. The LMP_VERSION_REQ and LMP_VERSION_RES PDUs contain three parameters: Version, Company_Identifier and Subversion. Version specifies the version of the Bluetooth LMP specification that the device supports. All companies that create a unique implementation of the LM shall have their own Company_Identifier. The same company is also responsible for the administration and maintenance of the Subversion. It is recommended that each company has a unique Subversion for each RF/BB/LM implementation. For a given Version and Company_Identifier, the values of the Subversion shall increase each time a new implementation is released. For both Company_Identifier and Subversion the value 0xFFFF means that no valid number applies. There is no ability to negotiate the version of the LMP.
 
-## References
+## 📜 References
 
 https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-54/out/en/br-edr-controller/link-manager-protocol-specification.html
 
