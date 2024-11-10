@@ -57,14 +57,14 @@ So far, it seems like the perfect candidate for storing passwords, 2FA codes, re
 
 But what if I were to optimize further?
 
-## 🔑 Passwords, 1Password
+## 🔑 Apple Passwords, 1Password
 
-Here comes the point of diminishing returns. Contrary to previous situations, my list of requirements is basically cosmetic, smelling like a productivity bro wishlist:
+Here comes the point of diminishing returns. Contrary to previous situations, my list of requirements here is basically cosmetic, smelling like a productivity bro's wishlist:
 
 1. Sometimes, some prompts don't accept anything other than Apple's Passwords.app - maybe switch to passwords.app then... just for logins?
-2. Some people on MPU rave about 1Password - what's that about? maybe 1Password is a sidegrade?
+2. Some people on [MPU](https://talk.macpowerusers.com) rave about 1Password - what's that about? maybe 1Password is a side-grade?
 
-### Passwords
+### Apple Passwords
 
 I ended up trying it, as part of my *completely futile pursuit of reducing reliance on external apps* / *condensing multiple app usage for no reason* - and it sucks. 😊
 
@@ -77,9 +77,9 @@ I ended up trying it, as part of my *completely futile pursuit of reducing relia
 5. No ability to create multiple databases
 6. The import from CSV from a Strongbox or a Bitwarden export is broken.
 
-I hope Apple improves it with upcoming iOS / MacOS releases because right now, it's not a serious attempt at storing passwords. 
+I hope Apple improves it with upcoming iOS / MacOS releases because right now, it's not a serious attempt at storing and managing passwords. 
 
-I guess the only nice thing about the Passwords app is that it's supported *almost* everywhere. If passwords.app is 99% reliable, strongbox has to be 98% at least.
+I guess the only nice thing about the Passwords app is that it's supported *almost* everywhere. If strongbox is at least 98% reliable, passwords.app is a for-sure 99%.
 
 ### 1Password
 
