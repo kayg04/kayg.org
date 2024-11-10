@@ -1,6 +1,6 @@
 ---
 date: 2024-02-04 23:03
-last edited: 2024-09-07 15:04
+last edited: 2024-11-10 19:53
 title: Services
 ---
 ## Overview
@@ -12,5 +12,4 @@ I host a bunch of services for the www / friends. Most of it is public and free 
 | [_Bitwarden_](https://vault.kayg.org/) | Manage passwords                | Lastpass       | Public        |
 | _[Immich](https://photos.kayg.org/)_   | Store your pictures             | Google Photos  | Private       |
 | [_Nextcloud_](https://cloud.kayg.org/) | Cloud storage                   | Google Drive   | Private       |
-| [_Privatebin_](https://bin.kayg.org/)  | Share text securely             | Pastebin       | Public        |
 | _[SearX](https://search.kayg.org/)_    | Search any part of the internet | Google Search  | Public        |
