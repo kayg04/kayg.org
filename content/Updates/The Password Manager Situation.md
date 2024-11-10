@@ -106,11 +106,12 @@ Still 1Password is very feature complete and if you do not mind the above caveat
 
 Strongbox. 
 
-1. Choice between subscription and perpetual licensing
-2. Great support and wiki
-3. Easy sync with Strongbox Sync OR your favourite cloud provider
-4. Looks extremely pretty across all Apple Devices
-5. All the Keepass goodies with great Safari integration and passkey support.
+1. Open source - https://github.com/strongbox-password-safe/Strongbox
+2. Choice between subscription and perpetual licensing
+3. Great support and wiki
+4. Easy sync with Strongbox Sync OR your favourite cloud provider
+5. Looks extremely pretty across all Apple Devices
+6. All the Keepass goodies with great Safari integration and passkey support.
 
 ## 🔚 Bidding Thoughts
 
