@@ -89,13 +89,15 @@ I guess the only nice thing about the Passwords app is that it's supported *almo
 2. They used to have perpetual licenses and have since transitioned to subscription-only.
 3. Their desktop apps used to be native and are now electron.
 
-Even so, I tried it. On MacOS, 1Password looks way better than Bitwarden but doesn't look as nice as Strongbox BUT it has predefined templates for everything you can think of - passports, ssh keys, credit cards, crypto wallets.... This is great UX and I love it. You can also create multiple vaults (vaults are not the same as in keepass, they're merely a collection of entries in 1Password) to share with your family. The experience is seamless. 
+Even so, I tried it. 
+
+On MacOS, 1Password looks way better than Bitwarden (Bitwarden has said on Reddit that desktop apps are not their priority because of the usage volume) but doesn't look as nice as Strongbox. 1Password has predefined templates for everything you can think of - passports, ssh keys, credit cards, crypto wallets.... This is great UX and I love it. You can also create multiple vaults (vaults are not the same as in keepass, they're merely a collection of entries in 1Password) to share with your family. The experience is seamless. 
 
 I also tried it on iOS, the app looks great and also has the ability for Spotlight to index a vault's entries even after it's locked (something that no other password manager has - convenience at the risk of slightly lower security). Also, like strongbox, you can choose to auto-fill any field of any entry that you'd like. 
 
 However, even with its attention to detail, it fails for me because:
 
-1. No option for multiple databases. [1Password says it themselves](https://blog.1password.com/totp-and-1password/) that if you store 2FA tokens in the same place as your passwords, it's not added security, just convenience; and yet there's no way to do that on 1Password. The only way to work around that is multiple accounts, same as Bitwarden. Except account switching is ridiculously easy in Bitwarden, not so much in 1Password.
+1. No option for multiple databases. [1Password says it themselves](https://blog.1password.com/totp-and-1password/) that if you store 2FA tokens in the same place as your passwords, it's not added security, just convenience; and yet there's no way to do that on 1Password. The only way to work around that is with multiple accounts, same as Bitwarden. Except account switching is ridiculously easy in Bitwarden, not so much in 1Password.
 2. It's the most expensive of the bunch, and the way the company has headed lately (cloud-only, subscription-only, electron, price increase) does not seem to be very promising.
 
 Still 1Password is very feature complete and if you do not mind the above caveats, it's a worthy contender.
