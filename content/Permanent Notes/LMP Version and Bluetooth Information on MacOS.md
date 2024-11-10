@@ -1,6 +1,6 @@
 ---
 date: 2024-11-10 19:53
-last edited: 2024-11-10 20:08
+last edited: 2024-11-10 20:22
 tags:
   - macos
   - macos/bluetooth
