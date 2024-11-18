@@ -20,6 +20,7 @@ const config: QuartzConfig = {
     baseUrl: "kayg.org",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
+    generateSocialImages: false,
     theme: {
       cdnCaching: false,
       typography: {
