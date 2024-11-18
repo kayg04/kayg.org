@@ -1,6 +1,6 @@
 ---
 date: 2024-11-10 20:22
-last edited: 2024-11-10 21:44
+last edited: 2024-11-11 21:38
 tags:
   - passwords
   - password-managers
@@ -41,7 +41,7 @@ As a recent Apple convert after years of using Windows and Linux, I wanted somet
 
 However, it misses the greatest feature of KeepassXC still - AutoType. 
 
-For fields that don't support any kind of auto-fill, even Apple's Passwords.app (yes, like the disk unlock prompt for an APFS encrypted drive), AutoType is extremely useful. 
+For fields that don't support any kind of auto-fill, even Apple's Passwords.app (yes, like the [[disk-encryption-unlock-prompt.png|disk unlock prompt for an APFS encrypted drive]]), AutoType is extremely useful. 
 
 Strongbox has other advantages, though:
 
