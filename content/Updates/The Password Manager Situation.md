@@ -1,6 +1,6 @@
 ---
 date: 2024-11-10 20:22
-last edited: 2024-11-11 21:38
+last edited: 2024-11-18 18:18
 tags:
   - passwords
   - password-managers
