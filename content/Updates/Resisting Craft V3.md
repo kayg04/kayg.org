@@ -25,7 +25,7 @@ Even with all of Craft’s qualities (that I’m immensely swayed by) and its re
 
 ### I Live In My Calendar
 
-The calendar is my journal, the calendar is my day planner, the calendar is my task manager; it’s my gospel. Did I mention **[[Public/Updates/Time Flies By|calendars are great]]**?
+The calendar is my journal, the calendar is my day planner, the calendar is my task manager; it’s my gospel. Did I mention **[[Time Flies By|calendars are great]]**?
 
 As somebody who’s gotten so used to logging in my calendar, the quick add / quick entry natural language is second nature to me now. “Oh, did I just spend the last 30 minutes scrolling on X? Let me log that,” “Oh, was that an hour of SwiftUI? let me log that too.” It doesn’t matter what I’ve been doing; it’s very essential that it exists on my calendar, not only for accountability but also for my doubting self next week, month or even year (if I make it!). 
 
