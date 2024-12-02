@@ -3,7 +3,7 @@ date: 2024-12-02 10:34
 last edited: 2024-12-02 15:38
 ---
 ## Preface
-In a time when everybody on X is hyping up the newest release of [Craft Docs](https://craft.so), I have a few counterpoints to make. But first, let’s take a look at the product. 
+In a time when everybody on X is hyping up the newest release of [Craft Docs](https://www.craft.do), I have a few counterpoints to make. But first, let’s take a look at the product. 
 
 Craft is a mostly Apple-only product, with Windows and Web as relatively recent releases to perhaps cater to more adaption, that has eight coatings of visual polish for every knob that does something functional. Seriously, even though the general app quality on Apple devices is exceptional, Craft stands on top of that list, on a pedestal that goes as high as attention to detail can; Craft is beautiful to look at, and it’s a pleasure to play around. With the newly added calendar and tasks section, one of my favourite features is being able to add an “Event Note.” Something I am really, really sore about, in Obsidian.
 
