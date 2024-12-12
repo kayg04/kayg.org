@@ -1,6 +1,10 @@
 ---
 date: 2024-12-02 10:34
-last edited: 2024-12-02 15:38
+last edited: 2024-12-03 09:07
+tags:
+  - time
+  - pkm
+  - calendars
 ---
 ## Preface
 In a time when everybody on X is hyping up the newest release of [Craft Docs](https://www.craft.do), I have a few counterpoints to make. But first, let’s take a look at the product. 
@@ -11,7 +15,7 @@ Craft is a mostly Apple-only product, with Windows and Web as relatively recent 
 
 It’s got *offline mode*! In fact, while I write this article on a flight, Craft is almost fully functional, and all my data is available on my iPhone.
 
-To be fair, I had tried out Craft before when I got a Setapp subscription but the general opinion around the beginning of this year was that they were pivoting to a teamspace / workspace for enterprises, rather than notetakers and knowledge builders like me. It was a great-looking app then too but because of change in direction, I didn’t pay much heed to it. There’s also [at least one other person](https://flohgro.com/obsidian/migrating-notes-from-craft-to-obsidian/) who migrated out of it because of the pivoting.
+To be fair, I had tried out Craft before when I got a Setapp subscription but the general opinion around the beginning of this year was that they were pivoting to a teamspace / workspace for enterprises, rather than notetakers and knowledge builders like me. It was a great-looking app then too but because of the change in direction, I didn’t pay much heed to it. There’s also [at least one other person](https://flohgro.com/obsidian/migrating-notes-from-craft-to-obsidian/) who migrated out of it because of the pivoting.
 
 [The Verge](https://www.theverge.com/2024/11/28/24307906/craft-3-notes-tasks-calendar-app-mac-iphone-windows) summarises it best: 
 
@@ -37,7 +41,7 @@ As of the initial V3 release, if there are too many past events, I cannot see th
 
 One of my favourite qualities of plaintext tasks (like in Obsidian) is here ability to take notes anywhere and refer to them anywhere I want. One of my least favourite qualities about plaintext tasks is the effort it requires to input, manage and **see** tasks. I don't live in Obsidian, I live in Fantastical. Having tasks in my calendar is the best thing I've done towards finishing them on time. If not in my calendar, I would like to be able to see them on my home screen, on my Mac, or anywhere outside the app… and much like with Obsidian, that's not possible in Craft as tasks support is rather rudimentary right now.
 
-Tasks are best left to a dedicated task manager like TickTick, Things 3 of Reminders (via GoodTask). Then some sort of manual interlinking via app uri results, with some friction, in the least amount of hacking around.
+Tasks are best left to a dedicated task manager like TickTick, Things 3 or Reminders (via GoodTask). Then some sort of manual interlinking via app uri results, with some friction, in the least amount of hacking around.
 
 ### Tasks should automatically be Reminders
 
@@ -58,7 +62,7 @@ One of the best ways to make it easy for people to transition to your product is
 
 I also tried converting relative links to absolute links in Obsidian before the import, but that didn’t help.
 
-### Offline-mode, not offline-first
+### Offline-mode, not local-first
 
 Craft’s data still lives on its servers. Leaving any privacy concerns out the window, I have more usability concerns. In the hour and a half I spent writing this article and playing around with Craft, I found that much of Craft’s reliability is tied to the internet.
 
@@ -68,14 +72,14 @@ Craft’s data still lives on its servers. Leaving any privacy concerns out the 
 - Craft has no transparency on what is and isn’t synced
 
 ![[craft-offline-sync.mp4]]
-- Calendar events do not sync offline even though calendars themselves work entirely offline. 
+- Calendar events do not sync to craft when offline even though calendar events themselves work entirely offline. 
   
-  There is no easy way to show this, but you can try it yourself. Add an event while online and see it appear in Craft. Turn on flight mode, add another event and refresh Craft. The new calendar event has not been updated.
+  There is no easy way to show this, but you can try it yourself. Add an event while online and see it appear in Craft. Turn on flight mode, add another event and refresh Craft. The new calendar event does not show up in Craft.
 
 ## Am I just the wrong audience?
 
 I think so. 
 
-Craft is an excellent document-making tool, one where you’d expect documents to live on their own, present them in the finest visual dressings, surprise your audience or one where you’d write by just turning on focus mode, forgetting everything else. 
+Craft is an excellent document-making tool, one where you’d expect documents to live on their own, present them in the finest visual dressings, surprise your audience; a tool where you’d just write by turning on focus mode, forgetting everything else. 
 
 For simple, narrow use cases like those, Craft shines brighter than my head. For anything more complex, a combination of another tool like Obsidian / Logseq / Capacities / Roam Research / AnyType / Tana for all the interlinking and Craft for the exquisite presentation feels best.
