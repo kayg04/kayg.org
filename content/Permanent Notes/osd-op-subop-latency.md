@@ -1,7 +1,7 @@
 ---
 title: Ceph Operation v/s Subop Latency
 date: 2023-09-12 01:23
-last edited: 2024-02-08 23:34
+last edited: 2024-12-27 23:08
 ---
 In Ceph, operation latency and subop latency measure different aspects of I/O processing:
 
@@ -23,8 +23,6 @@ In Ceph, operation latency and subop latency measure different aspects of I/O pr
 1. A client operation (op) may trigger multiple suboperations (subops)
 2. Subops are internal operations between OSDs for replication
 3. Total operation latency includes subop latency when replication is involved
-
-## Related Concepts
 
 ## References
 
