@@ -39,7 +39,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         if (fileData.dates.created) {
           segments.push(
             <span>
-              ✍︎ Published <TimeMeta value={fileData.dates.created} />
+              ✍︎ Created <TimeMeta value={fileData.dates.created} />
             </span>,
           )
         }
