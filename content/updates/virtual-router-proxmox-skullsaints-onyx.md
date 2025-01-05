@@ -56,7 +56,7 @@ I love the all black too but what I don't love is that Skullsaints may have lied
 
 ## The Goal
 
-I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [[uses-2024-04#Hardware|I connect my Mac to ethernet via a dock]].
+I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [[Public/uses/index#Hardware|I connect my Mac to ethernet via a dock]].
 
 The MiniPC is to partly replace it, the LAN bit, maybe WiFi too in the future but no definite plans yet. Here's a visual (drawn with my new iPad which I am yet to make a post about) first:
 
