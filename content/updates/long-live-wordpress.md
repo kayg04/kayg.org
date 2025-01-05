@@ -19,7 +19,7 @@ Comments (powered by [Remark42](https://remark42.com/)) now supports multiple pr
 
 ## Uses page
 
-Lastly, there's now an [[Public/uses/index|updated `/uses` page]] on my website that lists all the hardware and software that power my workflow in the daily work and play. I have since then made improvements to my software setup with Raycast and BetterTouchTool with the hope of a truly deserving *keyboard warrior* title, which warrants a post of its own.. sooooon™. 
+Lastly, there's now an [[public/uses/index|updated `/uses` page]] on my website that lists all the hardware and software that power my workflow in the daily work and play. I have since then made improvements to my software setup with Raycast and BetterTouchTool with the hope of a truly deserving *keyboard warrior* title, which warrants a post of its own.. sooooon™. 
 
 ---
 As always if you face any issues with the changes, please let me know via comments or email. 

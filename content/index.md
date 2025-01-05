@@ -1,7 +1,7 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2025-01-05 20:56
+last edited: 2025-01-05 21:06
 ---
 ## Intro
 
