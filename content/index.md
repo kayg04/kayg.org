@@ -11,7 +11,7 @@ I am [an infrastructure slash devops guy](https://cloud.kayg.org/s/dpGZmKzsGNNMd
 
 This little space is also my second brain. Instead of relying on formal blog posts, I have decided to try putting out notes from my [zettelkasten](https://freedium.cfd/https://sacredkarailee.medium.com/understanding-zettelkasten-notes-d7eb3fae0c45) as updates. 
 
-You might be interested in [[services|using the services that I host]], [[uses|my workspace]], [my notes](https://kayg.org/Permanent-Notes/) and [my wordpress archive](https://kayg.org/Archive/Wordpress). If you notice any incorrect information or issues with the website, [[Comments!|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
+You might be interested in [[services|using the services that I host]], [[uses-2024-04|my workspace]], [my notes](https://kayg.org/Permanent-Notes/) and [my wordpress archive](https://kayg.org/Archive/Wordpress). If you notice any incorrect information or issues with the website, [[comments|feel free to leave a comment]] or [notify me privately over an email](mailto:mail@kayg.org).
 
 ## Other Platforms
 
