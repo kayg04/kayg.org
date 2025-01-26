@@ -8,12 +8,12 @@ tags:
   - networking/mtu
   - networking
   - proxmox/sdn
-last edited: 2025-01-26 22:40
+last edited: 2025-01-26 22:48
 date: 2025-01-26 22:07
 ---
 ## The Problem
 
-I use [[epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network which means the default MTU is 1450[^1].
+I use [[epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn)[^1].
 
 ![[proxmox-sdn-evpn-zone.png]]
 
@@ -171,10 +171,6 @@ And will be able to talk to any website without issues:
 * TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
 * TLSv1.3 (OUT), TLS handshake, Finished (20):
 ```
-
-
-[^1]: https://storage01:8006/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn
-
 
 
 
