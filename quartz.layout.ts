@@ -37,6 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
         showTags: false, // whether to show tags in the graph
       },
       globalGraph: {
+        enableRadial: true,
         showTags: false, // whether to show tags in the graph
       },
     }),
