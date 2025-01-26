@@ -8,12 +8,12 @@ tags:
   - networking/mtu
   - networking
   - proxmox/sdn
-last edited: 2025-01-26 22:48
+last edited: 2025-01-26 22:57
 date: 2025-01-26 22:07
 ---
 ## The Problem
 
-I use [[epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn)[^1].
+I use [[epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn).
 
 ![[proxmox-sdn-evpn-zone.png]]
 
