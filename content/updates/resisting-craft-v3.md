@@ -48,7 +48,7 @@ Tasks are best left to a dedicated task manager like TickTick, Things 3 or Remin
 
 I love that Craft differentiates between when I’m going to do the task (schedule) and when it needs to be done (deadline). But I find it odd that reminders aren’t automatically added when a task is scheduled. In fact, reminders don’t even work correctly when offline.
 
-![[craft-tasks-reminders.mp4]]
+![[public/updates/Resisting Craft V3/craft-tasks-reminders.mp4]]
 ### Notes are just okay
 
 Note-taking in Craft supports the same level of back-linking as Notion does, which is to say that it’s on a surface level. There are no unlinked mentions, no ability to customise the display text of a link, and obviously no way to extend anything. 

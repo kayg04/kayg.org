@@ -87,7 +87,7 @@ However, since all my calendars start with emojis, `/calendar` doesn't work at a
 Fantastical, however, delivers every-time. You don't need to specify `to` or `-` between time ranges, the `/calendar` syntax matches the calendar perfectly. 
 
 
-![[fantastical-add-event-nlp.mp4]]
+![[public/updates/BusyCal vs Fantastical/fantastical-add-event-nlp.mp4]]
 
 Fantastical is the winner here.
 
