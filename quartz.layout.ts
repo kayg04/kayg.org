@@ -5,7 +5,12 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+    Component.RecentNotes({
+      title: "Recently Updated",
+      limit: 5,
+    }),
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -24,31 +29,29 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-    Component.MobileOnly(Component.TableOfContents()),
   ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
-    Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer({ title: "Finder" })),
-    Component.DesktopOnly(Component.TableOfContents())
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    }),
+    Component.Explorer(),
   ],
   right: [
     Component.Graph({
       localGraph: {
         showTags: false, // whether to show tags in the graph
       },
-      globalGraph: {
-        enableRadial: true,
-        showTags: false, // whether to show tags in the graph
-      },
     }),
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
-     Component.RecentNotes({
-      title: "Recent Entries",
-      limit: 4,
-    }),
   ],
 }
 
