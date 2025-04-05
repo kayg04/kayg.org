@@ -9,6 +9,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.RecentNotes({
       title: "Recently Updated",
       limit: 5,
+      showTags: false,
     }),
   ],
   footer: Component.Footer({
