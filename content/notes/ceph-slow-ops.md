@@ -115,7 +115,7 @@ The `SLOW_OPS` warning appears in Ceph health status when operations are taking 
 
 ## Related Concepts
 
-- [[osd-op-subop-latency|Ceph Operation Latency]]
+- [[./osd-op-subop-latency|Ceph Operation Latency]]
 
 [^1]: [Ceph Health Checks - Slow OPS](https://docs.ceph.com/en/latest/rados/operations/health-checks/?highlight=dump_historic_ops#slow-ops)
 [^2]: [Ceph Troubleshooting Slow OSD Operations](https://docs.ceph.com/en/reef/rados/troubleshooting/troubleshooting-osd/#debugging-slow-requests)

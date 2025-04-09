@@ -11,9 +11,9 @@ tags:
   - talk/cfp
 title: FOSS United Talk - Migrating VMs between Proxmox Nodes backed by ZFS Native Encryption
 ---
-- Derived from [[migrating-vms-encrypted-proxmox]]
+- Derived from [[./migrating-vms-encrypted-proxmox]]
 - Submitted to [FOSSUnited May 2024 Meetup](https://fossunited.org/events/delhi_may_2024/cfp/vs7goo211l)
-	- Rejected because I had [[ilug-d-talk-ceph-rgw-multi-site|another talk for the same meetup]].
+	- Rejected because I had [[./ilug-d-talk-ceph-rgw-multi-site|another talk for the same meetup]].
 ## Intro (or the Problem)
 
 Encryption is all the buzz these days. In a hypervisor environment, it is reasonable to have some kind of encryption. Should the hypervisor handle that or should the user? To be more specific, we are talking about server side encryption or SSE or encryption at rest. This encryption at rest can be achieved in the following ways:
@@ -26,7 +26,7 @@ Encryption is all the buzz these days. In a hypervisor environment, it is reason
 
 This talk is about moving VMs (and containers) that are already on such a ZFS native encrypted Proxmox setup to a Proxmox setup that is set up without encryption (one that puts the onus on the user instead). There are a few strategies we can go through here:
 
-- Use the [[proxmox]] Migration / Live Migration
+- Use the [[../notes/proxmox]] Migration / Live Migration
 	- Obviously not possible because of issues highlighted before.
 - [remote-migrate](https://pve.proxmox.com/pve-docs/qm.1.html) (a tool for migrating vms/cts to a remote cluster) could've been it but is blocked by the fact that:
 	- cloud-init drives are not supported

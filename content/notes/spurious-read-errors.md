@@ -9,7 +9,7 @@ title: Ceph Spurious Read Errors
 ---
 ## Overview
 
-Transient read errors in [[ceph]] (also referred to as spurious read errors) are failures that occur briefly and then resolve on subsequent attempts. Ceph retries the read operation up to four times. If all four attempts fail, Ceph concludes that the disk copy is compromised and shifts to a healthy replica.
+Transient read errors in [[./ceph]] (also referred to as spurious read errors) are failures that occur briefly and then resolve on subsequent attempts. Ceph retries the read operation up to four times. If all four attempts fail, Ceph concludes that the disk copy is compromised and shifts to a healthy replica.
 
 ## Transient vs. Persistent Errors
 

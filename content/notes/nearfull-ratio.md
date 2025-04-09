@@ -11,15 +11,15 @@ title: Nearfull Ratio
 ---
 ## ❓ What? 
 
-`mon_osd_nearfull_ratio` is the maximum / threshold percentage of disk space used before an OSD is considered as a [[nearfull-osd]]. When utilisation crosses [[nearfull-ratio]], it can reach [[backfillfull-ratio]] and [[full-ratio]]. The default value is 0.85 or 85% of the total available space / capacity.
+`mon_osd_nearfull_ratio` is the maximum / threshold percentage of disk space used before an OSD is considered as a [[./nearfull-osd]]. When utilisation crosses [[./nearfull-ratio]], it can reach [[./backfillfull-ratio]] and [[./full-ratio]]. The default value is 0.85 or 85% of the total available space / capacity.
 
 ## ❔ Why?
 
-The ratio is set as a way to alert and prevent OSDs/disks from reaching [[backfillfull-ratio]] and [[full-ratio]]. 
+The ratio is set as a way to alert and prevent OSDs/disks from reaching [[./backfillfull-ratio]] and [[./full-ratio]]. 
 
-On croit / IBM / SUSE, once [[nearfull-ratio]] is reached, pools in the cluster are marked read-only until the [[nearfull-ratio]] is increased or more storage space is added or the cluster is balanced in a way that no OSD reaches [[nearfull-ratio]]. 
+On croit / IBM / SUSE, once [[./nearfull-ratio]] is reached, pools in the cluster are marked read-only until the [[./nearfull-ratio]] is increased or more storage space is added or the cluster is balanced in a way that no OSD reaches [[./nearfull-ratio]]. 
 
-On ceph, pools are read-only when [[full-ratio]] is reached.
+On ceph, pools are read-only when [[./full-ratio]] is reached.
 
 ## 🎤 How?
 
@@ -39,7 +39,7 @@ ceph osd set-nearfull-ratio 0.85
 
 On croit, one can do this by adjusting the sliders at Maintenance → Full Ratios (at the bottom):
  
-![[backfillfull-ratio.png]]
+![[./backfillfull-ratio/backfillfull-ratio.png]]
 ## 👓 References
 
 https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity

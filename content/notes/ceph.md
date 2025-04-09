@@ -10,12 +10,12 @@ These are all the notes that talk about ceph.
 
 ## Cluster
 
-- [[querying-ceph-config]]
+- [[./querying-ceph-config]]
 ## OSDs
 
-- [[backfillfull-ratio]]
-- [[difference-osd-reweight-crush-reweight]]
-- [[full-ratio]]
-- [[nearfull-osd]]
-- [[nearfull-ratio]]
-- [[replace-failed-drive-ceph-cluster]]
+- [[./backfillfull-ratio]]
+- [[./difference-osd-reweight-crush-reweight]]
+- [[./full-ratio]]
+- [[./nearfull-osd]]
+- [[./nearfull-ratio]]
+- [[./replace-failed-drive-ceph-cluster]]

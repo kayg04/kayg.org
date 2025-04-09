@@ -12,7 +12,7 @@ title: Difference Between OSD Reweight and CRUSH Reweight
 ---
 ## TLDR
 
-[[ceph]] has two ways of changing an OSD's weight.
+[[./ceph]] has two ways of changing an OSD's weight.
 
 | ceph osd reweight | ceph osd crush reweight |
 | ---- | ---- |
@@ -65,7 +65,7 @@ ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP     META     AVAIL
 		ID  CLASS  WEIGHT   REWEIGHT  SIZE     RAW USE  DATA     OMAP    META     AVAIL    %USE   VAR   PGS  STATUS  TYPE NAME
 			18    hdd  0.03119   1.00000      0 B      0 B      0 B     0 B      0 B      0 B      0     0    4      up          osd.18
 	  ```
-- It forces CRUSH to move (`1 - reweight`) times the data that would have otherwise lived on this drive. However it does not change the weight of the host and therefore only causes data movement within the host, not across the crush map. This might cause a [[nearfull-osd]] situation as more data is allocated to a single OSD.
+- It forces CRUSH to move (`1 - reweight`) times the data that would have otherwise lived on this drive. However it does not change the weight of the host and therefore only causes data movement within the host, not across the crush map. This might cause a [[./nearfull-osd]] situation as more data is allocated to a single OSD.
 - When a custom reweight is set (eg: 0.5), it persists through an osd being marked out and marked in. We can confirm this with a tiny experiment as well.
 	- Set a custom weight on the OSD: 0.5
 	  ```bash

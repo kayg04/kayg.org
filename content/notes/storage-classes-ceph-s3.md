@@ -11,7 +11,7 @@ title: Storage Classes in Ceph S3
 ---
 ## ❓ What?
 
-Storage classes in [[ceph]] correspond to a certain [[data pool]]. They are a subsection of [[placement-rules-ceph-s3]] that link them to [[data pool]]s. A [[storage-classes-ceph-s3|storage class]] is unique to a [[placement-rules-ceph-s3|placement rule]] but [[placement-rules-ceph-s3|placement rules]] can have many [[storage-classes-ceph-s3|storage classes]]. Every [[placement-rules-ceph-s3|placement rule]] has a [[storage-classes-ceph-s3|storage class]] called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [[placement-rules-ceph-s3|placement rules]].
+Storage classes in [[./ceph]] correspond to a certain [[data pool]]. They are a subsection of [[./placement-rules-ceph-s3]] that link them to [[data pool]]s. A [[./storage-classes-ceph-s3|storage class]] is unique to a [[./placement-rules-ceph-s3|placement rule]] but [[./placement-rules-ceph-s3|placement rules]] can have many [[./storage-classes-ceph-s3|storage classes]]. Every [[./placement-rules-ceph-s3|placement rule]] has a [[./storage-classes-ceph-s3|storage class]] called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [[./placement-rules-ceph-s3|placement rules]].
 ### Changing Default Storage Class for a User
 
 **The default storage class for a placement rule (and therefore a bucket) cannot be modified.** If it's desired that a certain user's uploads, by default, goto a different storage class, this can be done by modifying the `default_storage_class` key for the specific user with `radosgw-admin` .
@@ -101,7 +101,7 @@ $ radosgw-admin user modify \
 }
 ```
 
-Otherwise, a storage class can also be specified during the time of the upload like in [[placement-rules-ceph-s3#Bucket Creation with Non-Default Placement Rule with AWS CLI|the placement rule example]].
+Otherwise, a storage class can also be specified during the time of the upload like in [[./placement-rules-ceph-s3#Bucket Creation with Non-Default Placement Rule with AWS CLI|the placement rule example]].
 
 ## ❔ Why?
 
@@ -112,7 +112,7 @@ Storage classes help users and administrators to prioritise space and costs by h
   
 A storage class can be created like so:
 
-![[storage-class-in-ceph-s3-1.png]]
+![[./storage-classes-ceph-s3/storage-class-in-ceph-s3-1.png]]
 Same over the command line:
 
 ```bash

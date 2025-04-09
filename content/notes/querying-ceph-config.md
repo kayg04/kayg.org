@@ -8,7 +8,7 @@ date: 2024-02-06 14:53
 last edited: 2025-01-11 11:42
 title: Querying Ceph Configuration
 ---
-[[ceph]]'s configuration can be queried in quite a few ways:
+[[./ceph]]'s configuration can be queried in quite a few ways:
 ### Runtime
 
 These commands fetch configuration as reported by the running daemons.

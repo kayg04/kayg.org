@@ -10,9 +10,9 @@ On MacOS, Fantastical and BusyCal are both excellent choices, with very few thin
 On iOS, Fantastical wins because it looks prettier by a long shot, supports reminders and has 1:1 feature parity with MacOS.
 ## Preface
 
-Much like every other productivity bro, I am drawn to shiny new things. Especially shiny new things that portend to solve a real problem I have. Since I [[time-flies-by|recently got into calendaring]], I figured it was wise of me to simultaneously use multiple tools in my arsenal that attempt to tackle the same problem. In my case, they are Apple Calendar, BusyCal, Fantastical. Since Apple Calendar's NLP doesn't even let me omit the `:` when specifying time and Siri being completely atrocious while I want to schedule an event, I figured it wasn't worthy of this battle.
+Much like every other productivity bro, I am drawn to shiny new things. Especially shiny new things that portend to solve a real problem I have. Since I [[./time-flies-by|recently got into calendaring]], I figured it was wise of me to simultaneously use multiple tools in my arsenal that attempt to tackle the same problem. In my case, they are Apple Calendar, BusyCal, Fantastical. Since Apple Calendar's NLP doesn't even let me omit the `:` when specifying time and Siri being completely atrocious while I want to schedule an event, I figured it wasn't worthy of this battle.
 
-So I looked to the internet. I have heard of Fantastical since before I got my iPhone this september. I know [Stephen Robles raves about it](https://www.youtube.com/watch?v=XC2lsDCa_04&pp=ygUac3RlcGhlbiByb2JsZXMgZmFudGFzdGljYWw%3D), it's [Ali Abdaal's favourite calendar](https://youtu.be/6o2tm00Ar8A), MKBHD's heard of it, Reddit is seriously upset that they increased prices sometime last year, even [MPU folks want to jump ship](https://www.youtube.com/watch?v=XC2lsDCa_04&pp=ygUac3RlcGhlbiByb2JsZXMgZmFudGFzdGljYWw%3D). This doesn't mean it's not good, just expensive. I don't mind paying a premium for extra niceness in things that solve a real problem. But that's just me, and you don't have to agree, and that's really the beauty of calendars. [[time-flies-by#^44a512|No app can lock you in]]. 
+So I looked to the internet. I have heard of Fantastical since before I got my iPhone this september. I know [Stephen Robles raves about it](https://www.youtube.com/watch?v=XC2lsDCa_04&pp=ygUac3RlcGhlbiByb2JsZXMgZmFudGFzdGljYWw%3D), it's [Ali Abdaal's favourite calendar](https://youtu.be/6o2tm00Ar8A), MKBHD's heard of it, Reddit is seriously upset that they increased prices sometime last year, even [MPU folks want to jump ship](https://www.youtube.com/watch?v=XC2lsDCa_04&pp=ygUac3RlcGhlbiByb2JsZXMgZmFudGFzdGljYWw%3D). This doesn't mean it's not good, just expensive. I don't mind paying a premium for extra niceness in things that solve a real problem. But that's just me, and you don't have to agree, and that's really the beauty of calendars. [[./time-flies-by#^44a512|No app can lock you in]]. 
 
 And as far as the horizon goes, the next serious player in the calendar space is BusyCal (which is included in my setapp subscription!). So I thought it's quite fair to compare them both, on iOS and MacOS.
 
@@ -36,15 +36,15 @@ When you play around both apps on MacOS, Fantastical has seriously, I mean *seri
 
 BusyCal is no joke though but it doesn't quite have the same polish as Fantastical does. I really love that the calendars are displayed on the left sidebar, like in the stock calendar app. I love how toggle buttons show up next to the specific accounts.
 
-![[busycal-account-sidebar-pill.gif]]
+![[./busycal-vs-fantastical/busycal-account-sidebar-pill.gif]]
 
 I love the sliding pills when navigating between views.
 
-![[busycal-navigating-between-views.gif]]
+![[./busycal-vs-fantastical/busycal-navigating-between-views.gif]]
 
 But... Fantastical is just built different. Fantastical makes way better use of colours. Like in this month view heatmap, it's way easier to tell busy-ness on Fantastical than BusyCal. When you add an event, the paparazzi around it is just extra nice. 
 
-![[fantastical-add-event.gif]]
+![[./busycal-vs-fantastical/fantastical-add-event.gif]]
 
 Also it's quite unfair to say but BusyCal looks... very busy in the daily and weekly views and it doesn't quite respond to you resizing the window. And there aren't any toggles to make it appear different. While Fantastical is very responsive to both navigating between views and resizing the window. 
 
@@ -54,18 +54,18 @@ I recently bought BusyCal on iOS to test drive it but I am quite disappointed to
 
 However, conversely on iOS, the day view on BusyCal allows you to zoom in and zoom out to a very flexible degree.
 
-![[busycal-ios-density-day-view.mp4]]
+![[./busycal-vs-fantastical/busycal-ios-density-day-view.mp4]]
 ## Customisability
 
 ### MacOS
 
 This is not a competition, I would say this straight up: BusyCal wins because of how much it allows me to do. Want an event to directly start after the end of next? The context menu has you covered. Want to copy the app URI and link it in your obsidian task page? The context menu got you covered. I mean, really, BusyCal is no joke when it comes to turning knobs. Want to get a summary of how you spent your time? The context menu has tags.
 
-![[busycal-context-menu.png]]
+![[./busycal-vs-fantastical/busycal-context-menu.png]]
 
 While Fantastical is so-so:
 
-![[fantastical-context-menu.png]]
+![[./busycal-vs-fantastical/fantastical-context-menu.png]]
 
 ### iOS 
 
@@ -82,12 +82,12 @@ Both BusyCal and Fantastical have most bases covered. Both of them expect a simi
 In my experience, it's very important that you mention `[Day]` before `[Time Range]`, otherwise neither BusyCal nor Fantastical would schedule your event perfectly.
 
 However, since all my calendars start with emojis, `/calendar` doesn't work at all in BusyCal. It doesn't include the word `/calendar` in the event but puts it in the wrong one. 
-![[busycal-add-event-nlp.mp4]]
+![[./busycal-vs-fantastical/busycal-add-event-nlp.mp4]]
 
 Fantastical, however, delivers every-time. You don't need to specify `to` or `-` between time ranges, the `/calendar` syntax matches the calendar perfectly. 
 
 
-![[public/updates/BusyCal vs Fantastical/fantastical-add-event-nlp.mp4]]
+![[./BusyCal vs Fantastical/fantastical-add-event-nlp.mp4]]
 
 Fantastical is the winner here.
 

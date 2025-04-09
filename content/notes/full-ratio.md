@@ -11,7 +11,7 @@ title: Full Ratio
 ---
 ## ❓ What?
   
-The maximum / threshold percentage of disk space usage before an OSD is considered `full`. This happens after usage has crossed and [[nearfull-ratio]]. The default value is 0.95 or 95% of the total available space / capacity.
+The maximum / threshold percentage of disk space usage before an OSD is considered `full`. This happens after usage has crossed and [[./nearfull-ratio]]. The default value is 0.95 or 95% of the total available space / capacity.
 
 ## ❔ Why?
 
@@ -20,7 +20,7 @@ When a ceph cluster approaches full ratio, it sacrifices high availability: the 
 
 ## 🎤 How?
   
-[[full-ratio]] is set during cluster creation on the OSDMap as follows:
+[[./full-ratio]] is set during cluster creation on the OSDMap as follows:
 
 ```TOML
 [global]
@@ -34,9 +34,9 @@ Afterwards, it can be changed with:
 ceph osd set-full-ratio
 ```
 
-In croit, [[full-ratio]] can be changed by visiting Maintenance → Full Ratios (at the bottom):
+In croit, [[./full-ratio]] can be changed by visiting Maintenance → Full Ratios (at the bottom):
 
-![[backfillfull-ratio.png]]
+![[./backfillfull-ratio/backfillfull-ratio.png]]
 ## 👓 References
 
 https://docs.ceph.com/en/quincy/rados/configuration/mon-config-ref/#storage-capacity

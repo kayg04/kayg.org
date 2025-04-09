@@ -23,7 +23,7 @@ Therefore, to restrict myself, and to make writing easier, I decided, "why not m
 
 I still haven't! However, these are the indicators of progress made until now.
 
-- [[changing-wordpress-url]]
-- [[comments]]
+- [[./changing-wordpress-url]]
+- [[../updates/comments]]
 
 Things yet to be done are being tracked in my personal task manager, TickTick, as Obsidian task reminders are so so. Once finished, they will appear as a note on this page. 

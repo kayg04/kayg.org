@@ -11,7 +11,7 @@ date: 2024-06-02 21:40
 last edited: 2025-01-05 20:21
 title: Virtual Router in Proxmox with the Skullsaints Onyx
 ---
-ANOTHER EDIT: Apparently the [[virtual-router-proxmox-skullsaints-onyx#Proxmox VM Hookscripts|hookscript section]] is what causes me the most headache and is not needed. Since the tap interface is bridged with `vmbr0`, it should not be configured to get an IP. The correct way to do it is to configure an IP and gateway on the bridge `vmbr0` itself like so:
+ANOTHER EDIT: Apparently the [[#Proxmox VM Hookscripts|hookscript section]] is what causes me the most headache and is not needed. Since the tap interface is bridged with `vmbr0`, it should not be configured to get an IP. The correct way to do it is to configure an IP and gateway on the bridge `vmbr0` itself like so:
 
 ```conf
 auto vmbr0
@@ -24,7 +24,7 @@ iface vmbr0 inet static
 	hwaddress 06:61:cf:2c:2a:b4
 ```
 
-EDIT: Apparently it's possible to [[rid-fwbr-interfaces-proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used, so I am updating the post with the fw* interfaces removed. 
+EDIT: Apparently it's possible to [[../notes/rid-fwbr-interfaces-proxmox|get rid of the fw* interfaces]] when the proxmox firewall is not used, so I am updating the post with the fw* interfaces removed. 
 
 ## Preface
 
@@ -43,24 +43,24 @@ Alright, having said all of that - "what about latency, Gopal?" you might ask, "
 
 So I have been eyeing some miniPCs for a while now, router style - multiple ethernet ports, 2.5 gig, at least one usb 3.0 and all that jazz. Aliexpress is definitely cheaper but I didn't want to wait very long and nor did I want to deal with the notorious custom officers. So I got the [Skullsaints Onyx](https://www.electroniksindia.com/products/skullsaints-onyx-intel-11th-gen-n5105-fanless-mini-industrial-pc-with-4x-2-5g-intel-i226-i225-lan-ddr4-nvme-soft-router-firewall-hdmi2-0-13-ports) instead. Here are a few pictures that make the port selection self-obvious:
 
-![[onyx-front.jpg]]
-![[onyx-back.jpg]]
-![[onyx-vertical.jpg]]
+![[./virtual-router-proxmox-skullsaints-onyx/onyx-front.jpg]]
+![[./virtual-router-proxmox-skullsaints-onyx/onyx-back.jpg]]
+![[./virtual-router-proxmox-skullsaints-onyx/onyx-vertical.jpg]]
 
 I love the all black too but what I don't love is that Skullsaints may have lied to me about this having 2x RAM slots. As you'll see in the below pictures, there's only one RAM slot available. I have already raised my issue with them and I'll update the post when I have a response.
 
-![[onyx-insides.jpg]]
-![[onyx-ram.jpg]]
+![[./virtual-router-proxmox-skullsaints-onyx/onyx-insides.jpg]]
+![[./virtual-router-proxmox-skullsaints-onyx/onyx-ram.jpg]]
 
 
 
 ## The Goal
 
-I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [[public/uses/index#Hardware|I connect my Mac to ethernet via a dock]].
+I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [[../uses/index#Hardware|I connect my Mac to ethernet via a dock]].
 
 The MiniPC is to partly replace it, the LAN bit, maybe WiFi too in the future but no definite plans yet. Here's a visual (drawn with my new iPad which I am yet to make a post about) first:
 
-![[virtual-router-goal.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-goal.png]]
 
 These are the components in the picture:
 - My ISP's unit is my gateway to the internet. ACT's unit is the single uplink which provides my router with a static IP via PPPoE. 
@@ -73,7 +73,7 @@ These are the components in the picture:
 
 I live with my girlfriend. If the internet breaks, there's reasonable havoc. If the internet breaks and is down, it's the calm before the storm. Joking aside, she's very supportive of my testing. I break shit often and she is very understanding. Still, I like my services to be reliable and I like to minimise downtime. So for now, to make sure everything will work when I finally switch routers, here's a visual that I tested:
 
-![[virtual-router-poc.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-poc.png]]
 
 Basically, my existing router stays and handles the uplink. It assigns, via DHCP, random addresses to everything - OpenWRT VM (fixed static lease), Proxmox (bridged to be on the same subnet by OpenWRT VM) and other physical devices such as my phone, ipad and my mac.
 
@@ -91,7 +91,7 @@ Steps: Create a new generic VM, download and extract the generic ext4 tarball, r
 
 I didn't want any NICs on the Proxmox host as I want the OpenWRT VM as my only (virtual) networking machine. Passing through the NICs is straightforward. On the VM, Add PCI Device, choose each NIC with All Functions with PCI Express toggle checked.
 
-![[virtual-router-nic-passthrough.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-nic-passthrough.png]]
 
 ### Bridge Configuration on Proxmox
 
@@ -138,14 +138,14 @@ OpenWRT does not know which ones are the real NICs and which one is virtual. In 
 
 The important bit here is to make sure `br-lan` has the MAC Address of our uplink (`eth1`), not the virtual bridge (`eth0`). This is because our external gateway (Mercusys MR90X) would assign a fixed lease (static private IP) for our virtual OpenWRT based on its MAC Address.  
   
-![[virtual-router-openwrt-configuration.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-configuration.png]]
 
 Once that's done, set the interface `br-lan` to be a DHCP client, so it asks for an IP assignment from our external gateway.
 
-![[virtual-router-openwrt-br-lan-dhcp.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-br-lan-dhcp.png]]
 
 Here's an overview of what everything looks like so far:
-![[virtual-router-openwrt-interfaces-overview.png]]
+![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-interfaces-overview.png]]
 
 
 Let's confirm internet connectivity for our PoC Router:

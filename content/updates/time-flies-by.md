@@ -18,7 +18,7 @@ This is a two-fold, layered problem:
 
 These problems are universal and to some extent, solvable, can be worked-around, delayed. Even as I write this piece, this is what my screen looks like: 
 
-![[full-screen-distractions.png]]
+![[./time-flies-by/full-screen-distractions.png]]
 
 I have a few ideas on how to work-around distractions that may or may not work for you, the reader:
 
@@ -33,7 +33,7 @@ Examples are their own explanation. In the screenshot above, the simplest workar
 
 However, a nicer solution is to leverage your own arsenal of tools to tackle the problem - in my case, that is using [Raycast Auto-Quit](https://www.raycast.com/changelog/1-79-0), which quits the apps automatically after a certain period of time (configurable). If the app is playing music like Apple Music is, it will just close the window instead.
 
-![[raycast-auto-quit.png]]
+![[./time-flies-by/raycast-auto-quit.png]]
 ### Take Smaller Steps
 
 Let changes sink in, enough for them to give you a feeling that you are utilising your time better than you were. Then make the next change.
@@ -66,7 +66,7 @@ So I decided to do the next best thing instead.
 
 Instead of planning ahead, I decided to add whatever it is I *have done* as an event in the calendar. This is adding an event *after the fact*. So my past three days look like this:
 
-![[apple-calendar-time-tracking.png]]
+![[./time-flies-by/apple-calendar-time-tracking.png]]
 
 Tracking in this way has the following advantages:
 

@@ -31,15 +31,15 @@ and if it's a web service then the page might appear to be loading or get stuck 
 
   This is a cause of MTU mismatch. With Proxmox LXCs, the veths already take on the value of the Proxmox network bridge. The veth configuration looks like this:
 
-![[proxmox-lxc-veth-mtu.png]]
+![[./bridge-mtu-proxmox/proxmox-lxc-veth-mtu.png]]
 
 But with VMs, that is not the case. A value of `1` needs to be entered manually.
 
-![[proxmox-vm-nic-mtu.png]]
+![[./bridge-mtu-proxmox/proxmox-vm-nic-mtu.png]]
 
 ## 🎤 When is it a problem?
 
-One of the problems can be [[epvn-vxlan-proxmox-sdn]] where the [bridge MTU size is 1450](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pvesdn_zone_plugin_evpn) while all VM NICs have a default of 1500 MTU. Of course one might never notice it if they rely on a VPN like tailscale for all inter-vm communication like I do but if there's a time where VMs have to be reached via the EVPN network then MTU mismatch is definitely a showstopper.
+One of the problems can be [[./epvn-vxlan-proxmox-sdn]] where the [bridge MTU size is 1450](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pvesdn_zone_plugin_evpn) while all VM NICs have a default of 1500 MTU. Of course one might never notice it if they rely on a VPN like tailscale for all inter-vm communication like I do but if there's a time where VMs have to be reached via the EVPN network then MTU mismatch is definitely a showstopper.
 
 ## 👓 References
 

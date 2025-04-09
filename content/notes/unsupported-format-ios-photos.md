@@ -23,7 +23,7 @@ https://support.apple.com/en-gb/108782
 
 Some apps like [Localsend](https://github.com/localsend/localsend) have an option in Settings that goes like, "Save Media to Gallery," which, for convenience reasons, tries to save media to the Photos app where most people are likely to look. However, this does mean that you can't easily drop your remuxes or whatever media you have on-hand to your iphone and expect the transfer to succeed. Worse, the error surprises you only at the end of the file transfer.  
 
-![[localsend-h264-fail.png]]
+![[./unsupported-format-ios-photos/localsend-h264-fail.png]]
 
 ## 🎤 How?
 
@@ -33,7 +33,7 @@ But what if you want the media in Photos? The only answer to that is you cannot.
 
 What if I want to upload some H264 encoded media that's not supported by Photos? I cannot, and that kinda sucks on a premium phone. Hey, but I can always share from Files, right? Nope.
 
-![[instagram-share-from-files.jpg]]
+![[./unsupported-format-ios-photos/instagram-share-from-files.jpg]]
 
 So what are my options if I want to upload unsupported media from Files to apps like Instagram?
 
@@ -48,7 +48,7 @@ What are my options to share unsupported media to an iOS device?
 
 Okay but do you know that you can drag and drop things from Files to Photos? Yup, but it does not make unsupported file types magically work.
 
-![[photos-some-items-not-slupported.jpg]]
+![[./unsupported-format-ios-photos/photos-some-items-not-slupported.jpg]]
 
 If you have other leads, please let me know.
 

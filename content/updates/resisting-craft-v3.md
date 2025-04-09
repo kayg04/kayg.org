@@ -12,7 +12,7 @@ In a time when everybody on X is hyping up the newest release of [Craft Docs](ht
 
 Craft is a mostly Apple-only product, with Windows and Web as relatively recent releases to perhaps cater to more adaption, that has eight coatings of visual polish for every knob that does something functional. Seriously, even though the general app quality on Apple devices is exceptional, Craft stands on top of that list, on a pedestal that goes as high as attention to detail can; Craft is beautiful to look at, and it’s a pleasure to play around. With the newly added calendar and tasks section, one of my favourite features is being able to add an “Event Note.” Something I am really, really sore about, in Obsidian.
 
-![[craft-event-notes.mp4]]
+![[./resisting-craft-v3/craft-event-notes.mp4]]
 
 It’s got *offline mode*! In fact, while I write this article on a flight, Craft is almost fully functional, and all my data is available on my iPhone.
 
@@ -30,7 +30,7 @@ Even with all of Craft’s qualities (that I’m immensely swayed by) and its re
 
 ### I Live In My Calendar
 
-The calendar is my journal, the calendar is my day planner, the calendar is my task manager; it’s my gospel. Did I mention **[[time-flies-by|calendars are great]]**?
+The calendar is my journal, the calendar is my day planner, the calendar is my task manager; it’s my gospel. Did I mention **[[./time-flies-by|calendars are great]]**?
 
 As somebody who’s gotten so used to logging in my calendar, the quick add / quick entry natural language is second nature to me now. “Oh, did I just spend the last 30 minutes scrolling on X? Let me log that,” “Oh, was that an hour of SwiftUI? let me log that too.” It doesn’t matter what I’ve been doing; it’s very essential that it exists on my calendar, not only for accountability but also for my doubting self next week, month or even year (if I make it!). 
 
@@ -48,14 +48,14 @@ Tasks are best left to a dedicated task manager like TickTick, Things 3 or Remin
 
 I love that Craft differentiates between when I’m going to do the task (schedule) and when it needs to be done (deadline). But I find it odd that reminders aren’t automatically added when a task is scheduled. In fact, reminders don’t even work correctly when offline.
 
-![[public/updates/Resisting Craft V3/craft-tasks-reminders.mp4]]
+![[./Resisting Craft V3/craft-tasks-reminders.mp4]]
 ### Notes are just okay
 
 Note-taking in Craft supports the same level of back-linking as Notion does, which is to say that it’s on a surface level. There are no unlinked mentions, no ability to customise the display text of a link, and obviously no way to extend anything. 
 
 The daily journal/calendar pages are a neat addition, but without a proper high-level visual of daily notes talking to other pages, information is isolated, available only through search, and most likely lost.
 
-![[craft-notes-backlinks.mp4]]
+![[./resisting-craft-v3/craft-notes-backlinks.mp4]]
 
 ### Importing works only for text
 
@@ -69,10 +69,10 @@ Craft’s data still lives on its servers. Leaving any privacy concerns out the 
 
 - Searching only partially works.
 
-![[craft-offline-searching.mp4]]
+![[./resisting-craft-v3/craft-offline-searching.mp4]]
 - Craft has no transparency on what is and isn’t synced
 
-![[craft-offline-sync.mp4]]
+![[./resisting-craft-v3/craft-offline-sync.mp4]]
 - Calendar events do not sync to craft when offline even though calendar events themselves work entirely offline. 
   
   There is no easy way to show this, but you can try it yourself. Add an event while online and see it appear in Craft. Turn on flight mode, add another event and refresh Craft. The new calendar event does not show up in Craft.

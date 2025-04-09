@@ -8,7 +8,7 @@ The often pondering Bill and his transitions of insecurity caught my eye; the ca
 
 > [“In a compelling story of this genre we are continually being asked to rethink our assessment of the relationship between the various characters, and I decided to structure my story in such a way as to emphasize the audience’s incomplete understanding of each new scene as it is first presented.](https://www.youtube.com/watch?v=jUpA7Qma_9E)”
 
-![](following-review-2.png)
+![](<./images/following-review-2.png>)
 
 Nolan’s use of non-linear devices isn’t a shocking revelation. The utility does not feel as groundbreaking as it should because an average film viewer is introduced to the filmmaker first by his grand-scale reckonings, of which every one has ended up in the [_IMDb top 250_,](http://prntscr.com/gzfws0) a scale who’s credibility has long faded.
 

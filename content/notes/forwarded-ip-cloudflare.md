@@ -12,7 +12,7 @@ title: Getting Forwarded IPs Right with Cloudflare
 
   When the orange cloud is ticked on Cloudflare DNS records, every request is proxied by Cloudflare. 
 
-![[cloudflare-proxy.png]]
+![[./forwarded-ip-cloudflare/cloudflare-proxy.png]]
 
 This is great because I get great peering no matter where in the world I am. This is great because the backend cannot see the client's real IP.
 
@@ -59,7 +59,7 @@ Once the image is built, all that needs to be done is adding a new line that say
     [...]
 ```
 
-And once Caddy is restarted, our `X-Forwarded-For` should have IPs in [[x-forwarded-for|the format we expect]]. 
+And once Caddy is restarted, our `X-Forwarded-For` should have IPs in [[./x-forwarded-for|the format we expect]]. 
 
 ### Stop Clients from spoofing X-Forwarded-For
 
@@ -76,7 +76,7 @@ To prevent (2), we can tell Cloudflare to remove the header altogether.
 
 To do this, simply create a Transform Rule under Rules → Transform Rules → Modify Request Header. Apply the rule to all incoming requests and set the action to *Remove* and enter `X-Forwarded-For` as the value.
 
-![[cloudflare-transform-rule.png]]
+![[./forwarded-ip-cloudflare/cloudflare-transform-rule.png]]
 And that's it. We just made sure that our applications see the correct client IP and the client cannot spoof it. 
 
 ## 👓 References

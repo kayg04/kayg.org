@@ -5,9 +5,9 @@ last edited: 2025-01-05 19:22
 ---
 ## Index Notes
 
-This is a section of my Zettelkasten that is dedicated to grouping information ([[permanent-notes|Permanent Notes]]) together and classifying / categorising them into their subsections if possible. These notes will be a superset and/or contain a map of content for a given topic / project / idea.
+This is a section of my Zettelkasten that is dedicated to grouping information ([[./permanent-notes|Permanent Notes]]) together and classifying / categorising them into their subsections if possible. These notes will be a superset and/or contain a map of content for a given topic / project / idea.
 
-Tags for notes of this folder include #project #reference and their subtags. Since some topics could both be a project and a reference (like [[ceph]], which is something I write about in the process of continually learning through work and/or experimentation but it is also for my own reference should I forget), I feel like it's important to define how I view them:
+Tags for notes of this folder include #project #reference and their subtags. Since some topics could both be a project and a reference (like [[./ceph]], which is something I write about in the process of continually learning through work and/or experimentation but it is also for my own reference should I forget), I feel like it's important to define how I view them:
 
 ## Project
 
@@ -27,10 +27,10 @@ Can projects be references and vice versa? Truth be told, I don't know yet. I'll
 
 Reference Notes:
 
-- [[save-up-expenses]]
+- [[./save-up-expenses]]
 
 Projects: 
 
-- [[ceph]]
-- [[move-wordpress-quartz]]
-- [[proxmox]]
+- [[./ceph]]
+- [[./move-wordpress-quartz]]
+- [[./proxmox]]

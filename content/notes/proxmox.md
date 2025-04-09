@@ -12,4 +12,4 @@ These are all the notes that talk about Proxmox.
 
 ## Networking
 
-- [[vlans-proxmox]]
+- [[./vlans-proxmox]]

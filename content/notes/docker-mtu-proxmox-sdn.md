@@ -13,11 +13,11 @@ date: 2025-01-26 22:07
 ---
 ## The Problem
 
-I use [[epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn).
+I use [[./epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn).
 
-![[proxmox-sdn-evpn-zone.png]]
+![[./docker-mtu-proxmox-sdn/proxmox-sdn-evpn-zone.png]]
 
-The VM's network adapters can be [[bridge-mtu-proxmox#❔ Why?|configured quite trivially by setting the MTU value to 1, which just inherits the underlying bridge's MTU]].
+The VM's network adapters can be [[./bridge-mtu-proxmox#❔ Why?|configured quite trivially by setting the MTU value to 1, which just inherits the underlying bridge's MTU]].
 
 The VMs network adapter from the inside looks like so:
 
@@ -75,7 +75,7 @@ root@b40bc9e008e4:/# curl -v https://google.com
 [...]
 ```
 
-This is problematic because now certain websites are inaccessible (see: [[bridge-mtu-proxmox]]) but moreso because it breaks [[comments|comments on my website]] for users of GitHub and Microsoft. And I am a GitHub user! 
+This is problematic because now certain websites are inaccessible (see: [[./bridge-mtu-proxmox]]) but moreso because it breaks [[../updates/comments|comments on my website]] for users of GitHub and Microsoft. And I am a GitHub user! 
 ## The Solution
 
 Change the docker network MTU. The advice that floats around the internet is this:
