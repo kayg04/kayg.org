@@ -9,7 +9,7 @@ tags:
   - networking/bridge
   - networking/mtu
 date: 2024-08-09 17:14
-last edited: 2025-01-05 18:44
+last edited: 2025-04-10 15:57
 title: Bridge MTUs in Proxmox
 ---
 ## ❓ What?
@@ -39,7 +39,7 @@ But with VMs, that is not the case. A value of `1` needs to be entered manually.
 
 ## 🎤 When is it a problem?
 
-One of the problems can be [[./epvn-vxlan-proxmox-sdn]] where the [bridge MTU size is 1450](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pvesdn_zone_plugin_evpn) while all VM NICs have a default of 1500 MTU. Of course one might never notice it if they rely on a VPN like tailscale for all inter-vm communication like I do but if there's a time where VMs have to be reached via the EVPN network then MTU mismatch is definitely a showstopper.
+One of the problems can be [evpn-vxlan-proxmox-sdn](<./evpn-vxlan-proxmox-sdn.md>) where the [bridge MTU size is 1450](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#pvesdn_zone_plugin_evpn) while all VM NICs have a default of 1500 MTU. Of course one might never notice it if they rely on a VPN like tailscale for all inter-vm communication like I do but if there's a time where VMs have to be reached via the EVPN network then MTU mismatch is definitely a showstopper.
 
 ## 👓 References
 

@@ -1,8 +1,12 @@
 ---
 title: "CosmicByte Firefly: Mechanical Keyboard on a Budget - First Impressions"
-date: 2020-09-24
+date: 2020-09-24 00:00
+last edited: 2025-04-10 15:53
+tags:
+  - medium
+  - wordpress
 ---
-![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-cover.jpg]]
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-cover](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-cover.jpg>)
 ## Background
 
 Having bought my first mechanical keyboard, it felt apt that I get into the unboxing game but when I noticed that the chaotic packaging containing just the keyboard, an unboxing video would have just been me opening the box. More-so that uploading on YouTube would have been an undesirable slap to reality. So when I realized remembered that I have a blog I seldom use, this seemed like the perfect opportunity to make a new post.
@@ -14,8 +18,9 @@ Amazon has some horrible, uninviting pictures of this keyboard on display. When 
 
 Here are some pictures to establish that the keyboard actually does look pretty good.
 
-![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-1.jpg]]
-- ![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-2.jpg]]
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-1](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-1.jpg>)
+
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-2](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-2.jpg>)
 
 At this price point, I feel that any complaints one has regarding quality of the keyboard is them being pedantic. However, having said that, let's get the complaints out of the way so we can focus on the nicer things.
 
@@ -25,7 +30,7 @@ At this price point, I feel that any complaints one has regarding quality of the
 
 Most keys on this keyboard suffer an easy wobble with the exception of the spacebar which has two stabilizers instead of one.
 
-![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-3.jpg]]
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-3](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-3.jpg>)
 
 The wobble is not noticeable on keys that are [1U](https://keycap-ruler.com/) which includes most of the keys but when it comes to Shift, Return or the Backspace keys, which are bigger in size, the wobble becomes noticeable.
 
@@ -33,7 +38,7 @@ The wobble is not noticeable on keys that are [1U](https://keycap-ruler.com/) wh
 
 The keyboard comes with Outemu Blue Switches as the only option which are loud and clicky. This might not be a good choice if you are sensitive to sound or intend to use this in an office-space. The switches are not hot-swappable which makes any future upgrades unlikely.
 
-![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-4.jpg]]
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-4](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-4.jpg>)
 
 Regarding the quality of the switches themselves, I am not the right person to judge as this is my first mechanical keyboard.
 
@@ -45,13 +50,11 @@ The keyboard weighs in at 990 grams and 358 mm long which is not ideal for carry
 
 The branding feels quite unnecessary on an otherwise nice looking keyboard. I have been looking for ways to hide / overwrite / erase the logo in a way that does not void warranty.
 
-The font used is questionable and screams "gamer" even at the quiet, writer types who happen to like some lights. With the exception of the multimedia symbols on the function keys, the font is not clearly visible without being backlit. The difference can be seen in the pictures below.
+The font used is questionable and screams "gamer" even at the quiet, writer types who happen to like some lights. With the exception of the multimedia symbols on the function keys, the font is not clearly visible without being backlit. 
 
-    ![[cosmicbyte-firefly-mechanical-keyboard-on-a-budget-5.jpg]]
-        
 Top down RGB is always going to look bad, come on!
 
-![[./images/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-6.jpg]]
+![cosmicbyte-firefly-mechanical-keyboard-on-a-budget-6](<./cosmicbyte-firefly-mechanical-keyboard-on-a-budget/cosmicbyte-firefly-mechanical-keyboard-on-a-budget-6.jpg>)
 
 ### The Hits
 

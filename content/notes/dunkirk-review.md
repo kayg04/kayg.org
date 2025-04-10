@@ -1,8 +1,13 @@
 ---
 title: Dunkirk (2017), dir. Christopher Nolan
-date: 2017-07-21
+date: 2017-07-21 00:00
+last edited: 2025-04-10 15:41
+tags:
+  - wordpress
+  - medium
 ---
-![[./images/dunkirk-review-cover.jpeg]]
+![dunkirk-review-cover](<./dunkirk-review/dunkirk-review-cover.jpeg>)
+
 No, it neither is the greatest magic trick nor is it Michael Caine’s advice that eschews violence for the day’s liberation. Nolan advances into the beach of sterile hope with honesty, and deviates from his imposition of cheap convention that would normally shatter the religious architecture into cumbersome fragments of blatant exposition. In this meditative survival epic, Nolan bisects the horizon as the security of shelter which every soul yearns for (“_You can practically see it from here_”) and as an uncharted jungle where the lush is the waters and the Germans are the wilder peril referred to as “enemies”. However, you never see the enemies. Betwixt the rapid homecoming of ordnance that recoils on every vessel to home, a survival instinct invades the human singularity and converts kindness into cowardice and affection into self-preservation.
 
 Yet the humanity is not lost, the fumes cloud it and the projectiles diminish its expanse but not every soldier submits to the chivalry of desertion and preservation of the battlefield’s drive. Nolan dresses the reluctance to run away as unity and breaks down the integrals of fear into two — one caters towards the massive artillery and the other thirsts to be the saviour of fellowmen. Here, he insists on the existence of hope when all else exhibits a fallible zero. The comradeship is definitive proof that danger does not drive us to betrayal but it stems from our habit of imparting several warrants to greed, to disguise it as primary survival under smokescreens of adrenaline. Hoytema leads an esoteric stare over the sands, slowly ascending into cockpit views to capture the colossal blues of air that are as breathless as the men in the midst of waters are. The bold storytelling with minimal dialogue is new ground for the director but herein, his triumph shows artistic merit — only because of how he chooses to characterize with a candid lens and decorate sporadic little marches into freedom with humanity.

@@ -8,12 +8,12 @@ tags:
   - networking/mtu
   - networking
   - proxmox/sdn
-last edited: 2025-01-26 22:57
+last edited: 2025-04-10 16:11
 date: 2025-01-26 22:07
 ---
 ## The Problem
 
-I use [[./epvn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn).
+I use [[./evpn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main network [which means the default MTU is 1450](https://pve.proxmox.com/pve-docs/chapter-pvesdn.html#pvesdn_zone_plugin_evpn).
 
 ![[./docker-mtu-proxmox-sdn/proxmox-sdn-evpn-zone.png]]
 
@@ -83,9 +83,9 @@ Change the docker network MTU. The advice that floats around the internet is thi
 1. Create `/etc/docker/daemon.json`
 2. Add:
    ```json
-{
-  "mtu": 1454
-}
+	{
+	  "mtu": 1454
+	}
 	```
 3. `systemctl daemon-reload` and `systemctl restart dcoker`
 4. Profit???

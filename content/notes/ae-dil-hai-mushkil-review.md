@@ -1,14 +1,18 @@
 ---
 title: Ae Dil Hai Mushkil (2016), dir. Karan Johar
-date: 2017-08-31
+date: 2017-08-31 00:00
+last edited: 2025-04-10 15:42
+tags:
+  - wordpress
+  - medium
 ---
-![[./images/ae-dil-hai-mushkil-review-cover.png]]
+![ae-dil-hai-mushkil-review-cover](<./ae-dil-hai-mushkil-review/ae-dil-hai-mushkil-review-cover.png>)
 
 Flowers are overrated. Happiness is over-sought. A removed line from Johar’s screenplay reads “\[1\]_Khushi ka kya hai? Gham ke aas paas hi to bhatakti hai_.” Alizeh’s gift to Ayan is a literal bed of thorns, capsizing any tincture of lust or leading attraction in their vessel of hugs, but Ayan, although subconsciously aware of the kinesis, is not ready for the its materiality. Thereby, denial and rebellion ignite the man-child envy. “\[2\]_Tum meri nahi ho sakti toh kiski bhi nahi hosakti_”, says Ayan, wishing fatalities on both Alizeh and her fiancé, hours before their wedding ceremony, looking past the establishment of him being the sole bolster from Alizeh’s side, and that, silence’s precedence over angst may have been better expression.
 
 This is how Karan Johar chooses to introduce layers in his characters; introducing flaws betwixt the ante of an awaited antidote. The spontaneity shines through the leads’ [_**prowess**_](https://imgur.com/a/mGb5B) over their language of expression and then it is dissected in equally magical proportions by their intimate gestures. Note that Ayan is first a charming crybaby who learns of real connection and compatibility, and then takes (/transforms) it for (/to) love — possessive and demanding. Not the other way around, a far more interesting take but Johar hardly cues the Sang-Soo esque, when this is an already tremendous diversion from his comfort zone. When Ayan interrupts Alizeh’s wedding and walks away in rejection — as a viewer, I immediately fell back on his initial exchanges with Alizeh, “\[3\]_Rona se better koi cheez bani hai kya_?”
 
-![[./images/ae-dil-hai-mushkil-review-1.png]]
+![ae-dil-hai-mushkil-review-1](<./ae-dil-hai-mushkil-review/ae-dil-hai-mushkil-review-1.png>)
 
 Karan says that the heart is not only enticed by the surreal image but also the moments that stretch between pursuit and attainment of the image make it bleed in hysteric ecstasy. When Ayan calls Alizeh, his first question is not, “\[4\]_Tu kaisi hai_?” but it is “\[5\]_Tune sex kiya na_?” One of the lines from Arijit Singh’s lyrics read, “\[6\]_ye ek tarfa mera safar, safar khubsoorat hai manzil se bhi_” and that is all, I think, one needs to know to compile Karan’s charts on obsessive-masculinity.
 
@@ -20,7 +24,7 @@ Ayan Sanger introduces himself as rich while Alizeh says she is wealthy. Ayan sa
 
 Karan also borrows Ali’s standpoint from Rockstar (“\[7\]_Tumhare awaaz main dard aur mohabbat ka naamo nishan hi nahi tha_”) which says that the expression of true art is limited to a personal stature of pain and love. The authenticity of the statement is debatable but the manner of carriage through Ranbir’s performance is splendid; particularly Ayan’s tone change in Alizeh’s wedding, a banal trope in Hindi cinema, salvaged and highlighted as a fresh resource by the director’s choice of theatrics. If it were not for those mediocre pop songs that Arijit Singh forces me to forgive, this would have been a greater product.
 
-![[./images/ae-dil-hai-mushkil-review-2.png]]
+![ae-dil-hai-mushkil-review-2](<./ae-dil-hai-mushkil-review/ae-dil-hai-mushkil-review-2.png>)
 
 “Pyaar mai junoon hai aur dosti mai sukoon hai” \[Love has passion but friendship has peace\]
 
@@ -30,13 +34,13 @@ The disconnection between Alizeh and Saba is intentional and is rather reflectiv
 
 Ayan finally hits the jackpot. His self-praise comes true. He can indeed sing to the tunes of Rafi now but hardly at the master’s level; just an internet sensation who rose in the dark of room and shines through uplifting tweets and boosts of YouTube subscribers. This is how Johar portrays failure in ADHM. Ayan’s personal life dragged to a standstill after repeated trials and his dreamed self, a Rafi reality, ends up at a stalemate of popularity and respect; all of which is transitory.
 
-![[./images/ae-dil-hai-mushkil-review-3.png]]
+![ae-dil-hai-mushkil-review-3](<./ae-dil-hai-mushkil-review/ae-dil-hai-mushkil-review-3.png>)
 
 Finally, at the endpoints of ADHM, Ayan finally finds Alizeh. He has all of her to himself (“\[8\]_tum mere khandan ho_”) but Alizeh is dying. He then resorts to sacrifice; shaves his head; takes care of her in every turn. The third act works like a pale image of the first, only in its intention, of course; quality will come later. They reunite and rejoice but death keeps lingering past an outburst of emotion. Everything seems to be well until Ayan throws a tantrum again. He falls back on his obtuse attempts of evocation and goes on to say that men and women can never be friends. This is how obsessed men are, in the world of ADHM. They lose every fight of the psyche that might help them change and still expect empathy in celebration of their failure.
 
 Rarely have seen such a sober humanist who does not only hide rich subtext in his tropes but also go as far to invent a new angle for a hated cliché. We have here one of the greatest personal confessions in cinema, shaped to a romantic comedy. Humans love to contradict themselves. Lovers are liars. We say one thing and we mean another. We cry when we are filled in joy and we smile when surrounded by grief. It is this unnecessary complexity we fancy, and garner to be a kin to circumstance. _Ae Dil Hai Mushkil_ mocks time in its final moments, and goes to believe how one song is only a corollary to what came before. The flower enervates, the happiness tires, and what remains is a fleeting recollection of all moments shared in animation.
 
-![](<./images/ae-dil-hai-mushkil-review-4.png>)
+![ae-dil-hai-mushkil-review-4](<./ae-dil-hai-mushkil-review/ae-dil-hai-mushkil-review-4.png>)
 
 “Main ek gaana gaun?” \[Can I sing a song?\]
 

@@ -6,12 +6,12 @@ tags:
   - ceph
   - ceph/osd
   - ceph/disk-ratios
-last edited: 2025-01-05 18:50
+last edited: 2025-04-10 13:26
 title: Nearfull Ratio
 ---
 ## ❓ What? 
 
-`mon_osd_nearfull_ratio` is the maximum / threshold percentage of disk space used before an OSD is considered as a [[./nearfull-osd]]. When utilisation crosses [[./nearfull-ratio]], it can reach [[./backfillfull-ratio]] and [[./full-ratio]]. The default value is 0.85 or 85% of the total available space / capacity.
+`mon_osd_nearfull_ratio` is the maximum / threshold percentage of disk space used before an OSD is considered as a [nearfull-osd](<./nearfull-osd.md>). When utilisation crosses [nearfull-ratio](<./nearfull-ratio.md>), it can reach [backfillfull-ratio](<./backfillfull-ratio.md>) and [full-ratio](<./full-ratio.md>). The default value is 0.85 or 85% of the total available space / capacity.
 
 ## ❔ Why?
 
