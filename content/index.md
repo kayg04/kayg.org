@@ -1,7 +1,7 @@
 ---
 title: K Gopal Krishna's Landing
 date: 2024-02-04 17:43
-last edited: 2025-04-10 16:21
+last edited: 2025-05-20 22:05
 ---
 ## Intro
 
@@ -24,4 +24,4 @@ You can find me on these platforms:
 - [Github](https://github.com/kayg04)
 - [Linkedin](https://www.linkedin.com/in/k-gopal-krishna-7546b92a2/)
 
-Some people also ask for my resume, [so here it is](https://cloud.kayg.org/s/dpGZmKzsGNNMdjx).
+Some people also ask for my resume, [resume](<./resume.pdf>).
