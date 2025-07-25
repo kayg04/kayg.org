@@ -56,11 +56,11 @@ I love the all black too but what I don't love is that Skullsaints may have lied
 
 ## The Goal
 
-I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [[../uses/index#Hardware|I connect my Mac to ethernet via a dock]].
+I already have a router - the Mercusys MR90X that runs OpenWRT and it serves me well. It's a little short on storage and RAM, and for the very little storage, I have compile tailscale myself into a combined binary, run it through UPX for a much shorter file size. Other than that quirk, I have no other issues with it. Speeds over WiFi go upto 750 Mbits at best and 300 Mbits, if I am a room apart. When I am at my desk, [I connect my Mac to ethernet via a dock](<../uses/index.md#hardware>).
 
 The MiniPC is to partly replace it, the LAN bit, maybe WiFi too in the future but no definite plans yet. Here's a visual (drawn with my new iPad which I am yet to make a post about) first:
 
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-goal.png]]
+![virtual-router-goal.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-goal.png>)
 
 These are the components in the picture:
 - My ISP's unit is my gateway to the internet. ACT's unit is the single uplink which provides my router with a static IP via PPPoE. 
@@ -73,7 +73,7 @@ These are the components in the picture:
 
 I live with my girlfriend. If the internet breaks, there's reasonable havoc. If the internet breaks and is down, it's the calm before the storm. Joking aside, she's very supportive of my testing. I break shit often and she is very understanding. Still, I like my services to be reliable and I like to minimise downtime. So for now, to make sure everything will work when I finally switch routers, here's a visual that I tested:
 
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-poc.png]]
+![virtual-router-poc.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-poc.png>)
 
 Basically, my existing router stays and handles the uplink. It assigns, via DHCP, random addresses to everything - OpenWRT VM (fixed static lease), Proxmox (bridged to be on the same subnet by OpenWRT VM) and other physical devices such as my phone, ipad and my mac.
 
@@ -91,7 +91,7 @@ Steps: Create a new generic VM, download and extract the generic ext4 tarball, r
 
 I didn't want any NICs on the Proxmox host as I want the OpenWRT VM as my only (virtual) networking machine. Passing through the NICs is straightforward. On the VM, Add PCI Device, choose each NIC with All Functions with PCI Express toggle checked.
 
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-nic-passthrough.png]]
+![virtual-router-nic-passthrough.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-nic-passthrough.png>)
 
 ### Bridge Configuration on Proxmox
 
@@ -138,14 +138,14 @@ OpenWRT does not know which ones are the real NICs and which one is virtual. In 
 
 The important bit here is to make sure `br-lan` has the MAC Address of our uplink (`eth1`), not the virtual bridge (`eth0`). This is because our external gateway (Mercusys MR90X) would assign a fixed lease (static private IP) for our virtual OpenWRT based on its MAC Address.  
   
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-configuration.png]]
+![virtual-router-openwrt-configuration.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-configuration.png>)
 
 Once that's done, set the interface `br-lan` to be a DHCP client, so it asks for an IP assignment from our external gateway.
 
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-br-lan-dhcp.png]]
+![virtual-router-openwrt-br-lan-dhcp.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-br-lan-dhcp.png>)
 
 Here's an overview of what everything looks like so far:
-![[./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-interfaces-overview.png]]
+![virtual-router-openwrt-interfaces-overview.png](<./virtual-router-proxmox-skullsaints-onyx/virtual-router-openwrt-interfaces-overview.png>)
 
 
 Let's confirm internet connectivity for our PoC Router:

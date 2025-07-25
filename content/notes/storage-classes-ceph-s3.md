@@ -101,7 +101,7 @@ $ radosgw-admin user modify \
 }
 ```
 
-Otherwise, a storage class can also be specified during the time of the upload like in [[./placement-rules-ceph-s3#Bucket Creation with Non-Default Placement Rule with AWS CLI|the placement rule example]].
+Otherwise, a storage class can also be specified during the time of the upload like in [the placement rule example](<./placement-rules-ceph-s3.md#bucket-creation-with-non-default-placement-rule-with-aws-cli>).
 
 ## ❔ Why?
 

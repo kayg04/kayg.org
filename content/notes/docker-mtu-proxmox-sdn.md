@@ -17,7 +17,7 @@ I use [[./evpn-vxlan-proxmox-sdn|Proxmox SDN and a eVPN Zone]] as my main networ
 
 ![[./docker-mtu-proxmox-sdn/proxmox-sdn-evpn-zone.png]]
 
-The VM's network adapters can be [[./bridge-mtu-proxmox#❔ Why?|configured quite trivially by setting the MTU value to 1, which just inherits the underlying bridge's MTU]].
+The VM's network adapters can be [configured quite trivially by setting the MTU value to 1, which just inherits the underlying bridge's MTU](<./bridge-mtu-proxmox.md#why>).
 
 The VMs network adapter from the inside looks like so:
 

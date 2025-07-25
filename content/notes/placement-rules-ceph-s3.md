@@ -149,7 +149,7 @@ The end result is the same with both the commands:
 
 ### Changing Default Placement Rule for the user
 
-A default placement rule with a default storage class can also be configured for a specific user like in the [[./storage-classes-ceph-s3#Changing Default Storage Class for a User|storage classes example]].
+A default placement rule with a default storage class can also be configured for a specific user like in the [storage classes example](<./storage-classes-ceph-s3.md#changing-default-storage-class-for-a-user>).
 
 ## 👓 References
 
