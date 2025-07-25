@@ -11,7 +11,7 @@ title: Storage Classes in Ceph S3
 ---
 ## ❓ What?
 
-Storage classes in [[./ceph]] correspond to a certain [[data pool]]. They are a subsection of [[./placement-rules-ceph-s3]] that link them to [[data pool]]s. A [[./storage-classes-ceph-s3|storage class]] is unique to a [[./placement-rules-ceph-s3|placement rule]] but [[./placement-rules-ceph-s3|placement rules]] can have many [[./storage-classes-ceph-s3|storage classes]]. Every [[./placement-rules-ceph-s3|placement rule]] has a [[./storage-classes-ceph-s3|storage class]] called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [[./placement-rules-ceph-s3|placement rules]].
+Storage classes in [storage class](./ceph]] correspond to a certain [data pool](<./data pool>). They are a subsection of [./placement-rules-ceph-s3](<./placement-rules-ceph-s3.md>) that link them to [data pool](<./data pool>)s. A [[./storage-classes-ceph-s3) is unique to a [placement rule](<./placement-rules-ceph-s3.md>) but [placement rules](<./placement-rules-ceph-s3.md>) can have many [storage classes](<./storage-classes-ceph-s3.md>). Every [placement rule](<./placement-rules-ceph-s3.md>) has a [storage class](<./storage-classes-ceph-s3.md>) called `STANDARD` by default but this `STANDARD` might correspond to different data pools for different [placement rules](<./placement-rules-ceph-s3.md>).
 ### Changing Default Storage Class for a User
 
 **The default storage class for a placement rule (and therefore a bucket) cannot be modified.** If it's desired that a certain user's uploads, by default, goto a different storage class, this can be done by modifying the `default_storage_class` key for the specific user with `radosgw-admin` .
@@ -105,14 +105,14 @@ Otherwise, a storage class can also be specified during the time of the upload l
 
 ## ❔ Why?
 
-Storage classes help users and administrators to prioritise space and costs by having different types of storage classes corresponding to different types of [[Device Class|device classes]]. For example, frequently accessed data may reside on NVMe while archives may reside on HDD. This type of [[Transitioning Data to a Different Storage Class|transitioning]] is made possible with [[Lifecycle Policy|lifecycle policies]]. 
+Storage classes help users and administrators to prioritise space and costs by having different types of storage classes corresponding to different types of [Device Class|device classes](<./Device Class|device classes>). For example, frequently accessed data may reside on NVMe while archives may reside on HDD. This type of [Transitioning Data to a Different Storage Class|transitioning](<./Transitioning Data to a Different Storage Class|transitioning>) is made possible with [Lifecycle Policy|lifecycle policies](<./Lifecycle Policy|lifecycle policies>). 
 
 ## 🎤 How?
 
   
 A storage class can be created like so:
 
-![[./storage-classes-ceph-s3/storage-class-in-ceph-s3-1.png]]
+![storage-class-in-ceph-s3-1](<./storage-classes-ceph-s3/storage-class-in-ceph-s3-1.png>)
 Same over the command line:
 
 ```bash

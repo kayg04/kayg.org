@@ -36,15 +36,15 @@ When you play around both apps on MacOS, Fantastical has seriously, I mean *seri
 
 BusyCal is no joke though but it doesn't quite have the same polish as Fantastical does. I really love that the calendars are displayed on the left sidebar, like in the stock calendar app. I love how toggle buttons show up next to the specific accounts.
 
-![[./busycal-vs-fantastical/busycal-account-sidebar-pill.gif]]
+![busycal-account-sidebar-pill](<./busycal-vs-fantastical/busycal-account-sidebar-pill.gif>)
 
 I love the sliding pills when navigating between views.
 
-![[./busycal-vs-fantastical/busycal-navigating-between-views.gif]]
+![busycal-navigating-between-views](<./busycal-vs-fantastical/busycal-navigating-between-views.gif>)
 
 But... Fantastical is just built different. Fantastical makes way better use of colours. Like in this month view heatmap, it's way easier to tell busy-ness on Fantastical than BusyCal. When you add an event, the paparazzi around it is just extra nice. 
 
-![[./busycal-vs-fantastical/fantastical-add-event.gif]]
+![fantastical-add-event](<./busycal-vs-fantastical/fantastical-add-event.gif>)
 
 Also it's quite unfair to say but BusyCal looks... very busy in the daily and weekly views and it doesn't quite respond to you resizing the window. And there aren't any toggles to make it appear different. While Fantastical is very responsive to both navigating between views and resizing the window. 
 
@@ -54,18 +54,18 @@ I recently bought BusyCal on iOS to test drive it but I am quite disappointed to
 
 However, conversely on iOS, the day view on BusyCal allows you to zoom in and zoom out to a very flexible degree.
 
-![[./busycal-vs-fantastical/busycal-ios-density-day-view.mp4]]
+![busycal-ios-density-day-view](<./busycal-vs-fantastical/busycal-ios-density-day-view.mp4>)
 ## Customisability
 
 ### MacOS
 
 This is not a competition, I would say this straight up: BusyCal wins because of how much it allows me to do. Want an event to directly start after the end of next? The context menu has you covered. Want to copy the app URI and link it in your obsidian task page? The context menu got you covered. I mean, really, BusyCal is no joke when it comes to turning knobs. Want to get a summary of how you spent your time? The context menu has tags.
 
-![[./busycal-vs-fantastical/busycal-context-menu.png]]
+![busycal-context-menu](<./busycal-vs-fantastical/busycal-context-menu.png>)
 
 While Fantastical is so-so:
 
-![[./busycal-vs-fantastical/fantastical-context-menu.png]]
+![fantastical-context-menu](<./busycal-vs-fantastical/fantastical-context-menu.png>)
 
 ### iOS 
 
@@ -82,7 +82,7 @@ Both BusyCal and Fantastical have most bases covered. Both of them expect a simi
 In my experience, it's very important that you mention `[Day]` before `[Time Range]`, otherwise neither BusyCal nor Fantastical would schedule your event perfectly.
 
 However, since all my calendars start with emojis, `/calendar` doesn't work at all in BusyCal. It doesn't include the word `/calendar` in the event but puts it in the wrong one. 
-![[./busycal-vs-fantastical/busycal-add-event-nlp.mp4]]
+![busycal-add-event-nlp](<./busycal-vs-fantastical/busycal-add-event-nlp.mp4>)
 
 Fantastical, however, delivers every-time. You don't need to specify `to` or `-` between time ranges, the `/calendar` syntax matches the calendar perfectly. 
 

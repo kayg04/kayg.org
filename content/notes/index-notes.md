@@ -5,9 +5,9 @@ last edited: 2025-01-05 19:22
 ---
 ## Index Notes
 
-This is a section of my Zettelkasten that is dedicated to grouping information ([[./permanent-notes|Permanent Notes]]) together and classifying / categorising them into their subsections if possible. These notes will be a superset and/or contain a map of content for a given topic / project / idea.
+This is a section of my Zettelkasten that is dedicated to grouping information ([Permanent Notes](<./permanent-notes.md>)) together and classifying / categorising them into their subsections if possible. These notes will be a superset and/or contain a map of content for a given topic / project / idea.
 
-Tags for notes of this folder include #project #reference and their subtags. Since some topics could both be a project and a reference (like [[./ceph]], which is something I write about in the process of continually learning through work and/or experimentation but it is also for my own reference should I forget), I feel like it's important to define how I view them:
+Tags for notes of this folder include #project #reference and their subtags. Since some topics could both be a project and a reference (like [./ceph](<./ceph.md>), which is something I write about in the process of continually learning through work and/or experimentation but it is also for my own reference should I forget), I feel like it's important to define how I view them:
 
 ## Project
 
@@ -21,16 +21,16 @@ Tags for notes of this folder include #project #reference and their subtags. Sin
 - A piece of literature or media that does not involve a priority *AND*
 - Adding information to it has little to no urgency and can be done so whenever desired or at random
 
-So, learning prospects will always be [[#Project|projects]], simply because I am at a point of time in my life where shit needs to be prioritised. Self-improvement topics will always be [[#Reference|references]] since they do not hold a period of definite start or definite end. 
+So, learning prospects will always be [#Project|projects](<./#Project|projects>), simply because I am at a point of time in my life where shit needs to be prioritised. Self-improvement topics will always be [#Reference|references](<./#Reference|references>) since they do not hold a period of definite start or definite end. 
 
 Can projects be references and vice versa? Truth be told, I don't know yet. I'll figure it out as this Zettelkasten grows. If all of this seems confusing, here's [a cover of one of everybody's favourite songs](https://youtu.be/M-i7QwRETf0) to enjoy.
 
 Reference Notes:
 
-- [[./save-up-expenses]]
+- [./save-up-expenses](<./save-up-expenses.md>)
 
 Projects: 
 
-- [[./ceph]]
-- [[./move-wordpress-quartz]]
-- [[./proxmox]]
+- [./ceph](<./ceph.md>)
+- [./move-wordpress-quartz](<./move-wordpress-quartz.md>)
+- [./proxmox](<./proxmox.md>)

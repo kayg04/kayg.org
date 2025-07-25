@@ -38,23 +38,23 @@ Year after year, I stayed mostly on KeepassXC - ran into some synchronization pr
 
 As a recent Apple convert after years of using Windows and Linux, I wanted something that fit the SwiftUI aesthetic better - but still keepass-y. I turned to [Strongbox](https://strongbox.reamaze.com). At first glance, it looked spectacular:
 
-![[./the-password-manager-situation/strongbox-new-entry.png]]
+![strongbox-new-entry](<./the-password-manager-situation/strongbox-new-entry.png>)
 
 However, it misses the greatest feature of KeepassXC still - AutoType. 
 
-For fields that don't support any kind of auto-fill, even Apple's Passwords.app (yes, like the [[./the-password-manager-situation/disk-encryption-unlock-prompt.png|disk unlock prompt for an APFS encrypted drive]]), AutoType is extremely useful. 
+For fields that don't support any kind of auto-fill, even Apple's Passwords.app (yes, like the [disk unlock prompt for an APFS encrypted drive](<./the-password-manager-situation/disk-encryption-unlock-prompt.png>)), AutoType is extremely useful. 
 
 Strongbox has other advantages, though:
 
 1. Mind-blowing Apple ecosystem support - Touch ID, Native Safari Integration, 2FA / Custom Field auto-fill on iOS, even an Apple Watch app!
 2. Large Text view for any field that makes it super easy to scan from any device - for easy sharing:
    
-   ![[./the-password-manager-situation/strongbox-large-text-view.png]]
+   ![strongbox-large-text-view](<./the-password-manager-situation/strongbox-large-text-view.png>)
 3. Multiple Databases, saving to any cloud provider of choice, Strongbox Sync - Apple's Cloudkit, all the usual niceness of keepass
 
 So far, it seems like the perfect candidate for storing passwords, 2FA codes, recovery codes....
 
-![[./the-password-manager-situation/strongbox-database-manager.png]]
+![strongbox-database-manager](<./the-password-manager-situation/strongbox-database-manager.png>)
 
 But what if I were to optimize further?
 
@@ -72,7 +72,7 @@ I ended up trying it, as part of my *completely futile pursuit of reducing relia
 1. No concept of a master password - device password / FaceID is it.
 2. Password generation is limited to two variants - "Strong" and "Without special Characters"
    
-   ![[./the-password-manager-situation/passwords-app-password-generator.png]]
+   ![passwords-app-password-generator](<./the-password-manager-situation/passwords-app-password-generator.png>)
 3. No custom fields - just a notes section
 4. Credit Cards will still be in Safari
 5. No ability to create multiple databases
@@ -116,5 +116,5 @@ Strongbox.
 
 ## 🔚 Bidding Thoughts
 
-This is not the first time I have thought of switching my existing workflows for no reason, and certainly not the first time I have questioned my choice of password managers. I wanted to put my thoughts out so I can make all the time spent switching, tinkering, experimenting - amount to something other than [[./time-flies-by|an entry in my "Procrastination" Calendar]]. Hopefully, this article reassures me that what I currently use is already the best out there on the wide web, and by the time I need to question my choices again, either this article or my memory whacks me on my bald head and tells me to keep working instead.
+This is not the first time I have thought of switching my existing workflows for no reason, and certainly not the first time I have questioned my choice of password managers. I wanted to put my thoughts out so I can make all the time spent switching, tinkering, experimenting - amount to something other than [an entry in my "Procrastination" Calendar](<./time-flies-by.md>). Hopefully, this article reassures me that what I currently use is already the best out there on the wide web, and by the time I need to question my choices again, either this article or my memory whacks me on my bald head and tells me to keep working instead.
 

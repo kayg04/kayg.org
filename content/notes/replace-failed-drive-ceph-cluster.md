@@ -19,7 +19,7 @@ Those errors are visible in the `SMART ERROR Log` or in the OSD logs that can be
 
 ## ❔ Why?
 
-A [[./ceph]] cluster over time can have drives that are either completely non-functional or emitting read/write errors because of sustained use or manufacturing defects. In that case, a replacement of the drive is necessary to ensure configured data redundancy and sustained performance. 
+A [./ceph](<./ceph.md>) cluster over time can have drives that are either completely non-functional or emitting read/write errors because of sustained use or manufacturing defects. In that case, a replacement of the drive is necessary to ensure configured data redundancy and sustained performance. 
 
 ## 🎤 How?
 
@@ -33,11 +33,11 @@ When there's a failed drive/OSD, there are two situations:
 
 ### Procedure
 
-- In both cases, the disk can be marked out of the [[./ceph]] cluster with `ceph osd out <osd.num>` or `ceph osd reweight 0` (Both are equivalent operations).
+- In both cases, the disk can be marked out of the [./ceph](<./ceph.md>) cluster with `ceph osd out <osd.num>` or `ceph osd reweight 0` (Both are equivalent operations).
 
-- [[./ceph]] drains the dying OSD and moves data OR if the disk is dead, ceph rebuilds data from redundant bits / parity to _other OSDs on the same node_. This may cause a [[./nearfull-osd]] situation.
+- [./ceph](<./ceph.md>) drains the dying OSD and moves data OR if the disk is dead, ceph rebuilds data from redundant bits / parity to _other OSDs on the same node_. This may cause a [./nearfull-osd](<./nearfull-osd.md>) situation.
  
-- To prevent such a situation, the trick here is to set `ceph osd crush reweight 0`.  This makes sure that the data is distributed to _other OSDs on all the nodes / throughout the crushmap_. See [[./difference-osd-reweight-crush-reweight]].
+- To prevent such a situation, the trick here is to set `ceph osd crush reweight 0`.  This makes sure that the data is distributed to _other OSDs on all the nodes / throughout the crushmap_. See [./difference-osd-reweight-crush-reweight](<./difference-osd-reweight-crush-reweight.md>).
 
 - Wait till the OSD has been drained (0 PGs) if the disk is still alive. The subcommands `ok-to-stop` and `safe-to-destroy` can be run to make sure that the OSD can be stopped and destroyed without affecting data redundancy. If the disk is dead, it can be replaced immediately.
 

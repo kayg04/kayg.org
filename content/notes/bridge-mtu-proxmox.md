@@ -31,11 +31,11 @@ and if it's a web service then the page might appear to be loading or get stuck 
 
   This is a cause of MTU mismatch. With Proxmox LXCs, the veths already take on the value of the Proxmox network bridge. The veth configuration looks like this:
 
-![[./bridge-mtu-proxmox/proxmox-lxc-veth-mtu.png]]
+![proxmox-lxc-veth-mtu](<./bridge-mtu-proxmox/proxmox-lxc-veth-mtu.png>)
 
 But with VMs, that is not the case. A value of `1` needs to be entered manually.
 
-![[./bridge-mtu-proxmox/proxmox-vm-nic-mtu.png]]
+![proxmox-vm-nic-mtu](<./bridge-mtu-proxmox/proxmox-vm-nic-mtu.png>)
 
 ## 🎤 When is it a problem?
 

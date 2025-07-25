@@ -16,8 +16,8 @@ EVPN is the control plane that's responsible for populating the forwarding table
 
 ## ❔ Why?
 
-EVPN + VXLAN is a necessary step in configuring [[./proxmox]] how I want it to function:
-	1. One zone with multiple VNets that have [[./vlans-proxmox|VLAN tags]].
+EVPN + VXLAN is a necessary step in configuring [./proxmox](<./proxmox.md>) how I want it to function:
+	1. One zone with multiple VNets that have [VLAN tags](<./vlans-proxmox.md>).
 	2. VMs in any node can access each other and can access the internet. 
 	3. All network configuration is done only once via `Datacenter` and can be done through the GUI.
 ## 👓 References

@@ -11,7 +11,7 @@ title: Placement Rules in Ceph S3
 ---
 ## ❓ What?
 
-Placement rules in [[./ceph]] are a method to assign a specific [[data pool]], [[index pool]] and [[extra pools]] to a particular [[bucket]]. Placement rules are assigned to buckets at the time of creation and cannot be changed after creation. The default placement rule is called, `default-placement`. It assigns a [[./storage-classes-ceph-s3|storage class]] called `STANDARD` which links the default [[rados gateway]] data, index and non-ec pools. 
+Placement rules in [storage class](./ceph]] are a method to assign a specific [data pool](<./data pool>), [index pool](<./index pool>) and [extra pools](<./extra pools>) to a particular [bucket](<./bucket>). Placement rules are assigned to buckets at the time of creation and cannot be changed after creation. The default placement rule is called, `default-placement`. It assigns a [./storage-classes-ceph-s3) called `STANDARD` which links the default [[rados gateway](<./storage-classes-ceph-s3.md>) called `STANDARD` which links the default [[rados gateway) data, index and non-ec pools. 
 
 ### Undocumented --storage-class flag
 
@@ -101,17 +101,17 @@ However, it does not do what it says, even though the `default_placement` key no
 ### Creating a New Placement Rule OR Changing what STANDARD means
 
 However, this `STANDARD` storage class can be configured to have custom pools during placement rule creation. 
-![[./placement-rules-ceph-s3/placement-rules-in-ceph-s3-1.png]]
+![placement-rules-in-ceph-s3-1](<./placement-rules-ceph-s3/placement-rules-in-ceph-s3-1.png>)
 
 The new placement rule would look like this.
 
-![[./placement-rules-ceph-s3/placement-rules-in-ceph-s3-2.png]]
+![placement-rules-in-ceph-s3-2](<./placement-rules-ceph-s3/placement-rules-in-ceph-s3-2.png>)
 
 ### Changing Default Placement Rule for New Buckets
 
 The default placement rule can be changed so that it can be auto selected during bucket creation (new buckets only). As previously mentioned, making the same placement rule with another storage class has no effect.
 
-![[./placement-rules-ceph-s3/placement-rule-in-ceph-s3-4.png]]
+![placement-rule-in-ceph-s3-4](<./placement-rules-ceph-s3/placement-rule-in-ceph-s3-4.png>)
 On the command-line it would look like:
 
 ```bash
@@ -130,7 +130,7 @@ Placement rules establish a bucket (s3 lingo) to pool (ceph lingo) relationship,
 
 With croit, placement rules can be easily scrolled through during bucket creation:
 
-![[./placement-rules-ceph-s3/placement-rules-ceph-s3-3.png]]
+![placement-rules-ceph-s3-3](<./placement-rules-ceph-s3/placement-rules-ceph-s3-3.png>)
 
 ### Bucket Creation with Non-Default Placement Rule with AWS CLI
 
@@ -145,7 +145,7 @@ $ aws --endpoint-url http://172.31.117.5 s3api create-bucket --bucket test-test-
 
 The end result is the same with both the commands:
 
-![[./placement-rules-ceph-s3/placement-rule-ceph-s3-5.png]]
+![placement-rule-ceph-s3-5](<./placement-rules-ceph-s3/placement-rule-ceph-s3-5.png>)
 
 ### Changing Default Placement Rule for the user
 

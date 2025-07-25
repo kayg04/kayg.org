@@ -17,7 +17,7 @@ Instead of going the regular route and using Caps Lock as a hyper key / hyper ke
 
 BetterTouchTool does not listen to keystrokes sent by BetterTouchTool when configuring shortcuts or key sequences in it. Shortcuts are basically one key combo, such as a Modifier (Cmd, Opt, Ctrl) + Any key that is not a Modifier (h, j, k, l). 
 
-Using Caps Lock as Hyper Key would mean I have to press Four Modifiers when configuring a new shortcut every time, and this does not even work when defining a Key Sequence (which is what I use more because I am a fan of [[Namespaced Shortcuts]]) because [the modifier order is relevant and cannot be marked as irrelevant in BTT.](https://community.folivora.ai/t/how-to-use-caps-lock-as-hyper-key-in-key-sequences/36908/4?u=kayg04) 
+Using Caps Lock as Hyper Key would mean I have to press Four Modifiers when configuring a new shortcut every time, and this does not even work when defining a Key Sequence (which is what I use more because I am a fan of [Namespaced Shortcuts](<./Namespaced Shortcuts>)) because [the modifier order is relevant and cannot be marked as irrelevant in BTT.](https://community.folivora.ai/t/how-to-use-caps-lock-as-hyper-key-in-key-sequences/36908/4?u=kayg04) 
 
 ## 🎤 How?
 
@@ -30,19 +30,19 @@ I have spent quite a bit of time trying out different combinations of delays and
 	- Toggle Caps Lock
 	  
 	  This is important because otherwise Caps Lock itself would turn on - meaning all CAPS.
-	  ![[./caps-lock-not-hyper-key/caps-lock-press-and-release.png]]
+	  ![caps-lock-press-and-release](<./caps-lock-not-hyper-key/caps-lock-press-and-release.png>)
 
 - When Caps Lock is Pressed and *no further input is detected for the next 0.2 seconds* (that is, caps lock is not released OR any other key is NOT pressed):
 	- Block keyboard input. 
 	  
 	  Initially, the delay was 0.3s, but I have reduced it to 0.2s. I'll try reducing it further in the future. 
-	 ![[./caps-lock-not-hyper-key/caps-lock-release.png]]
+	 ![caps-lock-release](<./caps-lock-not-hyper-key/caps-lock-release.png>)
 - When Caps Lock is Released (*only when keyboard input is blocked* - I do not want it to trigger when caps lock is pressed with another key as I also configure shortcuts that are not key sequences):
 	- Allow keyboard input 
 	- Toggle Caps Lock 
 	  
 	  This is important because otherwise Caps Lock itself would turn on - meaning all CAPS.
-	  ![[./caps-lock-not-hyper-key/caps-lock-press-and-release.png]]
+	  ![caps-lock-press-and-release](<./caps-lock-not-hyper-key/caps-lock-press-and-release.png>)
 
 		
 

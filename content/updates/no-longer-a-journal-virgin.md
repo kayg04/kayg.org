@@ -16,15 +16,15 @@ Over the last two years which marked the largest move of my life: moving from a 
 
 ## Just TickTick, will you?
 
-[[TickTick]] was the initial answer to my problem, one that I found a month before the move happened; a workflow that would shine within spurts of motivation and dwindle in the workaday. I love the reminders (seriously though, *chef's kiss*), I love the calendar, I love the Kanban Boards, I love that it costs 1400 INR a year, I love.... but ~~did it~~ does it work for me?
+[TickTick](<./TickTick>) was the initial answer to my problem, one that I found a month before the move happened; a workflow that would shine within spurts of motivation and dwindle in the workaday. I love the reminders (seriously though, *chef's kiss*), I love the calendar, I love the Kanban Boards, I love that it costs 1400 INR a year, I love.... but ~~did it~~ does it work for me?
 
-Two years later, the answer is so-so. I am more reliable than I was, I do get things done more consistently, the things I don't have time for get delegated to the maid or a house help from Urban Company. However these things happen with or without TickTick. Even though an entry might say, [[../notes/move-wordpress-quartz]], a project that would have subtasks under it, neither the time nor the effort was tracked in TickTick. Tracking the time was an after-thought, ticking the tasks was done when I somehow sometimes opened the app. It was something I had to go out of my way to tick.
+Two years later, the answer is so-so. I am more reliable than I was, I do get things done more consistently, the things I don't have time for get delegated to the maid or a house help from Urban Company. However these things happen with or without TickTick. Even though an entry might say, [../notes/move-wordpress-quartz](<../notes/move-wordpress-quartz.md>), a project that would have subtasks under it, neither the time nor the effort was tracked in TickTick. Tracking the time was an after-thought, ticking the tasks was done when I somehow sometimes opened the app. It was something I had to go out of my way to tick.
 
 ## The Problem
 
 The problem wasn't the friction of opening TickTick to get things done, it was that the information related to the task would be present somewhere else and the tasks themselves reside in TickTick. In my head, it was a simple problem to solve, copy link to *insert note taking app*, paste in ticktick and you have created a passive information link between your task and the note. 
 
-... That did not work. In the past two years, I have moved from [[Logseq]] to [[Notion]] to [[Logseq]] to [[Notion]] to [[Obsidian]] to [[Notion]], and finally found my peace with [[Obsidian]] again (something to talk about later perhaps). However not once, not even one task had an interconnected link between TickTick and the corresponding page on the note taking app.
+... That did not work. In the past two years, I have moved from [Logseq](<./Logseq>) to [Notion](<./Notion>) to [Logseq](<./Logseq>) to [Notion](<./Notion>) to [Obsidian](<./Obsidian>) to [Notion](<./Notion>), and finally found my peace with [Obsidian](<./Obsidian>) again (something to talk about later perhaps). However not once, not even one task had an interconnected link between TickTick and the corresponding page on the note taking app.
 ## Trying to be an Obsidian Chad
 
 So I did it, I decided to make the move, at least try, right? What did I have to lose? I am not afraid. Am I afraid? 
@@ -38,11 +38,11 @@ My first day of journaling and this is what I ended up making (and more importan
 	- Tasks due for today
 	- Tasks due in general - with no due date
 
-![[./no-longer-a-journal-virgin/no-longer-a-journal-virgin-1.png]]
+![no-longer-a-journal-virgin-1](<./no-longer-a-journal-virgin/no-longer-a-journal-virgin-1.png>)
 
 And this is made possible with Templater, Obsidian Template core plugin and Obsidian-Tasks. And journaling would look something like this in real life:
 
-![[./no-longer-a-journal-virgin/no-longer-a-journal-virgin-2.mp4]]
+![no-longer-a-journal-virgin-2](<./no-longer-a-journal-virgin/no-longer-a-journal-virgin-2.mp4>)
 
 What needs to be done? 
 - Hotkeys

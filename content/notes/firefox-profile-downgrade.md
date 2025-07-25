@@ -26,7 +26,7 @@ I have reported the bug here: https://bugzilla.mozilla.org/show_bug.cgi?id=16505
 
 The older version of firefox will try to access the application password created by the new version so you will get a prompt of Firefox asking for keychain access. Simply adding the application to always have access to this particular item will be sufficient.
 
-![[./firefox-profile-downgrade/old-firefox-keychain-prompt.png]]
+![old-firefox-keychain-prompt](<./firefox-profile-downgrade/old-firefox-keychain-prompt.png>)
 
 ## 👓 References
 

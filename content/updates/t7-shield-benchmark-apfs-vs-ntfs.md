@@ -13,7 +13,7 @@ title: T7 Shield - APFS vs NTFS
 
 I got the 4 TB Samsung T7 Shield back in August or October 2023 for a very appealing price of 24k INR but it has sat in my bag since, except for a benchmark that I ran once or so and never published it.
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/samsung-t7-shield-4-tb-ssd.jpg]]
+![samsung-t7-shield-4-tb-ssd](<./t7-shield-benchmark-apfs-vs-ntfs/samsung-t7-shield-4-tb-ssd.jpg>)
 
 This update is an attempt to make sense of and publish those benchmarks.
 
@@ -25,57 +25,57 @@ The tests on MacOS are done through AmorphousDiskMark from the App Store and the
 
 - Test size - 16 GB 
   
-  ![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - 16 GB.png]]
+  ![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - 16 GB.png)
   
 - Test size - 64 GB 
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - 64 GB.png]]
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - Last Test 64 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - 64 GB.png)
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS - Last Test 64 GB.png)
 
 ## Second Contender - APFS Encrypted
 
 - Test size - 64 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS Encrypted - 64 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - APFS Encrypted - 64 GB.png)
 
 ## Third Contender - Paragon NTFS
 
 - Test size - 16 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Paragon NTFS - 16 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Paragon NTFS - 16 GB.png)
 
 - Test size - 64 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Paragon NTFS - 64 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Paragon NTFS - 64 GB.png)
 
 ## Fourth Contender - Tuxera NTFS
 
 - Test size - 16 GB
   
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Tuxera NTFS - 16 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Tuxera NTFS - 16 GB.png)
 - Test size - 64 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Tuxera NTFS - 64 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung PSSD T7 Shield - Tuxera NTFS - 64 GB.png)
 
 ## Last Contender - WIndows NTFS
 
 - Test size - 16 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - 16 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - 16 GB.png)
 
 - Test size - 64 GB
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - 64 GB.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - 64 GB.png)
 
 - Test size - Real World Performance Preset
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - Real World Performance Preset.png]]
+![](./t7-shield-benchmark-apfs-vs-ntfs/Samsung T7 Shield - Windows NTFS - Real World Performance Preset.png)
 
 ## Disk stats
 
 I forgot to record the disk stats before starting these tests so I likely took them somewhere in between them.
 
-![[./t7-shield-benchmark-apfs-vs-ntfs/CrystalDiskInfo_20231108095316.png]]
+![CrystalDiskInfo\_20231108095316](<./t7-shield-benchmark-apfs-vs-ntfs/CrystalDiskInfo_20231108095316.png>)
 
 ## Conclusion
 

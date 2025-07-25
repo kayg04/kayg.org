@@ -13,4 +13,4 @@ So far, tooling wise, these are the tricks I have up my sleeve:
 
 ### Credit Cards
 
-- [[./sbi-cashback-card]]
+- [./sbi-cashback-card](<./sbi-cashback-card.md>)

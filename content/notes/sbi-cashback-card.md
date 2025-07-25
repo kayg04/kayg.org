@@ -11,9 +11,9 @@ title: SBI Cashback Card
 ---
 ## ❓ What?
 
-As part of [[./save-up-expenses]] initiative, I use the SBI Cashback card which provides 5% back on online and 1% back on offline spends. Here are the list of categories exempt from the cashback:
+As part of [./save-up-expenses](<./save-up-expenses.md>) initiative, I use the SBI Cashback card which provides 5% back on online and 1% back on offline spends. Here are the list of categories exempt from the cashback:
 
-![[./sbi-cashback-card/sbi-cashback-card-1.png]]
+![sbi-cashback-card-1](<./sbi-cashback-card/sbi-cashback-card-1.png>)
 
 ## 👓 References
 

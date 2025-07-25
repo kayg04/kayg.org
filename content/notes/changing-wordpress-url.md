@@ -11,9 +11,9 @@ title: Changing Wordpress URL
 ---
 ## ❓ What happened?
 
-My wordpress instance was hosted at https://kayg.org, however I [[./move-wordpress-quartz|replaced it with Quartz]] before exporting / importing content. Therefore, I need it accessible over at https://wp.kayg.org so I can squeeze some content out and decommission it for good. I tried to access the instance over the private IP address directly by exposing the IP with [tailscale subnet routers](https://tailscale.com/kb/1019/subnets)... but that did not work because the site is configured to be available only over HTTPS and at a specific address. 😔
+My wordpress instance was hosted at https://kayg.org, however I [replaced it with Quartz](<./move-wordpress-quartz.md>) before exporting / importing content. Therefore, I need it accessible over at https://wp.kayg.org so I can squeeze some content out and decommission it for good. I tried to access the instance over the private IP address directly by exposing the IP with [tailscale subnet routers](https://tailscale.com/kb/1019/subnets)... but that did not work because the site is configured to be available only over HTTPS and at a specific address. 😔
 
-![[./changing-wordpress-url/wordpress-unavailable-different-domain.png]]
+![wordpress-unavailable-different-domain](<./changing-wordpress-url/wordpress-unavailable-different-domain.png>)
 
 ## 🎤 How do we fix this?
 
@@ -45,9 +45,9 @@ My wordpress instance was hosted at https://kayg.org, however I [[./move-wordpre
 
 And then the broken homepage and the admin page show up as intended!
 
-![[./changing-wordpress-url/broken-homepage.png]]
+![broken-homepage](<./changing-wordpress-url/broken-homepage.png>)
 
-![[./changing-wordpress-url/admin-page.png]]
+![admin-page](<./changing-wordpress-url/admin-page.png>)
 
 ## 👓 References
 

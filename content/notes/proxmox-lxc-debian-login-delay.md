@@ -20,7 +20,7 @@ While implementing the new setup, I encountered a challenge with Debian. When lo
 The root cause was traced to disabled nesting in Proxmox container options. Two solutions emerged:
 
 1. Enable nesting in Proxmox container settings
-2. Alternatively, mask the [[systemd-logind]] service if nesting cannot be enabled
+2. Alternatively, mask the [systemd-logind](<./systemd-logind>) service if nesting cannot be enabled
 
 This issue was ultimately identified through a helpful Reddit post, though the exact mechanism causing the delay remains unclear.
 
